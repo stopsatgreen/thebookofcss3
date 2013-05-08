@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf8">
+<title></title>
+<link rel="stylesheet" href="css/blueprint/screen.css" type="text/css" media="screen, projection">
+<link rel="stylesheet" href="css/blueprint/print.css" type="text/css" media="print">	
+<!--[if lt IE 8]><link rel="stylesheet" href="css/blueprint/ie.css" type="text/css" media="screen, projection"><![endif]-->
+<link rel="stylesheet" href="css/persistent.css" type="text/css" media="screen, projection">
+<style>
+.trans-xy {
+    -moz-transform: scaleX(1.5) scaleY(1.5);
+    -ms-transform: scaleX(1.5) scaleY(1.5);
+    -webkit-transform: scaleX(1.5) scaleY(1.5);
+}
+.trans-z {
+    -moz-transform: scaleZ(2.5) translateZ(10px);
+    -ms-transform: scaleZ(2.5) translateZ(10px);
+    -webkit-transform: scaleZ(2.5) translateZ(10px);
+}
+.trans-xyz {
+    -moz-transform: scale3d(1.25,1.25,4) translateZ(10px);
+    -ms-transform: scale3d(1.25,1.25,4) translateZ(10px);
+    -webkit-transform: scale3d(1.25,1.25,4) translateZ(10px);
+}
+.threed:hover .trans-xy {
+    -moz-transform: scaleX(1) scaleY(1);
+    -ms-transform: scaleX(1) scaleY(1);
+    -webkit-transform: scaleX(1) scaleY(1);
+}
+.threed:hover .trans-z {
+    -moz-transform: scaleZ(1) translateZ(0);
+    -ms-transform: scaleZ(1) translateZ(0);
+    -webkit-transform: scaleZ(1) translateZ(0);
+}
+.threed:hover .trans-xyz {
+    -moz-transform: scale3d(1,1,1) translateZ(0); 
+    -ms-transform: scale3d(1,1,1) translateZ(0); 
+    -webkit-transform: scale3d(1,1,1) translateZ(0); 
+}
+</style>
+</head>
+<body class="ch_14">
+<div class="container">
+    <div class="span-6 threed">
+        <div class="trans-xy">
+	        <h2>The Book Of</h2>
+    	    <h1>CSS3</h1>
+		</div>
+    </div>
+    <div class="span-6 threed">
+        <div class="trans-z">
+	        <h2>The Book Of</h2>
+    	    <h1>CSS3</h1>
+		</div>
+    </div>
+    <div class="span-6 threed">
+        <div class="trans-xyz">
+	        <h2>The Book Of</h2>
+    	    <h1>CSS3</h1>
+		</div>
+    </div>
+    <div class="span-6 last">&thinsp;</div>
+</div>
+</body>
+</html>

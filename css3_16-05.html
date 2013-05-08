@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf8">
+<title></title>
+<link rel="stylesheet" href="css/blueprint/screen.css" type="text/css" media="screen, projection">
+<link rel="stylesheet" href="css/blueprint/print.css" type="text/css" media="print">	
+<!--[if lt IE 8]><link rel="stylesheet" href="css/blueprint/ie.css" type="text/css" media="screen, projection"><![endif]-->
+<link rel="stylesheet" href="css/persistent.css" type="text/css" media="screen, projection">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<script src="http://css-template-layout.googlecode.com/files/jquery.tpl_layout1.1.5.js"></script>
+<script>$(document).ready(function() { $.setTemplateLayout() });</script>
+<style>
+.container { padding-top: 40px; }
+#tpl-holder {
+    border: 1px solid gray;
+    display: "abb" "ccc";
+}
+div[class^='tpl'] { padding: 10px; }
+.tpl-one { position: a; }
+.tpl-two { position: b; }
+.tpl-three { position: c; }
+#tpl-holder::slot(b) { background-color: #555; }
+#tpl-holder::slot(c) { background-color: #DDD; }
+.tpl-two * { color: white; }
+h3 { line-height: 21px; }
+h3, p { margin-bottom: 0; }
+p { color: #333; }
+</style>
+</head>
+<body>
+<div class="container">
+    <div class="span-4">&nbsp;</div>
+    <div class="span-16">
+        <div id="tpl-holder">
+            <div class="tpl-one">
+    <h3>20,000 Leagues Under The Sea</h3>
+    <p>The year 1866 was marked by a bizarre development, an unexplained and downright inexplicable phenomenon that surely no one has forgotten.</p>
+            </div>
+            <div class="tpl-two">
+    <h3>Great Expectations</h3>
+    <p>My father's family name being Pirrip, and my Christian name Philip, my infant tongue could make of both names nothing longer or more explicit than Pip.</p>
+            </div>
+            <div class="tpl-three">
+    <h3>The Hound Of The Baskervilles</h3>
+    <p>Mr. Sherlock Holmes, who was usually very late in the mornings, save upon those not infrequent occasions when he was up all night, was seated at the breakfast table.</p>
+            </div>
+        </div>
+    </div>
+    <div class="span-4 last">&nbsp;</div>
+</div>
+</body>
+</html>

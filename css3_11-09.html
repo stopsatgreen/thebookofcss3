@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf8">
+<title></title>
+<link rel="stylesheet" href="css/blueprint/screen.css" type="text/css" media="screen, projection">
+<link rel="stylesheet" href="css/blueprint/print.css" type="text/css" media="print">	
+<!--[if lt IE 8]><link rel="stylesheet" href="css/blueprint/ie.css" type="text/css" media="screen, projection"><![endif]-->
+<link rel="stylesheet" href="css/persistent.css" type="text/css" media="screen, projection">
+<style>
+.span-8 {
+    background-color: red;
+    min-height: 100px;
+}
+div.no-min { min-height: 0; }
+h2 { margin: 0.75em 0; }
+.linears {
+	background-image:
+    -webkit-linear-gradient(to right bottom,black,white,transparent),
+    -webkit-linear-gradient(to left bottom,black,white,transparent);
+	background-image:
+    linear-gradient(to right bottom,black,white,transparent),
+    linear-gradient(to left bottom,black,white,transparent);
+}
+.radials {
+	background:
+    -webkit-radial-gradient(closest-side circle at 20% 50%,white,black 95%,transparent),
+    -webkit-radial-gradient(closest-side circle at 50% 50%,white,black 95%,transparent),
+    -webkit-radial-gradient(closest-side circle at 80% 50%,white,black 95%,transparent),
+    gray;
+	background:
+    radial-gradient(closest-side circle at 20% 50%,white,black 95%,transparent),
+    radial-gradient(closest-side circle at 50% 50%,white,black 95%,transparent),
+    radial-gradient(closest-side circle at 80% 50%,white,black 95%,transparent),
+    gray;
+</style>
+</head>
+<body>
+<div class="alert">
+	<p>The gradient syntax used in these examples is up to date, and different from the book.</p>
+</div>
+<div class="container">
+    <div class="span-4">&thinsp;</div>
+    <div class="span-8 linears"></div>
+    <div class="span-8 radials"></div>
+    <div class="span-4 last">&thinsp;</div>
+</div>
+</body>
+</html>

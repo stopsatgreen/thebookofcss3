@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf8">
+<title></title>
+<link rel="stylesheet" href="css/blueprint/screen.css" type="text/css" media="screen, projection">
+<link rel="stylesheet" href="css/blueprint/print.css" type="text/css" media="print">	
+<!--[if lt IE 8]><link rel="stylesheet" href="css/blueprint/ie.css" type="text/css" media="screen, projection"><![endif]-->
+<style>
+.container { padding-top: 40px; }
+h2 {
+    background-color: black;
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: -2px;
+    line-height: 1;
+    padding: 0.25em;
+    text-align: center;
+    width: 250px;
+}
+h2.transform-1 { -webkit-box-reflect: below 0 -webkit-gradient(linear,50% 0,50% 100%,from(transparent),to(white)); }
+h2.transform-2 { -webkit-box-reflect: below 0 url('images/cloud.png'); }
+</style>
+</head>
+<body>
+<div class="container">
+    <div class="span-6 last">&nbsp;</div>
+    <div class="span-6">
+        <h2 class="transform-1">Now with added CSS3!</h2>
+    </div>
+    <div class="span-1">&nbsp;</div>
+    <div class="span-6">
+        <h2 class="transform-2">Now with added CSS3!</h2>    
+    </div>
+    <div class="span-5 last">&nbsp;</div>
+</div>
+</body>
+</html>

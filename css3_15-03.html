@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf8">
+<title></title>
+<link rel="stylesheet" href="css/blueprint/screen.css" media="screen, projection">
+<link rel="stylesheet" href="css/blueprint/print.css" media="print">	
+<!--[if lt IE 8]><link rel="stylesheet" href="css/blueprint/ie.css" media="screen, projection"><![endif]-->
+<link rel="stylesheet" href="css/persistent.css" media="screen, projection">
+<style>
+.ch_15 .flexbox-holder {
+    height: 100px;
+	  margin: 0 10px 10px 0;
+    width: 100px;
+}
+.legacy {
+  display: -moz-box;
+  display: -ms-box;
+  display: -webkit-box;
+}
+.standard {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -webkit-flex;
+}
+</style>
+</head>
+<body class="ch_15">
+<div class="container">
+    <div class="span-24 last">
+        <div class="flexbox-holder legacy"></div>
+		    <div class="flexbox-holder legacy"></div>
+    </div>
+    <div class="span-24 last">
+        <div class="flexbox-holder standard"></div>
+		    <div class="flexbox-holder standard"></div>
+    </div>
+</div>
+</body>
+</html>

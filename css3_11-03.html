@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf8">
+<title></title>
+<link rel="stylesheet" href="css/blueprint/screen.css" media="screen, projection">
+<!--[if lt IE 8]><link rel="stylesheet" href="css/blueprint/ie.css" media="screen, projection"><![endif]-->
+<link rel="stylesheet" href="css/persistent.css" media="screen, projection">
+<link rel="stylesheet" href="css/persistent.css" type="text/css" media="screen, projection">
+<style>
+.container div { min-height: 100px; }
+div.no-min { min-height: 0; }
+h2 { margin: 0.75em 0; }
+.span-5 { background-color: red; }
+.gradient-1 {
+	background-image: -webkit-linear-gradient(to right,#0392CE,#FD5308,#0392CE);
+	background-image: linear-gradient(to right,#0392CE,#FD5308,#0392CE);
+}
+.gradient-2 {
+	background-image: -webkit-linear-gradient(to right,#0392CE,#FD5308 75%,#0392CE);
+	background-image: linear-gradient(to right,#0392CE,#FD5308 75%,#0392CE);
+}
+.gradient-3 {
+	background-image: -webkit-linear-gradient(to top,#0392CE,#FD5308 20px,#0392CE); 
+	background-image: linear-gradient(to top,#0392CE,#FD5308 20px,#0392CE); 
+}
+.gradient-4 {
+	background-image: -webkit-linear-gradient(45deg,#0392CE,#FD5308,#0392CE,#FD5308,#0392CE);
+	background-image: linear-gradient(45deg,#0392CE,#FD5308,#0392CE,#FD5308,#0392CE);
+}
+</style>
+</head>
+<body>
+<div class="alert">
+	<p>The gradient syntax used in these examples is up to date, and different from the book.</p>
+</div>
+<div class="container">
+    <div class="span-2">&thinsp;</div>
+    <div class="span-5 gradient-1"></div>
+    <div class="span-5 gradient-2"></div>
+    <div class="span-5 gradient-3"></div>
+    <div class="span-5 gradient-4"></div>
+    <div class="span-2 last">&thinsp;</div>
+</div>
+</body>
+</html>

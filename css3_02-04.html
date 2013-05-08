@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf8">
+<meta name="viewport" content="user-scalable=no, width=device-width">
+<title>Figure 2-4</title>
+<link rel="stylesheet" href="css/persistent.css" type="text/css" media="screen, projection">
+<style>
+body { font-family: 'Lucida Grande',Helvetica,Verdana; }
+ul, li { margin: 0; padding: 0; }
+ul { list-style: none; overflow: hidden; }
+li {
+    border: 1px solid black;
+    border-right-width: 0;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    color: black;
+    float: left;
+    font: 14px/20px 'Lucida Grande',Helvetica,Verdana;
+    padding: 5px 0;
+    text-align: center;
+    width: 20%;
+}
+li:last-child { border-right-width: 1px; }
+li a { color: inherit; }
+@media only screen and (orientation:portrait) {
+    li {
+        float: none;
+        border-width: 1px 1px 0;
+        width: 100%;
+    }
+    li:last-child { border-bottom-width: 1px; }
+}
+</style>
+<!--link href="css/css3_02-02a.css" media="screen and (min-device-width: 400px)" rel="stylesheet"-->
+</head>
+<body>
+<ul>
+    <li><a href="http://example.com/">Home</a></li>
+    <li><a href="http://example.com/">Products</a></li>
+    <li><a href="http://example.com/">About Us</a></li>
+    <li><a href="http://example.com/">Blog</a></li>
+    <li><a href="http://example.com/">Contact</a></li>
+</ul>
+</body>
+</html>

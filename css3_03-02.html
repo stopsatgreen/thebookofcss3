@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf8">
+<title></title>
+<link rel="stylesheet" href="css/blueprint/screen.css" type="text/css" media="screen, projection">
+<link rel="stylesheet" href="css/blueprint/print.css" type="text/css" media="print">	
+<!--[if lt IE 8]><link rel="stylesheet" href="css/blueprint/ie.css" type="text/css" media="screen, projection"><![endif]-->
+<style type="text/css">
+.container { padding-top: 40px; }
+li { font-size: 1.6em; }
+li a {
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    display: inline-block;
+    padding-left: 20px;
+}
+a[href^='mailto'] { background-image: url('images/icons/256/email-go.png'); }
+a[href^='ftp'] { background-image: url('images/icons/256/folder-go.png'); }
+a[href^='https'] { background-image: url('images/icons/256/lock-go.png'); }
+</style>
+</head>
+<body>
+<div class="container">
+    <div class="span-4">&nbsp;</div>
+    <div class="span-16">
+    <ul>
+    	<li>Lorem ipsum dolor <a href="mailto:email@example.com">email</a> sit amet.</li>
+    	<li>Nulla lacus metus <a href="ftp://example.com">FTP server</a> luctus eget.</li>
+    	<li>Etiam luctus tortor <a href="https://example.com">secure server</a> quis.</li>
+    </ul>
+    </div>
+    <div class="span-4 last">&nbsp;</div>
+</div>
+</body>
+</html>

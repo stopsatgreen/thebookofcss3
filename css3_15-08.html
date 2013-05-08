@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf8">
+<title></title>
+<link rel="stylesheet" href="css/blueprint/screen.css" type="text/css" media="screen, projection">
+<link rel="stylesheet" href="css/blueprint/print.css" type="text/css" media="print">	
+<!--[if lt IE 8]><link rel="stylesheet" href="css/blueprint/ie.css" type="text/css" media="screen, projection"><![endif]-->
+<link rel="stylesheet" href="css/persistent.css" type="text/css" media="screen, projection">
+<style>
+.flexbox-holder { height: 150px; }
+.legacy {
+  display: -moz-box;
+  display: -ms-box;
+  display: -webkit-box;
+}
+.standard {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -webkit-flex;
+}
+.ch_15 .legacy .flex,
+.ch_15 .standard .flex { width: 80px; }
+.legacy .flex {
+  -moz-box-flex: 1;
+  -ms-box-flex: 1;
+  -webkit-box-flex: 1;
+}
+.legacy .flex-one {
+    -moz-box-flex: 2;
+    -ms-box-flex: 2;
+    -webkit-box-flex: 2;
+}
+.flexbox-one.legacy .flex-one,
+.flexbox-one.legacy .flex-two {
+    -moz-box-flex-group: 2;
+    -ms-box-flex-group: 2;
+    -webkit-box-flex-group: 2;
+}
+.flexbox-one.legacy .flex-three {
+    -moz-box-flex-group: 3;
+    -ms-box-flex-group: 3;
+    -webkit-box-flex-group: 3;
+}
+.flexbox-two.legacy .flex-one,
+.flexbox-two.legacy .flex-two {
+    -moz-box-flex-group: 3;
+    -ms-box-flex-group: 3;
+    -webkit-box-flex-group: 3;
+}
+.flexbox-two.legacy .flex-three {
+    -moz-box-flex-group: 2;
+    -ms-box-flex-group: 2;
+    -webkit-box-flex-group: 2;
+}
+</style>
+</head>
+<body class="ch_15">
+<div class="container">
+  <div class="span-4">&nbsp;</div>
+  <div class="span-16">
+      <div class="flexbox-holder flexbox-one legacy">
+          <div class="flex flex-one">
+  <h3>20,000 Leagues Under The Sea</h3>
+          </div>
+          <div class="flex flex-two">
+  <h3>20,000 Leagues Under The Sea</h3>
+          </div>
+          <div class="flex flex-three">
+  <h3>20,000 Leagues Under The Sea</h3>
+          </div>
+      </div>
+  </div>
+  <div class="span-4 last">&nbsp;</div>
+  <div class="span-4">&nbsp;</div>
+  <div class="span-16">
+      <div class="flexbox-holder flexbox-two legacy">
+          <div class="flex flex-one">
+  <h3>20,000 Leagues Under The Sea</h3>
+          </div>
+          <div class="flex flex-two">
+  <h3>20,000 Leagues Under The Sea</h3>
+          </div>
+          <div class="flex flex-three">
+  <h3>20,000 Leagues Under The Sea</h3>
+          </div>
+      </div>
+  </div>
+  <div class="span-4 last">&nbsp;</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf8">
+<title></title>
+<link rel="stylesheet" href="css/blueprint/screen.css" type="text/css" media="screen, projection">
+<link rel="stylesheet" href="css/blueprint/print.css" type="text/css" media="print">	
+<!--[if lt IE 8]><link rel="stylesheet" href="css/blueprint/ie.css" type="text/css" media="screen, projection"><![endif]-->
+<link rel="stylesheet" href="css/persistent.css" type="text/css" media="screen, projection">
+<style>
+.span-5 {
+    border: 1px solid black;
+    height: 150px;
+    position: relative;
+}
+.widget {
+    background-color: black;
+    height: 50px;
+    left: 10px;
+    position: absolute;
+    top: 90px;
+    width: 50px;
+    -moz-transition: background-color 4s linear, left 2s ease-in-out, top 2s ease-in-out;
+    -ms-transition: background-color 4s linear, left 2s ease-in-out, top 2s ease-in-out;
+    -o-transition: background-color 4s linear, left 2s ease-in-out, top 2s ease-in-out;
+    -webkit-transition: background-color 4s linear, left 2s ease-in-out, top 2s ease-in-out;
+}
+.span-5:hover .widget {
+    background-color: silver;
+    left: 130px;
+    top: 10px;
+}
+</style>
+</head>
+<body>
+<div class="container">
+    <div class="span-9">&nbsp;</div>
+    <div class="span-5">
+        <div class="widget"></div>
+    </div>
+    <div class="span-10 last">&nbsp;</div>
+</div>
+</body>
+</html>

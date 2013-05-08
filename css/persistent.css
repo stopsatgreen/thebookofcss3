@@ -1,0 +1,119 @@
+.container { padding-top: 20px; }
+
+p { font-size: 14px; }
+
+.alert {
+	background-color: yellow;
+	padding: 10px 0;
+}
+
+.alert p {
+	font-weight: bold;
+	margin: 0 auto;
+	max-width: 90%;
+	min-width: 400px;
+	text-align: center;
+}
+
+/* Fonts */
+
+@font-face {
+    font-family: 'ChunkFiveRegular';
+    src: url('../assets/ChunkFive/Chunkfive-webfont.eot');
+    src: url('../assets/ChunkFive/Chunkfive-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../assets/ChunkFive/Chunkfive-webfont.woff') format('woff'),
+         url('../assets/ChunkFive/Chunkfive-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PT Sans';
+    src: url('../assets/PT-Sans/PT_Sans-webfont.eot');
+    src: url('../assets/PT-Sans/PT_Sans-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../assets/PT-Sans/PT_Sans-webfont.woff') format('woff'),
+         url('../assets/PT-Sans/PT_Sans-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Chapter 6 */
+
+.ch_06 .container { padding-top: 40px; }
+
+.ch_06 h1 {
+    font-family: ChunkFiveRegular, serif;
+    font-size: 720%;
+	margin-bottom: 0;
+    text-align: center;
+}
+
+/* Chapter 14 */
+
+.ch_14 .container { padding-top: 80px; }
+
+.threed {
+    outline: 4px dashed silver;
+    -moz-transform: rotateX(15deg) rotateY(45deg);
+    -ms-transform: rotateX(15deg) rotateY(45deg);
+    -webkit-transform: rotateX(15deg) rotateY(45deg);
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+}
+
+.threed div {
+	background-color: white;
+	border: 10px solid black;
+	padding: 10px;
+	text-align: center;
+    -moz-transition: -moz-transform 2s;
+    -ms-transition: -ms-transform 2s;
+    -webkit-transition: -webkit-transform 2s;
+}
+
+.ch_14 h1, .ch_14 h2 {
+	font-weight: bold;
+	margin: 0;
+}
+
+.ch_14 h1 {
+	font-size: 480%;
+	letter-spacing: -0.06em;
+	line-height: 0.8;
+}
+
+.ch_14 h2 {
+	font-size: 180%;
+	line-height: 1;
+}
+
+/* Chapter 15 */
+
+.ch_15 .container { padding-top: 40px; }
+
+.ch_15 .flexbox-holder {
+  background-color: silver;
+  margin-bottom: 20px;
+  width: 600px;
+}
+
+.ch_15 .flex {
+    background-color: white;
+    border: 1px solid gray;
+    margin: 10px;
+    padding: 10px;
+    
+}
+
+.ch_15 .legacy .flex { width: 200px; }
+
+.ch_15 .flex:nth-of-type(2n) { margin: 10px 0; }
+
+.ch_15 h3 { line-height: 21px; }
+
+.ch_15 h3, .ch_15 p { margin-bottom: 0; }
+
+.ch_15 p { color: #333; }
+
+

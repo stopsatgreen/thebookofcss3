@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf8">
+<title></title>
+<link rel="stylesheet" href="css/blueprint/screen.css" type="text/css" media="screen, projection">
+<link rel="stylesheet" href="css/blueprint/print.css" type="text/css" media="print">	
+<!--[if lt IE 8]><link rel="stylesheet" href="css/blueprint/ie.css" type="text/css" media="screen, projection"><![endif]-->
+<link rel="stylesheet" href="css/persistent.css" type="text/css" media="screen, projection">
+<style>
+.container { padding-top: 80px; }
+.threed {
+    -moz-perspective: 200px;
+    -ms-perspective: 200px;
+    -webkit-perspective: 200px;
+    -moz-transform: none;
+    -ms-transform: none;
+    -webkit-transform: none;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+}
+.threed div {
+	-moz-transform: rotateX(45deg) rotateY(-15deg) rotateZ(90deg) translateZ(20px);
+	-ms-transform: rotateX(45deg) rotateY(-15deg) rotateZ(90deg) translateZ(20px);
+	-webkit-transform: rotateX(45deg) rotateY(-15deg) rotateZ(90deg) translateZ(20px);
+}
+.trans-1 {
+    -moz-perspective-origin: left center;
+    -ms-perspective-origin: left center;
+    -webkit-perspective-origin: left center;
+}
+.trans-2 {
+    -moz-perspective-origin: 148px 56px;
+    -ms-perspective-origin: 148px 56px;
+    -webkit-perspective-origin: 148px 56px;
+}
+.trans-3 {
+    -moz-perspective-origin: 75% 25%;
+    -ms-perspective-origin: 75% 25%;
+    -webkit-perspective-origin: 75% 25%;
+}
+.threed:hover div {
+    -moz-transform: rotate3d(1,1,1,0deg) translateZ(0) !important;
+    -ms-transform: rotate3d(1,1,1,0deg) translateZ(0) !important;
+    -webkit-transform: rotate3d(1,1,1,0deg) translateZ(0) !important;
+}
+</style>
+</head>
+<body class="ch_14">
+<div class="container">
+    <div class="span-5 threed">
+        <div>
+	        <h2>The Book Of</h2>
+    	    <h1>CSS3</h1>
+		</div>
+    </div>
+    <div class="span-1">&thinsp;</div>
+    <div class="span-5 threed trans-1">
+        <div>
+	        <h2>The Book Of</h2>
+    	    <h1>CSS3</h1>
+		</div>
+    </div>
+    <div class="span-1">&thinsp;</div>
+    <div class="span-5 threed trans-2">
+        <div>
+	        <h2>The Book Of</h2>
+    	    <h1>CSS3</h1>
+		</div>
+    </div>
+    <div class="span-1">&thinsp;</div>
+    <div class="span-5 threed trans-3">
+        <div>
+	        <h2>The Book Of</h2>
+    	    <h1>CSS3</h1>
+		</div>
+    </div>
+    <div class="span-1 last">&thinsp;</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf8">
+<title></title>
+<link rel="stylesheet" href="css/blueprint/screen.css" type="text/css" media="screen, projection">
+<link rel="stylesheet" href="css/blueprint/print.css" type="text/css" media="print">	
+<!--[if lt IE 8]><link rel="stylesheet" href="css/blueprint/ie.css" type="text/css" media="screen, projection"><![endif]-->
+<style>
+.container { padding-top: 40px; }
+.stage-1, .stage-2, .stage-3 {
+  height: 232px;
+  outline: 1px solid gray;
+  overflow: hidden;
+}
+.stage-1, .stage-3 {
+	background: #FF0 url('images/landscape-colour.jpg');
+    -webkit-background-size: 100% 100%;
+}
+.stage-2 img {
+  display: block;
+  width: 100%;
+}
+.stage-3 {
+    -webkit-mask-image: url('images/white-black.png');
+    -webkit-mask-position: 50% 50%;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: 100%;
+}
+</style>
+</head>
+<body>
+<div class="container">
+    <div class="span-8 stage-1">&nbsp;</div>
+    <div class="span-8 stage-2"><img src="images/white-black.png"></div>
+    <div class="span-8 stage-3 last">&nbsp;</div>
+</div>
+</body>
+</html>

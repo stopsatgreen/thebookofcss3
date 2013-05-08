@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf8">
+<title></title>
+<link rel="stylesheet" href="css/blueprint/screen.css" type="text/css" media="screen, projection">
+<link rel="stylesheet" href="css/blueprint/print.css" type="text/css" media="print">	
+<!--[if lt IE 8]><link rel="stylesheet" href="css/blueprint/ie.css" type="text/css" media="screen, projection"><![endif]-->
+<link rel="stylesheet" href="css/persistent.css" type="text/css" media="screen, projection">
+<style>
+.container { padding-top: 40px; }
+div[class^='box-holder'] {
+    background-color: silver;
+    display: -moz-box;
+    display: -webkit-box;
+    width: 100%;
+    -moz-box-orient: vertical;
+    -ms-box-orient: vertical;
+    -webkit-box-orient: vertical;
+}
+.box-holder-one .flex-one {
+    -moz-box-ordinal-group: 2;
+    -ms-box-ordinal-group: 2;
+    -webkit-box-ordinal-group: 2;
+}
+.box-holder-one .flex-two {
+    -moz-box-ordinal-group: 3;
+    -ms-box-ordinal-group: 3;
+    -webkit-box-ordinal-group: 3;
+}
+.box-holder-one .flex-three {
+    -moz-box-ordinal-group: 1;
+    -ms-box-ordinal-group: 1;
+    -webkit-box-ordinal-group: 1;
+}
+.box-holder-two .flex-one {
+    -moz-box-ordinal-group: 2;
+    -ms-box-ordinal-group: 2;
+    -webkit-box-ordinal-group: 2;
+}
+.box-holder-two .flex-two, .box-holder-two .flex-three {
+    -moz-box-ordinal-group: 1;
+    -ms-box-ordinal-group: 1;
+    -webkit-box-ordinal-group: 1;
+}
+div[class^='flex'] {
+    background-color: white;
+    border: 1px solid gray;
+    margin: 10px;
+    padding: 10px;
+    -moz-box-flex: 1;
+    -ms-box-flex: 1;
+    -webkit-box-flex: 1;
+}
+.box-holder-one .flex-one { margin: 0 10px; }
+.box-holder-two .flex-three { margin: 0 10px; }
+h3 { font-size: 16px; }
+h3, p { line-height: 18px; margin-bottom: 0; }
+p { color: #333; font-size: 12px; }
+</style>
+</head>
+<body>
+<div class="container">
+    <div class="span-10">
+        <div class="box-holder-one">
+            <div class="flex-one">
+    <h3>1. 20,000 Leagues Under The Sea</h3>
+    <p>The year 1866 was marked by a bizarre development, an unexplained and downright inexplicable phenomenon that surely no one has forgotten.</p>
+            </div>
+            <div class="flex-two">
+    <h3>2. Great Expectations</h3>
+    <p>My father's family name being Pirrip, and my Christian name Philip, my infant tongue could make of both names nothing longer or more explicit than Pip.</p>
+            </div>
+            <div class="flex-three">
+    <h3>3. The Hound Of The Baskervilles</h3>
+    <p>Mr. Sherlock Holmes, who was usually very late in the mornings, save upon those not infrequent occasions when he was up all night, was seated at the breakfast table.</p>
+            </div>
+        </div>
+    </div>
+    <div class="span-10">
+        <div class="box-holder-two">
+            <div class="flex-one">
+    <h3>1. 20,000 Leagues Under The Sea</h3>
+    <p>The year 1866 was marked by a bizarre development, an unexplained and downright inexplicable phenomenon that surely no one has forgotten.</p>
+            </div>
+            <div class="flex-two">
+    <h3>2. Great Expectations</h3>
+    <p>My father's family name being Pirrip, and my Christian name Philip, my infant tongue could make of both names nothing longer or more explicit than Pip.</p>
+            </div>
+            <div class="flex-three">
+    <h3>3. The Hound Of The Baskervilles</h3>
+    <p>Mr. Sherlock Holmes, who was usually very late in the mornings, save upon those not infrequent occasions when he was up all night, was seated at the breakfast table.</p>
+            </div>
+        </div>
+    </div>
+    <div class="span-4 last"></div>
+</div>
+</body>
+</html>
