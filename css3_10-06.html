@@ -1,28 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf8">
-<title></title>
-<link rel="stylesheet" href="css/blueprint/screen.css" type="text/css" media="screen, projection">
-<link rel="stylesheet" href="css/blueprint/print.css" type="text/css" media="print">	
-<!--[if lt IE 8]><link rel="stylesheet" href="css/blueprint/ie.css" type="text/css" media="screen, projection"><![endif]-->
-<style>
-.container { padding-top: 20px; }
-.border-demo {
+  <meta charset="utf8">
+  <meta name="viewport" content="width=device-width">
+  <title>Issue with RGBA colors on borders in WebKit</title>
+  <link rel="stylesheet" href="css/blueprint/screen.css">
+  <link rel="stylesheet" href="css/persistent.css">
+  <style>
+  .border-demo {
     border: 25px solid red;
     border-color: hsla(0,0%,0%,0.5);
     height: 75px;
+    margin: 0 auto;
     width: 75px;
-}
-</style>
+  }
+  </style>
 </head>
 <body>
 <div class="container">
-    <div class="span-16">
-        <div class="border-demo"></div>
+  <div class="span-24 last">
+    <div class="error">
+      This example illustrated a bug in WebKit browsers which has been fixed since the book was published.
     </div>
-    <div class="span-8 last">
-    </div>
+  </div>
+  <div class="span-8">&thinsp;</div>
+  <div class="span-8">
+      <div class="border-demo"></div>
+  </div>
+  <div class="span-8 last">&thinsp;</div>
 </div>
 </body>
 </html>
