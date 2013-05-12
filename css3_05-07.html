@@ -2,9 +2,10 @@
 <html lang="en">
 <head>
 	<meta charset="utf8">
-	<title></title>
-	<link rel="stylesheet" href="css/blueprint/screen.css" media="screen, projection">
-	<link rel="stylesheet" href="css/persistent.css" media="screen, projection">	
+  <meta name="viewport" content="width=device-width">
+	<title>The second example uses the narrow font face due to the effect of the font-stretch property</title>
+	<link rel="stylesheet" href="css/blueprint/screen.css">
+	<link rel="stylesheet" href="css/persistent.css">	
 	<style>
 		h2 {
 			font: 360%/1 'DejaVu Sans','Myriad Pro','PT Sans', sans-serif;
@@ -15,11 +16,12 @@
 </head>
 <body>
 <div class="container">
-    <div class="span-16">
-        <h2>Lorem Ipsum Dolor</h2>
-        <h2 class="narrow">Lorem Ipsum Dolor</h2>
-    </div>
-    <div class="span-8 last"></div>
+  <div class="span-4">&thinsp;</div>
+  <div class="span-16">
+    <h2>Lorem Ipsum Dolor</h2>
+    <h2 class="narrow">Lorem Ipsum Dolor</h2>
+  </div>
+  <div class="span-4 last">&thinsp;</div>
 </div>
 </body>
 </html>
