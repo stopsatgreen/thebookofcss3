@@ -1,67 +1,39 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf8">
-<title></title>
-<link rel="stylesheet" href="css/blueprint/screen.css" type="text/css" media="screen, projection">
-<link rel="stylesheet" href="css/blueprint/print.css" type="text/css" media="print">	
-<!--[if lt IE 8]><link rel="stylesheet" href="css/blueprint/ie.css" type="text/css" media="screen, projection"><![endif]-->
-<style>
-.container { padding-top: 20px; }
-.span-1 { margin: 0; }
-div[class^='shadow'] {
-	background-color: #EFEFEF;
-	border: 1px solid black;
-	height: 100px;
-}
-.shadow-one {
-    -moz-box-shadow: inset 4px 4px;
-    -webkit-box-shadow: inset 4px 4px #000;
-    box-shadow: inset 4px 4px;
-}
-.shadow-two {
-    -moz-box-shadow: inset 4px 4px 3px;
-    -webkit-box-shadow: inset 4px 4px 3px #000;
-    box-shadow: inset 4px 4px 3px; 
-}
-.shadow-three {
-    -moz-box-shadow: inset 12px 12px 2px -6px;
-    -webkit-box-shadow: inset 12px 12px 2px -6px #000;
-    box-shadow: inset 12px 12px 2px -6px;
-}
-.shadow-four {
-    -moz-box-shadow: inset 4px -4px 2px #999;
-    -webkit-box-shadow: inset 4px -4px 2px #999;
-    box-shadow: inset 4px -4px 2px #999;
-}
-.shadow-five {
-    -moz-box-shadow: inset 4px -4px 2px #999, inset -4px 4px 2px;
-    -webkit-box-shadow: inset 4px -4px 2px #999, inset -4px 4px 2px #000;
-    box-shadow: inset 4px -4px 2px #999, inset -4px 4px 2px;
-}
-</style>
+  <meta charset="utf8">
+  <meta name="viewport" content="width=device-width">
+  <title>Inset shadows</title>
+  <link rel="stylesheet" href="css/blueprint/screen.css">
+  <link rel="stylesheet" href="css/persistent.css">
+  <style>
+  <style>
+    .shadow-one { box-shadow: inset 4px 4px; }
+    .shadow-two { box-shadow: inset 4px 4px 3px; }
+    .shadow-three { box-shadow: inset 12px 12px 2px -6px; }
+    .shadow-four { box-shadow: inset 4px -4px 2px #999; }
+    .shadow-five { box-shadow: inset 4px -4px 2px #999, inset -4px 4px 2px; }
+  </style>
 </head>
 <body>
-<div class="container">
+  <div class="container">
+    <div class="span-2">&thinsp;</div>
     <div class="span-4">
     	<div class="shadow-one"></div>
     </div>
-    <div class="span-1">&thinsp;</div>
     <div class="span-4">
     	<div class="shadow-two"></div>
     </div>
-    <div class="span-1">&thinsp;</div>
     <div class="span-4">
     	<div class="shadow-three"></div>
     </div>
-    <div class="span-1">&thinsp;</div>
     <div class="span-4">
     	<div class="shadow-four"></div>
     </div>
-    <div class="span-1">&thinsp;</div>
-    <div class="span-4 last">
+    <div class="span-4">
     	<div class="shadow-five"></div>
     </div>
-</div>
+    <div class="span-2 last">&thinsp;</div>
+  </div>
 </body>
 </html>

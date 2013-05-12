@@ -1,42 +1,44 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf8">
-<title></title>
-<link rel="stylesheet" href="css/blueprint/screen.css" type="text/css" media="screen, projection">
-<link rel="stylesheet" href="css/blueprint/print.css" type="text/css" media="print">	
-<!--[if lt IE 8]><link rel="stylesheet" href="css/blueprint/ie.css" type="text/css" media="screen, projection"><![endif]-->
-<style>
-.container { padding-top: 20px; }
-div[class*='colors-'] {
-    border: 6px solid #000;
-    min-height: 100px;
-}
-div.colors-stripe {
-    background-color: #AAA;
-    -moz-border-bottom-colors: black white black white black white;
-    -moz-border-left-colors: black white black white black white;
-    -moz-border-right-colors: black white black white black white;
-    -moz-border-top-colors: black white black white black white;
-}
-div.colors-fade {
-    -moz-border-bottom-colors: #222 #444 #666 #888 #AAA #CCC;
-    -moz-border-left-colors: #222 #444 #666 #888 #AAA #CCC;
-    -moz-border-right-colors: #222 #444 #666 #888 #AAA #CCC;
-    -moz-border-top-colors: #222 #444 #666 #888 #AAA #CCC;
-}
-</style>
+  <meta charset="utf8">
+  <meta name="viewport" content="width=device-width">
+  <title>Different values supplied to Firefox’s border-*-colors property</title>
+  <link rel="stylesheet" href="css/blueprint/screen.css">
+  <link rel="stylesheet" href="css/persistent.css">
+  <style>
+    div[class*='colors-'] {
+      border: 6px solid #000;
+      min-height: 100px;
+    }
+    div.colors-stripe {
+      background-color: #AAA;
+      -moz-border-bottom-colors: black white black white black white;
+      -moz-border-left-colors: black white black white black white;
+      -moz-border-right-colors: black white black white black white;
+      -moz-border-top-colors: black white black white black white;
+    }
+    div.colors-fade {
+      -moz-border-bottom-colors: #222 #444 #666 #888 #AAA #CCC;
+      -moz-border-left-colors: #222 #444 #666 #888 #AAA #CCC;
+      -moz-border-right-colors: #222 #444 #666 #888 #AAA #CCC;
+      -moz-border-top-colors: #222 #444 #666 #888 #AAA #CCC;
+    }
+  </style>
 </head>
 <body>
 <div class="container">
-    <div class="span-4">
-    	<div class="colors-stripe">&nbsp;</div>
-    </div>
-    <div class="span-1">&thinsp;</div>
-    <div class="span-4">
-    	<div class="colors-fade">&nbsp;</div>
-    </div>
-    <div class="span-15 last">&thinsp;</div>
+  <div class="span-24 last">
+    <div class="notice">This is a non-standard feature and probably unsuitable for production use.</div>
+  </div>
+  <div class="span-6">&thinsp;</div>
+  <div class="span-6">
+  	<div class="colors-stripe">&nbsp;</div>
+  </div>
+  <div class="span-6">
+  	<div class="colors-fade">&nbsp;</div>
+  </div>
+  <div class="span-6 last">&thinsp;</div>
 </div>
 </body>
 </html>

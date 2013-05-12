@@ -48,6 +48,31 @@ p { font-size: 14px; }
     text-align: center;
 }
 
+/* Chapter 6 */
+
+div[class^='radius'] {
+  background-color: #EFEFEF;
+  border: 10px solid #000;
+  min-height: 100px;
+}
+
+div[class*='bimage'] {
+  background-color: red;
+  border: 20px solid;
+  font-weight: bold;
+}
+
+div[class*='bimage'] p {
+  margin-bottom: 0;
+  padding: 30px;
+}
+
+div[class^='shadow'] {
+  background-color: #EFEFEF;
+  border: 1px solid black;
+  height: 100px;
+}
+
 /* Chapter 14 */
 
 .ch_14 .container { padding-top: 80px; }

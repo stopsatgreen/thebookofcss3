@@ -1,46 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf8">
-<title></title>
-<link rel="stylesheet" href="css/blueprint/screen.css" type="text/css" media="screen, projection">
-<link rel="stylesheet" href="css/blueprint/print.css" type="text/css" media="print">	
-<!--[if lt IE 8]><link rel="stylesheet" href="css/blueprint/ie.css" type="text/css" media="screen, projection"><![endif]-->
-<style>
-body { padding-top: 40px; }
-.container { padding-bottom: 20px; }
-div[class*='bimage'] {
-    background-color: red;
-    border: 20px solid;
-    font-weight: bold;
-}
-p {
-	margin-bottom: 0;
-	padding: 30px;
-}
-div.bimage-1 {
-    -moz-border-image: url('images/frame.png') 32 39 36 41 round stretch;
-    -webkit-border-image: url('images/frame.png') 32 39 36 41 round stretch;
-    border-image: url('images/frame.png') 32 39 36 41 round stretch;
-}
-div.bimage-2 {
-    -moz-border-image: url('images/frame.png') 32 39 36 41 stretch;
-    -webkit-border-image: url('images/frame.png') 32 39 36 41 stretch;
-    border-image: url('images/frame.png') 32 39 36 41 stretch;
-}
-</style>
+  <meta charset="utf8">
+  <meta name="viewport" content="width=device-width">
+  <title>border-image repeated horizontally and stretched horizontally</title>
+  <link rel="stylesheet" href="css/blueprint/screen.css">
+  <link rel="stylesheet" href="css/persistent.css">
+  <style>
+    div.bimage-1 {
+      -webkit-border-image: url('images/frame.png') 32 39 36 41 round stretch;
+      border-image: url('images/frame.png') 32 39 36 41 fill round stretch;
+    }
+    div.bimage-2 {
+      -webkit-border-image: url('images/frame.png') 32 39 36 41 stretch;
+      border-image: url('images/frame.png') 32 39 36 41 fill stretch;
+    }
+  </style>
 </head>
 <body>
 <div class="container">
 	<div class="span-2">&thinsp;</div>
     <div class="span-10">
     	<div class="bimage-1">
-	        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel pulvinar justo. Donec pharetra iaculis justo sed vehicula.</p>    
+	        <p>Some men are born to good luck: all they do or try to do comes right—all that falls to them is so much gain—all their geese are swans—all their cards are trumps—toss them which way you will, they will always, like poor puss, alight upon their legs, and only move on so much the faster.</p>    
 	    </div>
     </div>
     <div class="span-10">
     	<div class="bimage-2">
-        	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel pulvinar justo. Donec pharetra iaculis justo sed vehicula.</p>
+        	<p>Some men are born to good luck: all they do or try to do comes right—all that falls to them is so much gain—all their geese are swans—all their cards are trumps—toss them which way you will, they will always, like poor puss, alight upon their legs, and only move on so much the faster.</p>
         </div>
     </div>
 	<div class="span-2 last">&thinsp;</div>
