@@ -1,91 +1,64 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf8">
-<title></title>
-<link rel="stylesheet" href="css/blueprint/screen.css" type="text/css" media="screen, projection">
-<link rel="stylesheet" href="css/blueprint/print.css" type="text/css" media="print">	
-<!--[if lt IE 8]><link rel="stylesheet" href="css/blueprint/ie.css" type="text/css" media="screen, projection"><![endif]-->
-<link rel="stylesheet" href="css/persistent.css" type="text/css" media="screen, projection">
-<style>
-@-moz-keyframes expand {
-    from { border-width: 4px; }
-    50% { border-width: 12px; }
-    to {
-        border-width: 4px;
-        height: 120px;
-        width: 150px;   
-    }
-}
-@-ms-keyframes expand {
-    from { border-width: 4px; }
-    50% { border-width: 12px; }
-    to {
-        border-width: 4px;
-        height: 120px;
-        width: 150px;   
-    }
-}
-@-o-keyframes expand {
-    from { border-width: 4px; }
-    50% { border-width: 12px; }
-    to {
-        border-width: 4px;
-        height: 120px;
-        width: 150px;   
-    }
-}
-@-webkit-keyframes expand {
-    from { border-width: 4px; }
-    50% { border-width: 12px; }
-    to {
-        border-width: 4px;
-        height: 120px;
-        width: 150px;   
-    }
-}
-.anim {
-    outline: 1px solid black;
-    height: 150px;
-}
-.widget {
+  <meta charset="utf8">
+  <meta name="viewport" content="width=device-width">
+  <title>Animation fill mode</title>
+  <link rel="stylesheet" href="css/blueprint/screen.css">
+  <link rel="stylesheet" href="css/persistent.css">
+  <style>
+  @-webkit-keyframes expand {
+      from { border-width: 8px; }
+      50% { border-width: 24px; }
+      to {
+          border-width: 8px;
+          height: 100%;
+          width: 100%;   
+      }
+  }
+  @keyframes expand {
+      from { border-width: 8px; }
+      50% { border-width: 24px; }
+      to {
+          border-width: 8px;
+          height: 100%;
+          width: 100%;   
+      }
+  }
+  .anim {
+      outline: 1px solid silver;
+      height: 150px;
+  }
+  .widget {
     background-color: silver;
     border: 4px solid black;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
     height: 100px;
     margin: 10px auto;
     width: 100px;
-    -moz-animation: expand 6s ease 1s 1;
-    -ms-animation: expand 6s ease 1s 1;
-    -o-animation: expand 6s ease 1s 1;
     -webkit-animation: expand 6s ease 1s 1;
-}
-.forwards .widget {
-    -moz-animation-fill-mode: forwards;
-    -ms-animation-fill-mode: forwards;
-    -o-animation-fill-mode: forwards;
+    animation: expand 6s ease 1s 1;
+  }
+  .forwards .widget {
     -webkit-animation-fill-mode: forwards;
-}
-.backwards .widget {
-    -moz-animation-fill-mode: backwards;
-    -ms-animation-fill-mode: backwards;
-    -o-animation-fill-mode: backwards;
-    -webkit-animation-fill-mode: backwards;
-}
-</style>
+    animation-fill-mode: forwards;
+  }
+  .backwards .widget {
+   -webkit-animation-fill-mode: backwards;
+   animation-fill-mode: backwards;
+  }
+  </style>
 </head>
 <body>
 <div class="container">
-    <div class="span-6">&nbsp;</div>
-    <div class="span-6 anim forwards">
-        <div class="widget"></div>
-    </div>
-    <div class="span-6 anim backwards">
-        <div class="widget"></div>
-    </div>
-    <div class="span-6 last">&nbsp;</div>
+  <div class="notice">This demo is not in the book.</div>
+  <div class="span-6">&nbsp;</div>
+  <div class="span-6 anim forwards">
+      <div class="widget box-sizing"></div>
+  </div>
+  <div class="span-6 anim backwards">
+      <div class="widget box-sizing"></div>
+  </div>
+  <div class="span-6 last">&nbsp;</div>
 </div>
 </body>
 </html>

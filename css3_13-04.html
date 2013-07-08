@@ -1,82 +1,56 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf8">
-<title></title>
-<link rel="stylesheet" href="css/blueprint/screen.css" type="text/css" media="screen, projection">
-<link rel="stylesheet" href="css/blueprint/print.css" type="text/css" media="print">	
-<!--[if lt IE 8]><link rel="stylesheet" href="css/blueprint/ie.css" type="text/css" media="screen, projection"><![endif]-->
-<link rel="stylesheet" href="css/persistent.css" type="text/css" media="screen, projection">
-<style>
-@-moz-keyframes expand {
-    from { border-width: 4px; }
-    50% { border-width: 12px; }
-    to {
-        border-width: 4px;
-        height: 120px;
-        width: 150px;   
-    }
-}
-@-ms-keyframes expand {
-    from { border-width: 4px; }
-    50% { border-width: 12px; }
-    to {
-        border-width: 4px;
-        height: 120px;
-        width: 150px;   
-    }
-}
-@-o-keyframes expand {
-    from { border-width: 4px; }
-    50% { border-width: 12px; }
-    to {
-        border-width: 4px;
-        height: 120px;
-        width: 150px;   
-    }
-}
-@-webkit-keyframes expand {
-    from { border-width: 4px; }
-    50% { border-width: 12px; }
-    to {
-        border-width: 4px;
-        height: 120px;
-        width: 150px;   
-    }
-}
-.span-6 {
-    border: 1px solid black;
-    height: 150px;
-}
-.widget {
-    background-color: silver;
-    border: 4px solid black;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    height: 100px;
-    margin: 10px auto;
-    width: 100px;
-    -moz-animation: expand 6s ease 1s infinite alternate;
-    -ms-animation: expand 6s ease 1s infinite alternate;
-    -o-animation: expand 6s ease 1s infinite alternate;
-    -webkit-animation: expand 6s ease 1s infinite alternate;
-}
-.widget-holder:hover .widget {
-    -moz-animation-play-state: paused;
-    -ms-animation-play-state: paused;
-    -o-animation-play-state: paused;
+  <meta charset="utf8">
+  <meta name="viewport" content="width=device-width">
+  <title>Animation</title>
+  <link rel="stylesheet" href="css/blueprint/screen.css">
+  <link rel="stylesheet" href="css/persistent.css">
+  <style>
+  @-webkit-keyframes expand {
+      from { border-width: 8px; }
+      50% { border-width: 24px; }
+      to {
+          border-width: 8px;
+          height: 100%;
+          width: 100%;   
+      }
+  }
+  @keyframes expand {
+      from { border-width: 8px; }
+      50% { border-width: 24px; }
+      to {
+          border-width: 8px;
+          height: 100%;
+          width: 100%;   
+      }
+  }
+  .widget-holder {
+      border: 1px solid silver;
+      height: 300px;
+  }
+  .widget {
+      background-color: silver;
+      border: 8px solid black;
+      height: 100px;
+      width: 100px;
+      -webkit-animation: expand 6s ease 1s infinite alternate;
+      animation: expand 6s ease 1s infinite alternate;
+  }
+  .widget-holder:hover .widget {
     -webkit-animation-play-state: paused;
-}
-</style>
+    animation-play-state: paused;
+  }
+  </style>
 </head>
 <body>
 <div class="container">
-    <div class="span-9">&nbsp;</div>
-    <div class="span-6 widget-holder">
-        <div class="widget"></div>
+    <div class="notice">The values used in this demo differ from those in the book.</div>
+    <div class="span-6">&nbsp;</div>
+    <div class="span-12 widget-holder">
+        <div class="widget box-sizing"></div>
     </div>
-    <div class="span-9 last">&nbsp;</div>
+    <div class="span-6 last">&nbsp;</div>
 </div>
 </body>
 </html>
