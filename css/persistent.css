@@ -54,13 +54,12 @@ div[class^='radius'] {
   min-height: 100px;
 }
 
-div[class*='bimage'] {
+.bimage div {
   background-color: red;
-  border: 20px solid;
-  font-weight: bold;
+  border: 1px solid;
 }
 
-div[class*='bimage'] p {
+.bimage p {
   margin-bottom: 0;
   padding: 30px;
 }

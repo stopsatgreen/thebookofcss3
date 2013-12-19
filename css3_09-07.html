@@ -7,35 +7,38 @@
   <link rel="stylesheet" href="css/blueprint/screen.css">
   <link rel="stylesheet" href="css/persistent.css">
   <style>
-    div {
-    	-moz-box-sizing: border-box;
-    	box-sizing: border-box;
-    }
     img { width: 100%; }
+    .bimage { height: 311px; }
+    .bimage div {
+      border-width: 20px;
+      height: calc(100% - 40px);
+    }
     div.bimage-1 {
-      -webkit-border-image: url('images/frame.png') 32 39 36 41 stretch;
-      border-image: url('images/frame.png') 32 39 36 41 fill stretch;
+      -webkit-border-image: url('images/frame.png') 34 stretch;
+      border-image: url('images/frame.png') 34 stretch;
     }
     div.bimage-2 {
         border-image-source: url('images/frame.png');
-        border-image-slice: 32 39 36 41;
+        border-image-slice: 34;
         border-image-repeat: stretch;
     }
   </style>
 </head>
 <body>
 <div class="container">
-    <div class="span-1">&thinsp;</div>
     <div class="span-8">
-        <img src="images/frame.png">    
+        <img src="images/frame.svg">    
     </div>
-    <div class="span-7 bimage-1">
+    <div class="span-8 bimage">
+      <div class="bimage-1">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel pulvinar justo. Donec pharetra iaculis justo sed vehicula.</p>
+      </div>
     </div>
-    <div class="span-7 bimage-2">
+    <div class="span-8 last bimage">
+      <div class="bimage-2">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel pulvinar justo. Donec pharetra iaculis justo sed vehicula.</p>
+      </div>
     </div>
-    <div class="span-1 last">&thinsp;</div>
 </div>
 </body>
 </html>
