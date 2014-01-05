@@ -35,6 +35,29 @@
     font-style: normal;
 }
 
+/* Chapter 4 */
+
+.ch_04 .content {
+    background-color: #efefef;
+    border: 2px solid #999;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0.5em 1.5em 1em;
+}
+
+.ch_04 h2 {
+    font-family: ChunkFiveRegular, serif;
+    font-size: 240%;
+    margin-bottom: 0;
+}
+
+.ch_04 p {
+  font-size: 1.25em;
+  line-height: 1.25;
+  margin-bottom: 0.625em;
+}
+
 /* Chapter 6 */
 
 .ch_06 .container { padding-top: 40px; }
