@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf8">
-	<meta name="viewport" content="width=device-width">
-	<title>Comparing an artificial italic with a (true) italic font face</title>
-	<link rel="stylesheet" href="css/blueprint/screen.css" type="text/css" media="screen, projection">
-	<link rel="stylesheet" href="css/persistent.css" media="screen, projection">
-	<style>
+<meta charset="utf8">
+<meta name="viewport" content="width=device-width">
+<title>Example 5-3</title>
+<link rel="stylesheet" href="css/blueprint/screen.css">
+<link rel="stylesheet" href="css/persistent.css">
+<style>
 		@font-face {
 			font-family: GentiumBookBasic;
 			src: url('assets/GentiumBasic/GenBkBasR-webfont.eot');
@@ -21,24 +21,19 @@
 			url('assets/GentiumBasic/GenBkBasI-webfont.woff') format('woff'),
 			url('assets/GentiumBasic/GenBkBasI-webfont.ttf')  format('truetype');
 		}
-		h2 {
-			font-size: 360%;
-			line-height: 1;
-			margin: 0 0 0.33333em 1em;
-		}
-		h2.gentium {
+		h1.gentium {
 			font-family: GentiumBookBasic, sans-serif;
 			font-style: italic; 
 		}
-		h2.gentiumitalic { font-family: GentiumBookBasicItalic, sans-serif; }
+		h1.gentiumitalic { font-family: GentiumBookBasicItalic, sans-serif; }
 	</style>
 </head>
-<body>
+<body class="ch_05">
 <div class="container">
   <div class="span-4">&thinsp;</div>
   <div class="span-16">
-    <h2 class="gentium">A fellow of infinite jest</h2>
-    <h2 class="gentiumitalic">A fellow of infinite jest</h2>
+    <h1 class="gentium">A fellow of infinite jest</h1>
+    <h1 class="gentiumitalic">A fellow of infinite jest</h1>
   </div>
   <div class="span-4 last">&thinsp;</div>
 </div>

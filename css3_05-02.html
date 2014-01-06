@@ -1,54 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf8">
-	<meta name="viewport" content="width=device-width">
-	<title>A Regular and Italic web font applied using @font-face</title>
-	<link rel="stylesheet" href="css/blueprint/screen.css" media="screen, projection">
-	<link rel="stylesheet" href="css/persistent.css" media="screen, projection">
-	<style>
-		@font-face {
-			font-family: 'Gentium Basic';
-			src: url('assets/GentiumBasic/GenBasR-webfont.eot');
-			src: url('assets/GentiumBasic/GenBasR-webfont.eot?#iefix') format('embedded-opentype'),
-			url('assets/GentiumBasic/GenBasR-webfont.woff') format('woff'),
-			url('assets/GentiumBasic/GenBasR-webfont.ttf')  format('truetype');
-		}
-		@font-face {
-			font-family: 'Gentium Basic';
-			font-style: italic;
-			src: url('assets/GentiumBasic/GenBasI-webfont.eot');
-			src: url('assets/GentiumBasic/GenBasI-webfont.eot?#iefix') format('embedded-opentype'),
-			url('assets/GentiumBasic/GenBasI-webfont.woff') format('woff'),
-			url('assets/GentiumBasic/GenBasI-webfont.ttf')  format('truetype');
-		}
-		/*@font-face {
-			font-family: GentiumBasicItalic;
-			src: url('assets/GentiumBasic/GenBasI-webfont.eot');
-			src: url('assets/GentiumBasic/GenBasI-webfont.eot?#iefix') format('embedded-opentype'),
-			url('assets/GentiumBasic/GenBasI-webfont.woff') format('woff'),
-			url('assets/GentiumBasic/GenBasI-webfont.ttf')  format('truetype');
-		}*/
-		h2 {
-			font: 360%/1 'Gentium Basic', sans-serif;
-			margin: 0 0 0.33333em 1em;
-		}
-		/*h2.italic em {
-			font-family: GentiumBasicItalic, sans-serif; font-style: normal;
-		}*/
+<meta charset="utf8">
+<meta name="viewport" content="width=device-width">
+<title>Example 5-2</title>
+<link rel="stylesheet" href="css/blueprint/screen.css">
+<link rel="stylesheet" href="css/persistent.css">
+<style>
+	@font-face {
+	  font-family: 'Gentium Basic';
+	  src:  url('assets/GentiumBasic/GenBasR-webfont.eot');
+	  src:  url('assets/GentiumBasic/GenBasR-webfont.eot?#iefix') format('embedded-opentype'),
+	        url('assets/GentiumBasic/GenBasR-webfont.woff') format('woff'),
+	        url('assets/GentiumBasic/GenBasR-webfont.ttf')  format('truetype');
+	}
+	@font-face {
+	  font-family: 'Gentium Basic';
+	  font-style: italic;
+	  src:  url('assets/GentiumBasic/GenBasI-webfont.eot');
+	  src:  url('assets/GentiumBasic/GenBasI-webfont.eot?#iefix') format('embedded-opentype'),
+	        url('assets/GentiumBasic/GenBasI-webfont.woff') format('woff'),
+	        url('assets/GentiumBasic/GenBasI-webfont.ttf')  format('truetype');
+	}
+	h1 {
+		font-family: 'Gentium Basic';
+		margin: 0;
+	}
 	</style>
 </head>
-<body>
+<body class="ch_05">
 <div class="container">
-	<div class="span-24 last">
-		<div class="notice">
-			The example on this page differs from the illustration in the book, as a different font is being used.
-		</div>
-	</div>
   <div class="span-4">&thinsp;</div>
   <div class="span-16">
-    <h2>I knew him, Horatio</h2>
-    <h2><em>I knew him, Horatio</em></h2>
+    <h1>I knew him, Horatio</h1>
+    <h1><em>I knew him, Horatio</em></h1>
     <!-- <h2 class="italic"><em>I knew him, Horatio</em></h2> -->
   </div>
   <div class="span-4 last">&thinsp;</div>
