@@ -91,12 +91,11 @@
 
 /* Chapter 6 */
 
-.ch_06 .container { padding-top: 40px; }
-
 .ch_06 h1 {
     font-family: ChunkFiveRegular, serif;
-    font-size: 720%;
-	margin-bottom: 0;
+    font-size: 600%;
+    line-height: 0.9;
+    margin-bottom: 0;
     text-align: center;
 }
 
