@@ -99,6 +99,15 @@
     text-align: center;
 }
 
+/* Chapter 7 */
+
+.ch_07 p {
+  margin-bottom: 0;
+  text-indent: 1em;
+}
+
+.ch_07 p:first-child { text-indent: 0; }
+
 /* Chapter 9 */
 
 div[class^='radius'] {
