@@ -1,26 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf8">
-<title></title>
-<link rel="stylesheet" href="css/blueprint/screen.css" media="screen, projection">
-<link rel="stylesheet" href="css/persistent.css" media="screen, projection">
-<!--[if lt IE 8]><link rel="stylesheet" href="css/blueprint/ie.css" media="screen, projection"><![endif]-->
+<meta name="viewport" content="width=device-width">
+<title>Example 6-8</title>
+<link rel="stylesheet" href="css/blueprint/screen.css">
+<link rel="stylesheet" href="css/persistent.css">
 <style>
-h1 { color: #555; }
-h1.stroke {
-    -webkit-text-fill-color: white;
-    -webkit-text-stroke-color: #555;
-    -webkit-text-stroke-width: 3px;
+p {
+	background-color: #EEE;
+	font-size: 2em;
+	margin: 0;
+	padding: 0.5em;
+}
+.break {
+	word-wrap: break-word;
+	overflow-wrap: break-word;
 }
 </style>
 </head>
-<body class="ch_06">
+<body>
 <div class="container">
-    <div class="span-24 last">
-        <h1>Qwerty</h1>
-        <h1 class="stroke">Qwerty</h1>
+    <div class="span-4">&nbsp;</div>
+    <div class="span-8">
+        <p class="break">The condition of silicosis is sometimes factitiously referred to as Pneumonoultramicroscopicsilicovolcanoconiosis.</p>
     </div>
+    <div class="span-8">
+        <p>The condition of silicosis is sometimes factitiously referred to as Pneumonoultramicroscopicsilicovolcanoconiosis.</p>
+    </div>
+    <div class="span-4 last">&nbsp;</div>
 </div>
 </body>
 </html>

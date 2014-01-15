@@ -2,35 +2,11 @@
 <html>
 <head>
 <meta charset="utf8">
-<title></title>
-<link rel="stylesheet" href="css/blueprint/screen.css" type="text/css" media="screen, projection">
-<link rel="stylesheet" href="css/blueprint/print.css" type="text/css" media="print">	
-<!--[if lt IE 8]><link rel="stylesheet" href="css/blueprint/ie.css" type="text/css" media="screen, projection"><![endif]-->
-<link rel="stylesheet" href="css/persistent.css" type="text/css" media="screen, projection">
-<style type="text/css">
-.container { padding-top: 40px; }
-@font-face {
-	font-family: 'ChunkFiveRegular';
-	src: local('ChunkFive Regular'), url('assets/Chunkfive.ttf') format('truetype');
-}
-.content {
-    background-color: #eee;
-    border: 2px solid #999;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    padding: 0.5em 1.5em 1em;
-}
-h2 {
-    font-family: ChunkFiveRegular, serif;
-    font-size: 240%;
-    margin-bottom: 0;
-}    
-p {
-    font-size: 160%;
-    line-height: 1.25;
-    margin-bottom: 0.625em;
-}
+<meta name="viewport" content="width=device-width">
+<title>Example 4-8</title>
+<link rel="stylesheet" href="css/blueprint/screen.css">
+<link rel="stylesheet" href="css/persistent.css">
+<style>
 blockquote {
     border-left: 3px double #AAA;
     color: #222;
@@ -40,17 +16,17 @@ p:only-of-type { font-style: italic; }
 p:only-child { text-decoration: underline; }
 </style>
 </head>
-<body>
+<body class="ch_04">
 <div class="container">
-    <div class="span-8">&nbsp;</div>
-    <div class="span-8 content">
-<h2>On Intelligence</h2>
-<p>Arthur C. Clarke once said:</p>
-<blockquote>
-        <p>It has yet to be proven that intelligence has any survival value.</p>
-</blockquote>
-    </div>
-    <div class="span-8 last">&nbsp;</div>
+  <div class="span-7">&nbsp;</div>
+  <div class="span-10 content">
+    <h2>On Intelligence</h2>
+    <p>Arthur C. Clarke once said:</p>
+    <blockquote>
+      <p>It has yet to be proven that intelligence has any survival&nbsp;value.</p>
+    </blockquote>
+  </div>
+  <div class="span-7 last">&nbsp;</div>
 </div>
 </body>
 </html>

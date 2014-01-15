@@ -2,23 +2,22 @@
 <html>
 <head>
 <meta charset="utf8">
-<title></title>
-<link rel="stylesheet" href="css/blueprint/screen.css" type="text/css" media="screen, projection">
-<link rel="stylesheet" href="css/blueprint/print.css" type="text/css" media="print">	
-<!--[if lt IE 8]><link rel="stylesheet" href="css/blueprint/ie.css" type="text/css" media="screen, projection"><![endif]-->
-<style type="text/css">
-.container { padding-top: 40px; }
-li { font-size: 1.6em; }
+<meta name="viewport" content="width=device-width">
+<title>Example 3-2</title>
+<link rel="stylesheet" href="css/blueprint/screen.css">
+<link rel="stylesheet" href="css/persistent.css">
+<style>
+li { font-size: 3.2em; }
 li a {
     background-position: left center;
     background-repeat: no-repeat;
-    background-size: 16px 16px;
+    background-size: 1em;
     display: inline-block;
-    padding-left: 20px;
+    padding-left: 1.2em;
 }
-a[href^='mailto'] { background-image: url('images/icons/256/email-go.png'); }
-a[href^='ftp'] { background-image: url('images/icons/256/folder-go.png'); }
-a[href^='https'] { background-image: url('images/icons/256/lock-go.png'); }
+a[href^='mailto'] { background-image: url('images/icons/email.svg'); }
+a[href^='ftp'] { background-image: url('images/icons/folder.svg'); }
+a[href^='https'] { background-image: url('images/icons/lock.svg'); }
 </style>
 </head>
 <body>
@@ -26,9 +25,9 @@ a[href^='https'] { background-image: url('images/icons/256/lock-go.png'); }
     <div class="span-4">&nbsp;</div>
     <div class="span-16">
     <ul>
-    	<li>Lorem ipsum dolor <a href="mailto:email@example.com">email</a> sit amet.</li>
-    	<li>Nulla lacus metus <a href="ftp://example.com">FTP server</a> luctus eget.</li>
-    	<li>Etiam luctus tortor <a href="https://example.com">secure server</a> quis.</li>
+    	<li>An <a href="mailto:email@example.com">email</a> address.</li>
+    	<li>An <a href="ftp://example.com">FTP server</a>.</li>
+    	<li>A <a href="https://example.com">secure link</a>.</li>
     </ul>
     </div>
     <div class="span-4 last">&nbsp;</div>

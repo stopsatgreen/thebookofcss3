@@ -1,35 +1,35 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="utf8">
-<title></title>
-<link rel="stylesheet" href="css/blueprint/screen.css" type="text/css" media="screen, projection">
-<link rel="stylesheet" href="css/blueprint/print.css" type="text/css" media="print">	
-<!--[if lt IE 8]><link rel="stylesheet" href="css/blueprint/ie.css" type="text/css" media="screen, projection"><![endif]-->
+<meta name="viewport" content="width=device-width">
+<title>Example 6-9</title>
+<link rel="stylesheet" href="css/blueprint/screen.css">
+<link rel="stylesheet" href="css/persistent.css">
 <style>
-.container { padding-top: 40px; }
 p {
-    border: 1px solid silver;
-    font-size: 240%;
-    height: 1.2em;
-    line-height: 1;
-    overflow: hidden;
-    white-space: nowrap;
+	font-size: 2em;
+	line-height: 1.25;
+	margin: 0;
+	padding: 0 0.5em;
 }
-p.ellipsis {
-	-o-text-overflow: ellipsis;
-    text-overflow: ellipsis;
+.hyphens p {
+	-moz-hyphens: auto;
+	-ms-hyphens: auto;
+	-webkit-hyphens: auto;
+	hyphens: auto;
 }
+mark { background-color: #DDD; }
 </style>
 </head>
 <body>
 <div class="container">
-	<div class="span-4">&nbsp;</div>
-    <div class="span-16">
-    	<p>On a certain afternoon, in the late springtime, the bell upon Tunstall Moat House was heard ringing.</p>
-        <p class="ellipsis">On a certain afternoon, in the late springtime, the bell upon Tunstall Moat House was heard ringing.</p>
+    <div class="span-12">
+        <p> Alice was beginning to get very tired of sitting by her sister on the bank, and of having nothing to do: once or twice she had peeped into the book her sister was reading, but it had no pictures or <mark>conversations</mark> in it, 'and what is the use of a book,' thought Alice 'without pictures or conversation?'</p>
     </div>
-    <div class="span-4 last">&nbsp;</div>
+    <div class="span-12 last hyphens">
+        <p>Alice was beginning to get very tired of sitting by her sister on the bank, and of having nothing to do: once or twice she had peeped into the book her sister was reading, but it had no pictures or <mark>conversations</mark> in it, 'and what is the use of a book,' thought Alice 'without pictures or conversation?'</p>
+    </div>
 </div>
 </body>
 </html>

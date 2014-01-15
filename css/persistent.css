@@ -22,35 +22,97 @@
 /* Fonts */
 
 @font-face {
-    font-family: 'ChunkFiveRegular';
-    src: url('../assets/ChunkFive/Chunkfive-webfont.eot');
-    src: url('../assets/ChunkFive/Chunkfive-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../assets/ChunkFive/Chunkfive-webfont.woff') format('woff'),
-         url('../assets/ChunkFive/Chunkfive-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'ChunkFiveRegular';
+  src:  url('../assets/ChunkFive/Chunkfive-webfont.eot');
+  src:  url('../assets/ChunkFive/Chunkfive-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../assets/ChunkFive/Chunkfive-webfont.woff') format('woff'),
+        url('../assets/ChunkFive/Chunkfive-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'PT Sans';
-    src: url('../assets/PT-Sans/PT_Sans-webfont.eot');
-    src: url('../assets/PT-Sans/PT_Sans-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../assets/PT-Sans/PT_Sans-webfont.woff') format('woff'),
-         url('../assets/PT-Sans/PT_Sans-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'PT Sans';
+  src:  url('../assets/PT-Sans/PT_Sans-webfont.eot');
+  src:  url('../assets/PT-Sans/PT_Sans-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../assets/PT-Sans/PT_Sans-webfont.woff') format('woff'),
+        url('../assets/PT-Sans/PT_Sans-webfont.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
 }
+
+@font-face {
+  font-family: 'PT Sans';
+  src:  url('../assets/PT-Sans/PT_Sans_Narrow-webfont.eot');
+  src:  url('../assets/PT-Sans/PT_Sans_Narrow-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../assets/PT-Sans/PT_Sans_Narrow-webfont.woff') format('woff'),
+        url('../assets/PT-Sans/PT_Sans_Narrow-webfont.ttf') format('truetype');
+  font-stretch: condensed;
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Gentium Basic';
+  src:  url('../assets/GentiumBasic/GenBasR-webfont.eot');
+  src:  url('../assets/GentiumBasic/GenBasR-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../assets/GentiumBasic/GenBasR-webfont.woff') format('woff'),
+        url('../assets/GentiumBasic/GenBasR-webfont.ttf')  format('truetype');
+}
+@font-face {
+  font-family: 'Gentium Basic';
+  font-style: italic;
+  src:  url('../assets/GentiumBasic/GenBasI-webfont.eot');
+  src:  url('../assets/GentiumBasic/GenBasI-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../assets/GentiumBasic/GenBasI-webfont.woff') format('woff'),
+        url('../assets/GentiumBasic/GenBasI-webfont.ttf')  format('truetype');
+}
+
+/* Chapter 4 */
+
+.ch_04 .content {
+    background-color: #efefef;
+    border: 2px solid #999;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0.5em 1.5em 1em;
+}
+
+.ch_04 h2 {
+    font-family: ChunkFiveRegular, serif;
+    font-size: 240%;
+    margin-bottom: 0;
+}
+
+.ch_04 p {
+  font-size: 1.25em;
+  line-height: 1.25;
+  margin-bottom: 0.625em;
+}
+
+/* Chapter 5 */
+
+.ch_05 h1 { margin: 0; }
 
 /* Chapter 6 */
 
-.ch_06 .container { padding-top: 40px; }
-
 .ch_06 h1 {
     font-family: ChunkFiveRegular, serif;
-    font-size: 720%;
-	margin-bottom: 0;
+    font-size: 600%;
+    line-height: 0.9;
+    margin-bottom: 0;
     text-align: center;
 }
+
+/* Chapter 7 */
+
+.ch_07 p {
+  margin-bottom: 0;
+  text-indent: 1em;
+}
+
+.ch_07 p:first-child { text-indent: 0; }
 
 /* Chapter 9 */
 
@@ -60,13 +122,12 @@ div[class^='radius'] {
   min-height: 100px;
 }
 
-div[class*='bimage'] {
+.bimage div {
   background-color: red;
-  border: 20px solid;
-  font-weight: bold;
+  border: 1px solid;
 }
 
-div[class*='bimage'] p {
+.bimage p {
   margin-bottom: 0;
   padding: 30px;
 }
