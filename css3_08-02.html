@@ -1,38 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf8">
-<title></title>
-<link rel="stylesheet" href="css/blueprint/screen.css" type="text/css" media="screen, projection">
-<link rel="stylesheet" href="css/blueprint/print.css" type="text/css" media="print">	
-<!--[if lt IE 8]><link rel="stylesheet" href="css/blueprint/ie.css" type="text/css" media="screen, projection"><![endif]-->
+  <meta charset="utf8">
+  <meta name="viewport" content="width=device-width">
+  <title>Example 8-2</title>
+  <link rel="stylesheet" href="css/blueprint/screen.css">
+  <link rel="stylesheet" href="css/persistent.css">
 <style>
-.container { padding-top: 10px; }
-h2 {
-    background: url('images/landscape.jpg') 50% 50%;
-    background:
-        url('images/bunny.png') no-repeat 95% 85%,
-        url('images/bunny.png') no-repeat 70% 70%,
-        url('images/bunny.png') no-repeat 10% 100%,
-        url('images/landscape-colour.jpg') no-repeat 50% 50%;
-    -moz-background-size: auto,5%,50%,auto; /* Needed for Firefox <4 */
-    -webkit-background-size: auto,5%,50%,auto;
-    background-size: auto,5%,50%,auto;
-    color: white;
-    font-weight: bold;
-    font-size: 360%;
-    height: 450px;
-    line-height: 1;
-    text-shadow: 0 0 1px black;
-    padding: 25px;
-}
+.ch_08 .space { background-repeat: space; }
+.ch_08 .round { background-repeat: round; }
 </style>
 </head>
-<body>
+<body class="ch_08">
 <div class="container">
-    <div class="span-24 last">
-        <h2>Rabbits in a landscape</h2>
-    </div>
+    <div class="span-3">&nbsp;</div>
+    <div class="span-6 bunny">&nbsp;</div>
+    <div class="span-6 bunny space">&nbsp;</div>
+    <div class="span-6 bunny round">&nbsp;</div>
+    <div class="span-3 last">&nbsp;</div>
 </div>
 </body>
 </html>

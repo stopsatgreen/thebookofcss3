@@ -1,27 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf8">
-<title></title>
-<link rel="stylesheet" href="css/blueprint/screen.css" media="screen, projection">
-<link rel="stylesheet" href="css/persistent.css">	
-<!--[if lt IE 8]><link rel="stylesheet" href="css/blueprint/ie.css" type="text/css" media="screen, projection"><![endif]-->
+  <meta charset="utf8">
+  <meta name="viewport" content="width=device-width">
+  <title>Example 8-5</title>
+  <link rel="stylesheet" href="css/blueprint/screen.css">
+  <link rel="stylesheet" href="css/persistent.css">
 <style>
+.container { padding-top: 10px; }
 h2 {
-    background: url('images/landscape-colour.jpg') no-repeat 50% 60%;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font: normal 1440%/1 ChunkFiveRegular, serif;
-    letter-spacing: -15px;
-    margin-bottom: 0;
-    text-align: center;
+    background:
+        url('images/monkey.svg') no-repeat 95% 85%,
+        url('images/monkey.svg') no-repeat 50% 80%,
+        url('images/monkey.svg') no-repeat 10% 100%,
+        url('images/landscape-colour.jpg') no-repeat 50% 50% #F00;
+    background-size: auto 80%, auto 15%, auto 50%, auto;
+
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    color: white;
+    font-weight: bold;
+    font-size: 360%;
+    height: 350px;
+    line-height: 1;
+    padding: 25px;
+    text-shadow: 0 0 1px black;
 }
 </style>
 </head>
 <body>
 <div class="container">
     <div class="span-24 last">
-        <h2>Text</h2>
+        <h2>Monkeys in a landscape</h2>
     </div>
 </div>
 </body>

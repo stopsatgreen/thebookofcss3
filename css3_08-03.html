@@ -1,36 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf8">
-<title></title>
-<link rel="stylesheet" href="css/blueprint/screen.css" type="text/css" media="screen, projection">
-<link rel="stylesheet" href="css/blueprint/print.css" type="text/css" media="print">	
-<!--[if lt IE 8]><link rel="stylesheet" href="css/blueprint/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	<meta charset="utf8">
+  <meta name="viewport" content="width=device-width">
+  <title>Example 8-3</title>
+  <link rel="stylesheet" href="css/blueprint/screen.css">
+  <link rel="stylesheet" href="css/persistent.css">
 <style>
-.container { padding-top: 40px; }
-.bunny-1, .bunny-2 {
-    background: #F00 url('images/bunny.png') no-repeat 50% 50%;
-    float: left;
-    height: 100px;
-}
-.bunny-1 {
-    -moz-background-size: contain;
-    -webkit-background-size: contain;
-    background-size: contain;
-}
-.bunny-2 {
-    -moz-background-size: cover;
-    -webkit-background-size: cover;
-    background-size: cover;
-}
+.ch_08 .bunny { background-repeat: round space; }
 </style>
 </head>
-<body>
+<body class="ch_08">
 <div class="container">
-	<div class="span-6">&nbsp;</div>
-    <div class="span-6 bunny-1"></div>
-    <div class="span-6 bunny-2"></div>
-	<div class="span-6 last">&nbsp;</div>
+    <div class="span-6">&nbsp;</div>
+    <div class="span-12">
+    	<div class="bunny"></div>
+    </div>
+    <div class="span-6 last">&nbsp;</div>
 </div>
 </body>
 </html>

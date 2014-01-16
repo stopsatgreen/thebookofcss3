@@ -114,6 +114,18 @@
 
 .ch_07 p:first-child { text-indent: 0; }
 
+/* Chapter 8 */
+
+.ch_08 .bunny {
+  background-color: #0F0;
+  background-image: url('../images/bunny_sprite.png');
+  background-repeat: repeat;
+  -moz-background-size: auto 40%;
+  -webkit-background-size: auto 40%;
+  background-size: auto 40%;
+  min-height: 220px;
+}
+
 /* Chapter 9 */
 
 div[class^='radius'] {

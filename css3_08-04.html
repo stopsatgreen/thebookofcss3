@@ -1,58 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf8">
-<title></title>
-<link rel="stylesheet" href="css/blueprint/screen.css" type="text/css" media="screen, projection">
-<link rel="stylesheet" href="css/blueprint/print.css" type="text/css" media="print">	
-<!--[if lt IE 8]><link rel="stylesheet" href="css/blueprint/ie.css" type="text/css" media="screen, projection"><![endif]-->
+  <meta charset="utf8">
+  <meta name="viewport" content="width=device-width">
+  <title>Example 8-4</title>
+  <link rel="stylesheet" href="css/blueprint/screen.css">
+  <link rel="stylesheet" href="css/persistent.css">
 <style>
-.container { padding-top: 40px; }
-h2[class^='clip'] {
-    background: url('images/landscape-medium-colour.jpg') no-repeat 50% 50% #EFEFEF;
-    border: 20px solid rgba(0,0,0,0.33);
+h2 {
+    background-image: url('images/monkey.svg'), url('images/landscape-colour.jpg');
+    background-position: 95% 85%, 50% 50%;
+    background-repeat: no-repeat;
+    background-size: auto 60%, auto auto;
+    
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
     color: white;
-    float: left;
-    font-weight: bold; 
-    height: 110px;
+    font-weight: bold;
+    font-size: 360%;
+    height: 350px;
     line-height: 1;
-    margin-bottom: 0;
-    padding: 20px;
+    padding: 25px;
     text-shadow: 0 0 1px black;
-    width: auto;
-}
-h2[class$='brdr'] {
-    -moz-background-clip: border;
-    -webkit-background-clip: border;
-    -webkit-background-clip: border-box;
-    background-clip: border-box;
-}
-h2[class$='pddng'] {
-    -moz-background-clip: padding;
-    -webkit-background-clip: padding;
-    -webkit-background-clip: padding-box;
-    background-clip: padding-box;
-}
-h2[class$='cntnt'] {
-    -webkit-background-clip: content;
-    -webkit-background-clip: content-box;
-    background-clip: content-box;
 }
 </style>
 </head>
 <body>
 <div class="container">
-	<div class="span-5">&nbsp;</div>
-    <div class="span-5 image">
-        <h2 class="clip-brdr">Clip to border</h2>
+    <div class="span-24 last">
+        <h2>Monkey in a landscape</h2>
     </div>
-    <div class="span-5 image">
-        <h2 class="clip-pddng">Clip to padding</h2>
-    </div>
-    <div class="span-5 image">
-        <h2 class="clip-cntnt">Clip to content</h2>
-    </div>
-	<div class="span-4 last">&nbsp;</div>
 </div>
 </body>
 </html>
