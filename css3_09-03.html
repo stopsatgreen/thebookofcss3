@@ -3,12 +3,22 @@
 <head>
   <meta charset="utf8">
   <meta name="viewport" content="width=device-width">
-  <title>Four equal, regular rounded corners and four irregular rounded corners</title>
+  <title>Example 9-3</title>
   <link rel="stylesheet" href="css/blueprint/screen.css">
   <link rel="stylesheet" href="css/persistent.css">
   <style>
-    .radius-1 { border-radius: 20px; }
-    .radius-2 { border-radius: 10px / 20px; }
+    .radius-1 {
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+      border-bottom-right-radius: 20px;
+      border-bottom-left-radius: 20px;
+    }
+    .radius-2 {
+      border-top-left-radius: 10px 20px;
+      border-top-right-radius: 10px 20px;
+      border-bottom-right-radius: 10px 20px;
+      border-bottom-left-radius: 10px 20px;
+    }
   </style>
 </head>
 <body>

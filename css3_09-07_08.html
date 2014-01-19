@@ -3,24 +3,27 @@
 <head>
   <meta charset="utf8">
   <meta name="viewport" content="width=device-width">
-  <title>border-image repeated horizontally and stretched horizontally</title>
+  <title>Example 9-7</title>
   <link rel="stylesheet" href="css/blueprint/screen.css">
   <link rel="stylesheet" href="css/persistent.css">
   <style>
     img { width: 100%; }
-    .bimage { height: 311px; }
+    .bimage { height: 310px; }
     .bimage div {
-      border-width: 20px;
-      height: calc(100% - 40px);
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      border-width: 34px 10px;
+      height: 100%;
     }
     div.bimage-1 {
-      -webkit-border-image: url('images/frame.png') 34 stretch;
-      border-image: url('images/frame.png') 34 stretch;
+      border-image-source: url('images/frame.png');
+      border-image-slice: 34;
+      border-image-repeat: stretch;
     }
+    /* example of the shorthand property */
     div.bimage-2 {
-        border-image-source: url('images/frame.png');
-        border-image-slice: 34;
-        border-image-repeat: stretch;
+      -webkit-border-image: url('images/frame.png') 34 fill stretch;
+      border-image: url('images/frame.png') 34 fill stretch;
     }
   </style>
 </head>
@@ -34,6 +37,7 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel pulvinar justo. Donec pharetra iaculis justo sed vehicula.</p>
       </div>
     </div>
+    <!-- example of the shorthand property -->
     <div class="span-8 last bimage">
       <div class="bimage-2">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel pulvinar justo. Donec pharetra iaculis justo sed vehicula.</p>

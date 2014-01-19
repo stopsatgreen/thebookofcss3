@@ -3,34 +3,48 @@
 <head>
   <meta charset="utf8">
   <meta name="viewport" content="width=device-width">
-  <title>border-image repeated horizontally and stretched horizontally</title>
+  <title>Example 9-9</title>
   <link rel="stylesheet" href="css/blueprint/screen.css">
   <link rel="stylesheet" href="css/persistent.css">
   <style>
-    div.bimage-1 {
-      -webkit-border-image: url('images/frame.png') 32 39 36 41 round stretch;
-      border-image: url('images/frame.png') 32 39 36 41 fill round stretch;
+    img {
+      height: 100%;
+      width: auto;
     }
+    .original { text-align: right; }
+    .bimage { height: 200px; }
+    .bimage div {
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      border-width: 20px;
+      height: 100%;
+    }
+    div.bimage-1 {
+      border-image-source: url('images/frame-monkey.png');
+      border-image-slice: 68;
+      border-image-repeat: stretch;
+    }
+    /* example of the shorthand property */
     div.bimage-2 {
-      -webkit-border-image: url('images/frame.png') 32 39 36 41 stretch;
-      border-image: url('images/frame.png') 32 39 36 41 fill stretch;
+      -webkit-border-image: url('images/frame-monkey.png') 68 fill stretch;
+      border-image: url('images/frame-monkey.png') 68 fill stretch;
     }
   </style>
 </head>
 <body>
 <div class="container">
-	<div class="span-2">&thinsp;</div>
-    <div class="span-10">
-    	<div class="bimage-1">
-	        <p>Some men are born to good luck: all they do or try to do comes right—all that falls to them is so much gain—all their geese are swans—all their cards are trumps—toss them which way you will, they will always, like poor puss, alight upon their legs, and only move on so much the faster.</p>    
-	    </div>
+    <div class="span-2">&thinsp;</div>
+    <div class="span-6 bimage original">
+        <img src="images/frame-monkey.png" height="310">    
     </div>
-    <div class="span-10">
-    	<div class="bimage-2">
-        	<p>Some men are born to good luck: all they do or try to do comes right—all that falls to them is so much gain—all their geese are swans—all their cards are trumps—toss them which way you will, they will always, like poor puss, alight upon their legs, and only move on so much the faster.</p>
-        </div>
+    <div class="span-7 bimage">
+      <div class="bimage-1"></div>
     </div>
-	<div class="span-2 last">&thinsp;</div>
-</div>
+    <!-- example of the shorthand property -->
+    <div class="span-7 bimage">
+      <div class="bimage-2"></div>
+    </div>
+    <div class="span-2 last">&thinsp;</div>
+  </div>
 </body>
 </html>

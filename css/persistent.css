@@ -130,7 +130,7 @@
 
 div[class^='radius'] {
   background-color: #EFEFEF;
-  border: 10px solid #000;
+  border: 5px solid #000;
   min-height: 100px;
 }
 
