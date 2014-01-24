@@ -1,18 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf8">
-<title></title>
-<link rel="stylesheet" href="css/blueprint/screen.css" type="text/css" media="screen, projection">
-<link rel="stylesheet" href="css/blueprint/print.css" type="text/css" media="print">	
-<!--[if lt IE 8]><link rel="stylesheet" href="css/blueprint/ie.css" type="text/css" media="screen, projection"><![endif]-->
-<style>
-.container { padding-top: 20px; }
-.span-7 {
+  <meta charset="utf8">
+  <meta name="viewport" content="width=device-width">
+  <title>Example 10-5</title>
+  <link rel="stylesheet" href="css/blueprint/screen.css">
+  <link rel="stylesheet" href="css/persistent.css">
+  <style>
+.rgba {
     background-color: #EFEFEF;
-    background-image: url('images/bunny_sprite.png');
-	-moz-background-size: 20%;
-    background-size: 20%;
+    background-image: url('images/monkey-bw.svg');
+	background-size: 20%;
     min-height: 145px;
 }
 .holder { margin: 10px; }
@@ -54,14 +52,13 @@ div[class*='text'] p {
 </head>
 <body>
 <div class="container">
-    <div class="span-5">&thinsp;</div>
-    <div class="span-7 shadow">
+    <div class="span-4">&thinsp;</div>
+    <div class="span-8 rgba shadow">
         <div class="holder">
             <p>Call me Ishmael. Some years ago - never mind how long precisely...</p>
         </div>    
     </div>
-    <div class="span-1">&thinsp;</div>
-    <div class="span-7 border">
+    <div class="span-8 rgba border">
         <div class="holder">
             <p>Call me Ishmael. Some years ago - never mind how long precisely...</p>
         </div>
@@ -69,14 +66,13 @@ div[class*='text'] p {
 	<div class="span-4 last">&thinsp;</div>
 </div>
 <div class="container">    
-    <div class="span-5">&thinsp;</div>
-    <div class="span-7 text-shadow">
+    <div class="span-4">&thinsp;</div>
+    <div class="span-8 rgba text-shadow">
         <div class="holder">
             <p>Call me Ishmael</p>
         </div>
     </div>
-    <div class="span-1">&thinsp;</div>
-    <div class="span-7 text-semi">
+    <div class="span-8 rgba text-semi">
         <div class="holder">
             <p>Call me Ishmael</p>
         </div>

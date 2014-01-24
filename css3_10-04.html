@@ -1,22 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf8">
-<title></title>
-<link rel="stylesheet" href="css/blueprint/screen.css" type="text/css" media="screen, projection">
-<link rel="stylesheet" href="css/blueprint/print.css" type="text/css" media="print">	
-<!--[if lt IE 8]><link rel="stylesheet" href="css/blueprint/ie.css" type="text/css" media="screen, projection"><![endif]-->
-<style>
-.container { padding-top: 40px; }
+  <meta charset="utf8">
+  <meta name="viewport" content="width=device-width">
+  <title>Example 10-4</title>
+  <link rel="stylesheet" href="css/blueprint/screen.css">
+  <link rel="stylesheet" href="css/persistent.css">
+  <style>
+h1 {
+    font-family: ChunkFiveRegular, sans-serif;
+    font-size: 720%;
+    margin-bottom: 0;
+    text-align: center;
+}
 .text-holder {
-    background-image: url('images/bunny_sprite.png');
-	-moz-background-size: 10%;
-    background-size: 10%;
+    background-image: url('images/monkey-bw.svg');
+	background-size: 20%;
 }
 .text {
     background-color: white;
-    margin: 10px;
-    padding: 5px;
+    margin: 20px;
+    padding-top: 10px;
 }
 .opacity { opacity: 0.5; }
 .rgba { background-color: rgba(255,255,255,0.5); }
@@ -31,19 +35,18 @@ p {
 </head>
 <body>
 <div class="container">
-    <div class="span-4">&thinsp;</div>    
-    <div class="span-8 text-holder">
+    <div class="span-2">&thinsp;</div>    
+    <div class="span-10 text-holder">
         <div class="text opacity">
-            <p>Call me Ishmael</p>
+            <h1>Call me Ishmael</h1>
         </div>
     </div>
-    <div class="span-1">&thinsp;</div>    
-    <div class="span-8 text-holder">
+    <div class="span-10 text-holder">
         <div class="text rgba">
-            <p>Call me Ishmael</p>
+            <h1>Call me Ishmael</h1>
         </div>
     </div>
-    <div class="span-3 last">&thinsp;</div>
+    <div class="span-2 last">&thinsp;</div>
 </div>
 </body>
 </html>

@@ -2,47 +2,47 @@
 <html>
 <head>
 <meta charset="utf8">
-<title></title>
-<link rel="stylesheet" href="css/blueprint/screen.css" type="text/css" media="screen, projection">
-<link rel="stylesheet" href="css/blueprint/print.css" type="text/css" media="print">	
-<!--[if lt IE 8]><link rel="stylesheet" href="css/blueprint/ie.css" type="text/css" media="screen, projection"><![endif]-->
-<style>
-.container { padding-top: 40px; }
+<meta name="viewport" content="width=device-width">
+  <title>Examples 10-2 &amp; 10-3</title>
+  <link rel="stylesheet" href="css/blueprint/screen.css">
+  <link rel="stylesheet" href="css/persistent.css">
+  <style>
+h1 {
+    font-family: ChunkFiveRegular, sans-serif;
+    font-size: 720%;
+    margin-bottom: 0;
+    text-align: center;
+}
 .text-holder {
-	background: url('images/bunny_sprite.png') repeat;
-	-moz-background-size: 10%;
-    background-size: 10%;
+	background: url('images/monkey-bw.svg') repeat;
+    background-size: 10% auto;
 }
 .text {
     background-color: white;
-	margin: 10px;
-	padding: 5px;
+	margin: 20px;
+	padding-top: 10px;
 }
 .semi-opaque { opacity: 0.7; }
-p {
-    font-size: 640%;
-    font-weight: bold;
-	letter-spacing: -1px;
-	line-height: 0.8;
-	margin: 0;
-}
 </style>
 </head>
 <body>
 <div class="container">
-    <div class="span-3">&thinsp;</div>
-    <div class="span-8 text-holder">
+    <div class="span-2">&thinsp;</div>
+    <div class="span-20 text-holder">
         <div class="text">
-            <p>Call me Ishmael</p>
+            <h1>Call me Ishmael</h1>
         </div>
     </div>
-    <div class="span-1">&thinsp;</div>    
-    <div class="span-8 text-holder">
+    <div class="span-2 last">&thinsp;</div>
+</div>
+<div class="container">
+    <div class="span-2">&thinsp;</div>
+    <div class="span-20 text-holder">
         <div class="text semi-opaque">
-            <p>Call me Ishmael</p>
+            <h1>Call me Ishmael</h1>
         </div>
     </div>
-    <div class="span-4 last">&thinsp;</div>
+    <div class="span-2 last">&thinsp;</div>
 </div>
 </body>
 </html>
