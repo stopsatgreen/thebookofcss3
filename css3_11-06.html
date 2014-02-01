@@ -1,46 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf8">
-<title></title>
-<link rel="stylesheet" href="css/blueprint/screen.css" type="text/css" media="screen, projection">
-<link rel="stylesheet" href="css/blueprint/print.css" type="text/css" media="print">	
-<!--[if lt IE 8]><link rel="stylesheet" href="css/blueprint/ie.css" type="text/css" media="screen, projection"><![endif]-->
-<link rel="stylesheet" href="css/persistent.css" type="text/css" media="screen, projection">
-<style>
-.container div { min-height: 100px; }
-div.no-min { min-height: 0; }
-h2 { margin: 0.75em 0; }
-.span-5 { background-color: red; }
-.gradient-1 {
-	background-image: -webkit-radial-gradient(farthest-side circle,black,white);
-	background-image: radial-gradient(farthest-side circle,black,white);
-}
-.gradient-2 {
-	background-image: -webkit-radial-gradient(farthest-side circle at left,black,white);
-	background-image: radial-gradient(farthest-side circle at left,black,white);
-}
-.gradient-3 {
-	background-image: -webkit-radial-gradient(farthest-corner circle at right top,white,black);
-	background-image: radial-gradient(farthest-corner circle at right top,white,black);
-}
-.gradient-4 {
-	background-image: -webkit-radial-gradient(farthest-corner circle at right top,white,black);
-	background-image: radial-gradient(farthest-corner circle at right top,white,black);
-}
-</style>
+  <meta charset="utf8">
+  <meta name="viewport" content="width=device-width">
+  <title>Example 11-6</title>
+  <link rel="stylesheet" href="css/blueprint/screen.css">
+  <link rel="stylesheet" href="css/persistent.css">
+  <style>
+  .gradient {
+      background-image: -webkit-repeating-linear-gradient(black, white);
+      background-image: repeating-linear-gradient(white, black 25%);
+      min-height: 200px;
+  }
+  </style>
 </head>
 <body>
-<div class="alert">
-	<p>The gradient syntax used in these examples is up to date, and different from the book.</p>
-</div>
 <div class="container">
-    <div class="span-2">&thinsp;</div>
-    <div class="span-5 gradient-1"></div>
-    <div class="span-5 gradient-2"></div>
-    <div class="span-5 gradient-3"></div>
-    <div class="span-5 gradient-4"></div>
-    <div class="span-2 last">&thinsp;</div>
+	<div class="span-2">&nbsp;</div>
+  <div class="span-20 gradient"></div>
+  <div class="span-2 last">&nbsp;</div>
 </div>
 </body>
 </html>

@@ -1,31 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf8">
-<title></title>
-<link rel="stylesheet" href="css/blueprint/screen.css" media="screen, projection">
-<!--[if lt IE 8]><link rel="stylesheet" href="css/blueprint/ie.css" media="screen, projection"><![endif]-->
-<link rel="stylesheet" href="css/persistent.css" media="screen, projection">
-<style>
-.span-10 {
-    background-color: red;
-    background-image: -webkit-gradient(linear,50% 0%,50% 100%,from(#000),to(#FFF));
-    background-image: -moz-linear-gradient(#FD5308,#0392CE);
-    background-image: -o-linear-gradient(#FD5308,#0392CE);
-    background-image: -webkit-linear-gradient(#FD5308,#0392CE);
-    background-image: linear-gradient(#FD5308,#0392CE);
-    min-height: 200px;
-}
-</style>
+  <meta charset="utf8">
+  <meta name="viewport" content="width=device-width">
+  <title>Example 11-1</title>
+  <link rel="stylesheet" href="css/blueprint/screen.css">
+  <link rel="stylesheet" href="css/persistent.css">
+  <style>
+  .gradient {
+      background-color: red;
+      background-image: -webkit-gradient(linear,50% 0%,50% 100%,from(#000),to(#FFF));
+      background-image: -webkit-linear-gradient(black, white);
+      background-image: linear-gradient(black, white);
+      min-height: 200px;
+  }
+  </style>
 </head>
 <body>
-<div class="alert">
-	<p>The gradient syntax used in these examples is up to date, and different from the book.</p>
-</div>
 <div class="container">
-	<div class="span-7">&nbsp;</div>
-    <div class="span-10"></div>
-    <div class="span-7 last">&nbsp;</div>
+	<div class="span-2">&nbsp;</div>
+  <div class="span-20 gradient"></div>
+  <div class="span-2 last">&nbsp;</div>
 </div>
 </body>
 </html>

@@ -2,46 +2,34 @@
 <html>
 <head>
 <meta charset="utf8">
-<title></title>
-<link rel="stylesheet" href="css/blueprint/screen.css" type="text/css" media="screen, projection">
-<link rel="stylesheet" href="css/blueprint/print.css" type="text/css" media="print">	
-<!--[if lt IE 8]><link rel="stylesheet" href="css/blueprint/ie.css" type="text/css" media="screen, projection"><![endif]-->
-<link rel="stylesheet" href="css/persistent.css" type="text/css" media="screen, projection">
-<style>
+  <meta charset="utf8">
+  <meta name="viewport" content="width=device-width">
+  <title>Example 11-7</title>
+  <link rel="stylesheet" href="css/blueprint/screen.css">
+  <link rel="stylesheet" href="css/persistent.css">
+  <style>
 .container div { min-height: 100px; }
-div.no-min { min-height: 0; }
-h2 { margin: 0.75em 0; }
-.span-5 { background-color: red; }
-.gradient-1-new {
-    background-image: -webkit-radial-gradient(farthest-side circle,black,white,black);
-    background-image: radial-gradient(farthest-side circle,black,white,black);
+.gradient-1 {
+	background-image: -webkit-repeating-linear-gradient(to left,black,white,black 25%);
+	background-image: repeating-linear-gradient(to left,black,white,black 25%);
 }
-.gradient-2-new {
-    background-image: -webkit-radial-gradient(farthest-side circle,black,white 25%,black);
-    background-image: radial-gradient(farthest-side circle,black,white 25%,black);
+.gradient-2 {
+  background-image: -webkit-repeating-linear-gradient(45deg,black,white 2px,black 10px);
+  background-image: repeating-linear-gradient(45deg,black,white 2px,black 10px);
 }
-.gradient-3-new {
-    background-image: -webkit-radial-gradient(farthest-side circle at left,white,black 25%,white 75%,black);
-    background-image: radial-gradient(farthest-side circle at left,white,black 25%,white 75%,black);
-}
-.gradient-4-new {
-    background-image: -webkit-radial-gradient(closest-side circle at 40% 50%,white,white 25%,black 50%,white 75%,black);
-    background-image: radial-gradient(closest-side circle at 40% 50%,white,white 25%,black 50%,white 75%,black);
+.gradient-3 {
+	background-image: -webkit-repeating-linear-gradient(315deg,black,black 2px,white 2px,white 4px); 
+	background-image: repeating-linear-gradient(315deg,black,black 2px,white 2px,white 4px); 
 }
 </style>
 </head>
 <body>
-<div class="alert">
-	<p>The gradient syntax used in these examples is up to date, and different from the book.</p>
-</div>
 <div class="container">
-    <div class="span-2">&thinsp;</div>
-    <div class="span-5 gradient-1-new"></div>
-    <div class="span-5 gradient-2-new"></div>
-    <div class="span-5 gradient-3-new"></div>
-    <div class="span-5 gradient-4-new"></div>
-    <div class="span-2 last">&thinsp;</div>
-
+    <div class="span-3">&thinsp;</div>  
+    <div class="span-6 gradient-1"></div>
+    <div class="span-6 gradient-2"></div>
+    <div class="span-6 gradient-3"></div>
+    <div class="span-3 last">&thinsp;</div>  
 </div>
 </body>
 </html>

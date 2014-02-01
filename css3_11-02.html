@@ -1,50 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf8">
-<title></title>
-<link rel="stylesheet" href="css/blueprint/screen.css" media="screen, projection">
-<!--[if lt IE 8]><link rel="stylesheet" href="css/blueprint/ie.css" media="screen, projection"><![endif]-->
-<link rel="stylesheet" href="css/persistent.css" media="screen, projection">
-<style>
-.container div { min-height: 100px; }
-div.no-min { min-height: 0; }
-h2 { margin: 0.75em 0; }
-.span-4 { background-color: red; }
+  <meta charset="utf8">
+  <meta name="viewport" content="width=device-width">
+  <title>Example 11-2</title>
+  <link rel="stylesheet" href="css/blueprint/screen.css">
+  <link rel="stylesheet" href="css/persistent.css">
+  <style>
+.container div { min-height: 150px; }
 .gradient-1 {
-	background-image: -webkit-linear-gradient(to right, #FD5308,#0392CE);
-	background-image: linear-gradient(to right, #FD5308,#0392CE);
+  background-image: -webkit-linear-gradient(right center, black, white);
+  background-image: linear-gradient(to left, black, white);
 }
 .gradient-2 {
-	background-image: -webkit-linear-gradient(to left, #FD5308,#0392CE);
-	background-image: linear-gradient(to left, #FD5308,#0392CE);
+  background-image: -webkit-linear-gradient(left bottom, black, white);
+  background-image: linear-gradient(to top right, black, white);
 }
 .gradient-3 {
-	background-image: -webkit-linear-gradient(to top, #FD5308,#0392CE);
-	background-image: linear-gradient(to top, #FD5308,#0392CE);
-}
-.gradient-4 {
-	background-image: -webkit-linear-gradient(to right top, #FD5308,#0392CE);
-	background-image: linear-gradient(to right top, #FD5308,#0392CE);
-}
-.gradient-5 {
-	background-image: -webkit-linear-gradient(225deg, #FD5308,#0392CE);
-	background-image: linear-gradient(225deg, #FD5308,#0392CE);
+  background-image: -webkit-linear-gradient(120deg, black, white);
+  background-image: linear-gradient(120deg, black, white);
 }
 </style>
 </head>
 <body>
-<div class="alert">
-	<p>The gradient syntax used in these examples is up to date, and different from the book.</p>
-</div>
 <div class="container">
-    <div class="span-2">&thinsp;</div>
-    <div class="span-4 gradient-1"></div>
-    <div class="span-4 gradient-2"></div>
-    <div class="span-4 gradient-3"></div>
-    <div class="span-4 gradient-4"></div>
-    <div class="span-4 gradient-5"></div>
-    <div class="span-2 last">&thinsp;</div>
-</div>
+    <div class="span-8 gradient-1"></div>
+    <div class="span-8 gradient-2"></div>
+    <div class="span-8 last gradient-3"></div>
+    </div>
 </body>
 </html>
