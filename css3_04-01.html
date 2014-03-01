@@ -7,20 +7,24 @@
 <link rel="stylesheet" href="css/blueprint/screen.css">
 <link rel="stylesheet" href="css/persistent.css">
 <style>
-p:nth-child(2n) { font-weight: bolder; }
+.nth-child p:nth-child(2n) { font-weight: bolder; }
+.nth-of-type p:nth-of-type(2n) { font-weight: bolder; }
 </style>
 </head>
 <body class="ch_04">
 <div class="container">
-    <div class="span-6">&nbsp;</div>
-    <div class="span-12 content">
-<h2>The Picture of Dorian Gray</h2>
-<p>The artist is the creator of beautiful things.</p>
-<p>To reveal art and conceal the artist is art's aim.</p>
-<p>The critic is he who can translate into another manner or a new material his impression of beautiful things.</p>
-    </div>
-    <div class="span-6 last">&nbsp;</div>
-    </div>
+	<div class="span-12 content nth-child">
+		<h2>The Picture of Dorian Gray</h2>
+		<p>The artist is the creator of beautiful things.</p>
+		<p>To reveal art and conceal the artist is art's aim.</p>
+		<p>The critic is he who can translate into another manner or a new material his impression of beautiful things.</p>
+	</div>
+	<div class="span-12 last content nth-of-type">
+		<h2>The Picture of Dorian Gray</h2>
+		<p>The artist is the creator of beautiful things.</p>
+		<p>To reveal art and conceal the artist is art's aim.</p>
+		<p>The critic is he who can translate into another manner or a new material his impression of beautiful things.</p>
+	</div>
 </div>
 </body>
 </html>

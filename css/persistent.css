@@ -150,6 +150,30 @@ div[class^='shadow'] {
   height: 100px;
 }
 
+/* Chapter 12 */
+
+.ch_12 .container { padding-top: 60px; }
+
+.ch_12 .container > div { position: relative; }
+
+.ch_12 h2 {
+  background-color: silver;
+  font: normal 360%/1 ChunkFiveRegular, sans-serif;
+  letter-spacing: -2px;
+  opacity: 0.5;
+  padding: 0.25em;
+  text-align: center;
+}
+
+.ch_12 h2.transformed {
+    background-color: #333;
+    color: white;
+    left: 0;
+    opacity: 1;
+    position: absolute;
+    top: 0;
+}
+
 /* Chapter 14 */
 
 .ch_14 .container { padding-top: 80px; }

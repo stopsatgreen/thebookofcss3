@@ -7,20 +7,117 @@
 <link rel="stylesheet" href="css/blueprint/screen.css">
 <link rel="stylesheet" href="css/persistent.css">
 <style>
-p:nth-of-type(2n) { font-weight: bolder; }
+/* Undo inherited style */ tbody tr:nth-child(2n) td { background-color: transparent; }
+thead th, tbody td { text-align: center; }
+thead th:nth-child(-n+2), tbody td:first-of-type { text-align: left; }
+.styled tbody tr:nth-of-type(even) { background-color: #DDD; }
 </style>
 </head>
-<body class="ch_04">
+<body>
 <div class="container">
-    <div class="span-6">&nbsp;</div>
-    <div class="span-12 content">
-<h2>The Picture of Dorian Gray</h2>
-<p>The artist is the creator of beautiful things.</p>
-<p>To reveal art and conceal the artist is art's aim.</p>
-<p>The critic is he who can translate into another manner or a new material his impression of beautiful things.</p>
-    </div>
-    <div class="span-6 last">&nbsp;</div>
-    </div>
+  <div class="span-12">
+    <table>
+    <thead>
+    <tr>
+    <th>Day</th>
+    <th>Weather</th>
+    <th>Max. Day (°C)</th>
+    <th>Min. Night (°C)</th>
+    <th>Wind (mph)</th>
+    </tr>
+    </thead>
+    <tfoot>
+    <tr><td colspan="5">Data from <a href="http://bbc.co.uk/weather">bbc.co.uk/weather</a></td></tr>
+    </tfoot>
+    <tbody>
+    <tr>
+    <th>Sun</th>
+    <td>Sunny</td>
+    <td>8</td>
+    <td>4</td>
+    <td>8</td>
+    </tr>
+    <tr>
+    <th>Mon</th>
+    <td>Grey Cloud</td>
+    <td>7</td>
+    <td>4</td>
+    <td>6</td>
+    </tr>
+    <tr>
+    <th>Tue</th>
+    <td>Grey Cloud</td>
+    <td>5</td>
+    <td>2</td>
+    <td>13</td>
+    </tr>
+    <tr>
+    <th>Wed</th>
+    <td>Sleet</td>
+    <td>2</td>
+    <td>1</td>
+    <td>8</td>
+    </tr>
+    <tr>
+    <th>Thu</th>
+    <td>Heavy Rain</td>
+    <td>4</td>
+    <td>2</td>
+    <td>7</td>
+    </tr>
+    </tbody>
+    </table>
+  </div>
+  <div class="span-12 last styled">
+    <table>
+    <thead>
+    <tr>
+    <th>Day</th>
+    <th>Weather</th>
+    <th>Max. Day (°C)</th>
+    <th>Min. Night (°C)</th>
+    <th>Wind (mph)</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <th>Sun</th>
+    <td>Sunny</td>
+    <td>8</td>
+    <td>4</td>
+    <td>8</td>
+    </tr>
+    <tr>
+    <th>Mon</th>
+    <td>Grey Cloud</td>
+    <td>7</td>
+    <td>4</td>
+    <td>6</td>
+    </tr>
+    <tr>
+    <th>Tue</th>
+    <td>Grey Cloud</td>
+    <td>5</td>
+    <td>2</td>
+    <td>13</td>
+    </tr>
+    <tr>
+    <th>Wed</th>
+    <td>Sleet</td>
+    <td>2</td>
+    <td>1</td>
+    <td>8</td>
+    </tr>
+    <tr>
+    <th>Thu</th>
+    <td>Heavy Rain</td>
+    <td>4</td>
+    <td>2</td>
+    <td>7</td>
+    </tr>
+    </tbody>
+    </table>
+  </div>
 </div>
 </body>
 </html>

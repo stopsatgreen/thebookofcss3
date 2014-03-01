@@ -1,69 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf8">
-<title></title>
-<link rel="stylesheet" href="css/blueprint/screen.css" type="text/css" media="screen, projection">
-<link rel="stylesheet" href="css/blueprint/print.css" type="text/css" media="print">	
-<!--[if lt IE 8]><link rel="stylesheet" href="css/blueprint/ie.css" type="text/css" media="screen, projection"><![endif]-->
-<link rel="stylesheet" href="css/persistent.css" type="text/css" media="screen, projection">
-<style>
-.container { padding-top: 40px; }
-.container > div { position: relative; }
-h2 {
-    background-color: silver;
-    font-size: 36px;
-    font-weight: bold;
-    letter-spacing: -2px;
-    line-height: 1;
-    padding: 0.25em;
-    text-align: center;
-}
-h2[class^='transform'] {
-    background-color: black;
-    color: white;
-    left: 0;
-    position: absolute;
-    top: 0;
-}
-h2.transform-1 {
-    -moz-transform: skewX(45deg);
-    -ms-transform: skewX(45deg);
-    -o-transform: skewX(45deg);
-    -webkit-transform: skewX(45deg);
-}
-h2.transform-2 {
-    -moz-transform: skewY(10deg);
-    -ms-transform: skewY(10deg);
-    -o-transform: skewY(10deg);
-    -webkit-transform: skewY(10deg);
-}
-h2.transform-3 {
-    -moz-transform: skewx(-45deg) skewY(5deg);
-    -ms-transform: skew(-45deg,5deg);
-    -o-transform: skew(-45deg,5deg);
-    -webkit-transform: skew(-45deg,5deg);
+  <meta charset="utf8">
+  <meta name="viewport" content="width=device-width">
+  <title>Example 12-05</title>
+  <link rel="stylesheet" href="css/blueprint/screen.css">
+  <link rel="stylesheet" href="css/persistent.css">
+  <style>
+.ch_12 h2.transformed {
+    -ms-transform: translateX(20px) translateY(15%);
+    -webkit-transform: translateX(20px) translateY(15%);
+    transform: translateX(20px) translateY(15%);
+    width: 100%;
 }
 </style>
 </head>
-<body>
+<body class="ch_12">
 <div class="container">
-	<div class="span-2">&nbsp;</div>
-    <div class="span-6">
-        <h2>Now with CSS3!</h2>
-        <h2 class="transform-1">Now with CSS3!</h2>
+	<div class="span-7">&nbsp;</div>
+    <div class="span-10">
+        <h2>Now with<br>added CSS3!</h2>
+        <h2 class="transformed">Now with<br>added CSS3!</h2>
     </div>
-    <div class="span-1">&nbsp;</div>
-    <div class="span-6">
-        <h2>Now with CSS3!</h2>
-        <h2 class="transform-2">Now with CSS3!</h2>
-    </div>
-    <div class="span-1">&nbsp;</div>
-    <div class="span-6">
-        <h2>Now with CSS3!</h2>
-        <h2 class="transform-3">Now with CSS3!</h2>
-    </div>
-    <div class="span-2">&nbsp;</div>
+    <div class="span-7 last">&nbsp;</div>
 </div>
 </body>
 </html>

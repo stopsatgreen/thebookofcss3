@@ -3,30 +3,27 @@
 <head>
 <meta charset="utf8">
 <meta name="viewport" content="width=device-width">
-<title>Example 4-8</title>
+<title>Example 4-10</title>
 <link rel="stylesheet" href="css/blueprint/screen.css">
 <link rel="stylesheet" href="css/persistent.css">
 <style>
-blockquote {
-    border-left: 3px double #AAA;
-    color: #222;
-    padding-left: 1em;
-}
-p:only-of-type { font-style: italic; }
-p:only-child { text-decoration: underline; }
+input[type='text']:disabled { border: 1px dotted grey; }
+input[type='text']:enabled { border: 1px solid black; }
 </style>
 </head>
-<body class="ch_04">
+<body>
 <div class="container">
-  <div class="span-7">&nbsp;</div>
-  <div class="span-10 content">
-    <h2>On Intelligence</h2>
-    <p>Arthur C. Clarke once said:</p>
-    <blockquote>
-      <p>It has yet to be proven that intelligence has any survival&nbsp;value.</p>
-    </blockquote>
-  </div>
-  <div class="span-7 last">&nbsp;</div>
+    <div class="span-7">&nbsp;</div>
+    <div class="span-10">
+    <form action="">
+    <fieldset>
+    <legend>UI element state pseudo-classes</legend>
+    <input type="text" value="Lorem ipsum" disabled>
+    <input type="text" value="Lorem ipsum">
+    </fieldset>
+    </form>
+    </div>
+    <div class="span-7 last">&nbsp;</div>
 </div>
 </body>
 </html>
