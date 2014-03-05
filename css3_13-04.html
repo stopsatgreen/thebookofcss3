@@ -3,52 +3,31 @@
 <head>
   <meta charset="utf8">
   <meta name="viewport" content="width=device-width">
-  <title>Animation</title>
+  <title>Figure 13-4</title>
   <link rel="stylesheet" href="css/blueprint/screen.css">
   <link rel="stylesheet" href="css/persistent.css">
   <style>
-  @-webkit-keyframes expand {
-      from { border-width: 8px; }
-      50% { border-width: 24px; }
-      to {
-          border-width: 8px;
-          height: 100%;
-          width: 100%;   
-      }
-  }
-  @keyframes expand {
-      from { border-width: 8px; }
-      50% { border-width: 24px; }
-      to {
-          border-width: 8px;
-          height: 100%;
-          width: 100%;   
-      }
-  }
-  .widget-holder {
-      border: 1px solid silver;
-      height: 300px;
-  }
-  .widget {
-      background-color: silver;
-      border: 8px solid black;
-      height: 100px;
-      width: 100px;
-      -webkit-animation: expand 6s ease 1s infinite alternate;
-      animation: expand 6s ease 1s infinite alternate;
-  }
-  .widget-holder:hover .widget {
-    -webkit-animation-play-state: paused;
-    animation-play-state: paused;
-  }
-  </style>
+    .transition {
+        border: 1px solid black;
+        height: 250px;
+        padding: 10px;
+    }
+    h1 {
+        font: bold 300%/250px ChunkFiveRegular, serif;
+        text-align: center;
+        -webkit-transition: font-size 2s ease-out 250ms;
+        transition: font-size 2s ease-out 250ms;
+    }
+    h1:hover { font-size: 1200%; }
+    </style>
 </head>
 <body>
 <div class="container">
-    <div class="notice">The values used in this demo differ from those in the book.</div>
-    <div class="span-6">&nbsp;</div>
-    <div class="span-12 widget-holder">
-        <div class="widget box-sizing"></div>
+  <div class="span-6">&nbsp;</div>
+    <div class="span-12">
+        <div class="transition box-sizing">
+            <h1>CSS3</h1>
+        </div>
     </div>
     <div class="span-6 last">&nbsp;</div>
 </div>
