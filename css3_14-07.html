@@ -1,66 +1,73 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf8">
-<title></title>
-<link rel="stylesheet" href="css/blueprint/screen.css" type="text/css" media="screen, projection">
-<link rel="stylesheet" href="css/blueprint/print.css" type="text/css" media="print">	
-<!--[if lt IE 8]><link rel="stylesheet" href="css/blueprint/ie.css" type="text/css" media="screen, projection"><![endif]-->
-<link rel="stylesheet" href="css/persistent.css" type="text/css" media="screen, projection">
+  <meta charset="utf8">
+  <meta name="viewport" content="width=device-width">
+  <title>Figure 14-7</title>
+  <link rel="stylesheet" href="css/blueprint/screen.css">
+  <link rel="stylesheet" href="css/persistent.css">
 <style>
-.trans-xy {
-    -moz-transform: scaleX(1.5) scaleY(1.5);
-    -ms-transform: scaleX(1.5) scaleY(1.5);
-    -webkit-transform: scaleX(1.5) scaleY(1.5);
+.d3-parent {
+  background-color: silver;
+  outline: none;
+  -webkit-transform: perspective(200px) rotateY(15deg);
+  transform: perspective(200px) rotateY(15deg);
 }
-.trans-z {
-    -moz-transform: scaleZ(2.5) translateZ(10px);
-    -ms-transform: scaleZ(2.5) translateZ(10px);
-    -webkit-transform: scaleZ(2.5) translateZ(10px);
+.d3-child { background-color: transparent; }
+.trans-1 {
+    -moz-transform: matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,10,10,10,1);
+    -ms-transform: matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,10,10,10,1);
+    -webkit-transform: matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,10,10,10,1);
 }
-.trans-xyz {
-    -moz-transform: scale3d(1.25,1.25,4) translateZ(10px);
-    -ms-transform: scale3d(1.25,1.25,4) translateZ(10px);
-    -webkit-transform: scale3d(1.25,1.25,4) translateZ(10px);
+.trans-2 {
+    -moz-transform: matrix3d(1.5,0,0,0,0,1.5,0,0,0,0,2,0,0,0,10,1);
+    -ms-transform: matrix3d(1.5,0,0,0,0,1.5,0,0,0,0,2,0,0,0,10,1);
+    -webkit-transform: matrix3d(1.5,0,0,0,0,1.5,0,0,0,0,2,0,0,0,10,1);
 }
-.threed:hover .trans-xy {
-    -moz-transform: scaleX(1) scaleY(1);
-    -ms-transform: scaleX(1) scaleY(1);
-    -webkit-transform: scaleX(1) scaleY(1);
+.trans-3 {
+    -moz-transform: matrix3d(0.96,-0.26,0,0,0.26,0.96,0,0,0,0,1,0,-10,0,0,1);
+    -ms-transform: matrix3d(0.96,-0.26,0,0,0.26,0.96,0,0,0,0,1,0,-10,0,0,1);
+    -webkit-transform: matrix3d(0.96,-0.26,0,0,0.26,0.96,0,0,0,0,1,0,-10,0,0,1);
 }
-.threed:hover .trans-z {
-    -moz-transform: scaleZ(1) translateZ(0);
-    -ms-transform: scaleZ(1) translateZ(0);
-    -webkit-transform: scaleZ(1) translateZ(0);
+.d3-parent:hover .trans-1 {
+    -moz-transform: matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1);
+    -ms-transform: matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1);
+    -webkit-transform: matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1);
 }
-.threed:hover .trans-xyz {
-    -moz-transform: scale3d(1,1,1) translateZ(0); 
-    -ms-transform: scale3d(1,1,1) translateZ(0); 
-    -webkit-transform: scale3d(1,1,1) translateZ(0); 
+.d3-parent:hover .trans-2 {
+    -moz-transform: matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1);
+    -ms-transform: matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1);
+    -webkit-transform: matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1);
+}
+.d3-parent:hover .trans-3 {
+    -moz-transform: matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1);
+    -ms-transform: matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1);
+    -webkit-transform: matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1);
 }
 </style>
 </head>
 <body class="ch_14">
 <div class="container">
-    <div class="span-6 threed">
-        <div class="trans-xy">
-	        <h2>The Book Of</h2>
-    	    <h1>CSS3</h1>
-		</div>
+  <div class="span-3">&thinsp;</div>
+  <div class="span-6 d3-parent">
+    <div class="trans-1 d3-child">
+      <h2>The Book Of</h2>
+      <h1>CSS3</h1>
     </div>
-    <div class="span-6 threed">
-        <div class="trans-z">
-	        <h2>The Book Of</h2>
-    	    <h1>CSS3</h1>
-		</div>
+  </div>
+  <div class="span-6 d3-parent">
+    <div class="trans-2 d3-child">
+      <h2>The Book Of</h2>
+      <h1>CSS3</h1>
     </div>
-    <div class="span-6 threed">
-        <div class="trans-xyz">
-	        <h2>The Book Of</h2>
-    	    <h1>CSS3</h1>
-		</div>
+  </div>
+  <div class="span-6 d3-parent">
+    <div class="trans-3 d3-child">
+      <h2>The Book Of</h2>
+      <h1>CSS3</h1>
     </div>
-    <div class="span-6 last">&thinsp;</div>
+  </div>
+  <div class="span-3 last">&thinsp;</div>
 </div>
 </body>
 </html>

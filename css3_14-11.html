@@ -1,66 +1,48 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf8">
-<title></title>
-<link rel="stylesheet" href="css/blueprint/screen.css" type="text/css" media="screen, projection">
-<link rel="stylesheet" href="css/blueprint/print.css" type="text/css" media="print">	
-<!--[if lt IE 8]><link rel="stylesheet" href="css/blueprint/ie.css" type="text/css" media="screen, projection"><![endif]-->
-<link rel="stylesheet" href="css/persistent.css" type="text/css" media="screen, projection">
+  <meta charset="utf8">
+  <meta name="viewport" content="width=device-width">
+  <title>Figure 14-11</title>
+  <link rel="stylesheet" href="css/blueprint/screen.css">
+  <link rel="stylesheet" href="css/persistent.css">
 <style>
-.threed div {
-    -moz-transform: rotate3d(1,1,0,-22.5deg);
-    -ms-transform: rotate3d(1,1,0,-22.5deg);
-    -webkit-transform: rotate3d(1,1,0,-22.5deg);
+.d3-child {
+  -webkit-backface-visibility: visible;
+  -webkit-transform: rotateY(180deg);
+  backface-visibility: visible;
+  transform: rotateY(180deg);
 }
-.trans-1 div {
-    -moz-transform-origin: 0 28px 0;
-    -ms-transform-origin: 0 28px 0;
-    -webkit-transform-origin: 0 28px 0;
+.bf-hidden {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
-.trans-2 div {
-    -moz-transform-origin: 100% 100% 10px;
-    -ms-transform-origin: 100% 100% 10px;
-    -webkit-transform-origin: 100% 100% 10px;
-}
-.trans-3 div {
-    -moz-transform-origin: center bottom -20px;
-    -ms-transform-origin: center bottom -20px;
-    -webkit-transform-origin: center bottom -20px;
-}
-.threed:hover div {
-    -moz-transform: rotate3d(1,1,1,0deg);
-    -ms-transform: rotate3d(1,1,1,0deg);
-    -webkit-transform: rotate3d(1,1,1,0deg);
+.d3-parent:hover .d3-child {
+  -webkit-transform: none;
+  transform: none;
 }
 </style>
 </head>
 <body class="ch_14">
 <div class="container">
-    <div class="span-6 threed">
-        <div>
-	        <h2>The Book Of</h2>
-    	    <h1>CSS3</h1>
-		</div>
+  <div class="span-6">&thinsp;</div>
+  <div class="span-6 d3-parent">
+    <div class="trans-1 d3-child">
+      <div class="inner">
+        <h2>The Book Of</h2>
+        <h1>CSS3</h1>
+      </div>
     </div>
-    <div class="span-6 threed trans-1">
-        <div>
-	        <h2>The Book Of</h2>
-    	    <h1>CSS3</h1>
-		</div>
+  </div>
+  <div class="span-6 d3-parent">
+    <div class="trans-2 d3-child bf-hidden">
+      <div class="inner">
+        <h2>The Book Of</h2>
+        <h1>CSS3</h1>
+      </div>
     </div>
-    <div class="span-6 threed trans-2">
-        <div>
-	        <h2>The Book Of</h2>
-    	    <h1>CSS3</h1>
-		</div>
-    </div>
-    <div class="last span-6 threed trans-3">
-        <div>
-	        <h2>The Book Of</h2>
-    	    <h1>CSS3</h1>
-		</div>
-    </div>
+  </div>
+  <div class="span-6 last">&thinsp;</div>
 </div>
 </body>
 </html>

@@ -1,66 +1,56 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf8">
-<title></title>
-<link rel="stylesheet" href="css/blueprint/screen.css" type="text/css" media="screen, projection">
-<link rel="stylesheet" href="css/blueprint/print.css" type="text/css" media="print">	
-<!--[if lt IE 8]><link rel="stylesheet" href="css/blueprint/ie.css" type="text/css" media="screen, projection"><![endif]-->
-<link rel="stylesheet" href="css/persistent.css" type="text/css" media="screen, projection">
+  <meta charset="utf8">
+  <meta name="viewport" content="width=device-width">
+  <title>Figure 14-4</title>
+  <link rel="stylesheet" href="css/blueprint/screen.css">
+  <link rel="stylesheet" href="css/persistent.css">
 <style>
-.trans-x {
-    -moz-transform: rotateX(-60deg);
-    -ms-transform: rotateX(-60deg);
-    -webkit-transform: rotateX(-60deg);
+.d3-parent {
+  -webkit-perspective: none;
+  perspective: none;
 }
-.trans-y {
-    -moz-transform: rotateY(22.5deg);
-    -ms-transform: rotateY(22.5deg);
-    -webkit-transform: rotateY(22.5deg);
+.trans-1 {
+  -webkit-transform: perspective(1000px) rotateX(45deg) rotateY(45deg);
+  transform: perspective(1000px) rotateX(45deg) rotateY(45deg);
 }
-.trans-z {
-    -moz-transform: rotateZ(22.5deg);
-    -ms-transform: rotateZ(22.5deg);
-    -webkit-transform: rotateZ(22.5deg);
+.trans-2 {
+  -webkit-transform: perspective(250px) rotateX(45deg) rotateY(45deg);
+  transform: perspective(250px) rotateX(45deg) rotateY(45deg);
 }
-.threed:hover .trans-x {
-    -moz-transform: rotateX(-360deg);
-    -ms-transform: rotateX(-360deg);
-    -webkit-transform: rotateX(-360deg);
+.trans-3 {
+  -webkit-transform: perspective(150px) rotateX(45deg) rotateY(45deg);
+  transform: perspective(150px) rotateX(45deg) rotateY(45deg);
 }
-.threed:hover .trans-y {
-    -moz-transform: rotateY(-360deg);
-    -ms-transform: rotateY(-360deg);
-    -webkit-transform: rotateY(-360deg);
-}
-.threed:hover .trans-z {
-    -moz-transform: rotateZ(-360deg);
-    -ms-transform: rotateZ(-360deg);
-    -webkit-transform: rotateZ(-360deg);
+.d3-parent:hover div {
+  -webkit-transform: rotate3d(1,1,1,0deg) perspective(200px);
+  transform: rotate3d(1,1,1,0deg) perspective(200px);
 }
 </style>
 </head>
 <body class="ch_14">
 <div class="container">
-    <div class="span-6 threed">
-        <div class="trans-x">
-	        <h2>The Book Of</h2>
-    	    <h1>CSS3</h1>
-		</div>
+  <div class="span-3">&thinsp;</div>
+  <div class="span-6 d3-parent">
+    <div class="trans-1 d3-child">
+      <h2>The Book Of</h2>
+      <h1>CSS3</h1>
     </div>
-    <div class="span-6 threed">
-        <div class="trans-y">
-	        <h2>The Book Of</h2>
-    	    <h1>CSS3</h1>
-		</div>
+  </div>
+  <div class="span-6 d3-parent">
+    <div class="trans-2 d3-child">
+      <h2>The Book Of</h2>
+      <h1>CSS3</h1>
     </div>
-    <div class="span-6 threed">
-        <div class="trans-z">
-	        <h2>The Book Of</h2>
-    	    <h1>CSS3</h1>
-		</div>
+  </div>
+  <div class="span-6 d3-parent">
+    <div class="trans-3 d3-child">
+      <h2>The Book Of</h2>
+      <h1>CSS3</h1>
     </div>
-    <div class="span-6 last">&thinsp;</div>
+  </div>
+  <div class="span-3 last">&thinsp;</div>
 </div>
 </body>
 </html>

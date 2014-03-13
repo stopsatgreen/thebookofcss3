@@ -1,70 +1,60 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf8">
-<title></title>
-<link rel="stylesheet" href="css/blueprint/screen.css" type="text/css" media="screen, projection">
-<!--[if lt IE 8]><link rel="stylesheet" href="css/blueprint/ie.css" type="text/css" media="screen, projection"><![endif]-->
-<link rel="stylesheet" href="css/persistent.css" type="text/css" media="screen, projection">
+  <meta charset="utf8">
+  <meta name="viewport" content="width=device-width">
+  <title>Figure 14-9</title>
+  <link rel="stylesheet" href="css/blueprint/screen.css">
+  <link rel="stylesheet" href="css/persistent.css">
 <style>
-.threed {
-    -moz-transform-style: preserve-3d;
-    -ms-transform-style: preserve-3d;
-    -webkit-transform-style: preserve-3d;
+.d3-child {
+  -webkit-transform: rotateX(45deg) rotateZ(90deg);
+  transform: rotateX(45deg) rotateZ(90deg);
 }
-.threed div {
-    -moz-transform: rotateX(-90deg) rotateY(-15deg) rotateZ(0deg) translateZ(20px);
-    -ms-transform: rotateX(-90deg) rotateY(-15deg) rotateZ(0deg) translateZ(20px);
-    -webkit-transform: rotateX(-90deg) rotateY(-15deg) rotateZ(0deg) translateZ(20px);
+.trans-1 {
+  -webkit-transform-origin: 50% 0 0;
+  transform-origin: 50% 0 0;
 }
-.threed .trans-1 {
-    -moz-transform: rotateX(-90deg) rotateY(-15deg) rotateZ(0deg) perspective(20px) translateZ(10px);
-    -ms-transform: rotateX(-90deg) rotateY(-15deg) rotateZ(0deg) perspective(20px) translateZ(10px);
-    -webkit-transform: rotateX(-90deg) rotateY(-15deg) rotateZ(0deg) perspective(20px) translateZ(10px);
+.trans-2 {
+  -webkit-transform-origin: 50% 100% 0;
+  transform-origin: 50% 100% 0;
 }
-.threed .trans-2 {
-    -moz-transform: rotateX(-90deg) rotateY(-15deg) rotateZ(0deg) perspective(50px) translateZ(10px);
-    -ms-transform: rotateX(-90deg) rotateY(-15deg) rotateZ(0deg) perspective(50px) translateZ(10px);
-    -webkit-transform: rotateX(-90deg) rotateY(-15deg) rotateZ(0deg) perspective(50px) translateZ(10px);
+.trans-3 {
+  -webkit-transform-origin: center bottom -50px;
+  transform-origin: center bottom -50px;
 }
-.threed .trans-3 {
-    -moz-transform: rotateX(-90deg) rotateY(-15deg) rotateZ(0deg) perspective(1000px) translateZ(10px);
-    -ms-transform: rotateX(-90deg) rotateY(-15deg) rotateZ(0deg) perspective(1000px) translateZ(10px);
-    -webkit-transform: rotateX(-90deg) rotateY(-15deg) rotateZ(0deg) perspective(1000px) translateZ(10px);
-}
-.threed:hover div {
-    -moz-transform: rotate3d(1,1,1,0deg) perspective(200px) translateZ(0) !important;
-    -ms-transform: rotate3d(1,1,1,0deg) perspective(200px) translateZ(0) !important;
-    -webkit-transform: rotate3d(1,1,1,0deg) perspective(200px) translateZ(0) !important;
+.d3-parent:hover .d3-child {
+  -webkit-transform: none;
+  transform: none;
 }
 </style>
 </head>
 <body class="ch_14">
 <div class="container">
-    <div class="span-6 threed">
-        <div>
-	        <h2>The Book Of</h2>
-    	    <h1>CSS3</h1>
-		</div>
+  <div class="span-6 d3-parent">
+    <div class="d3-child">
+      <h2>The Book Of</h2>
+      <h1>CSS3</h1>
     </div>
-    <div class="span-6 threed">
-        <div class="trans-1">
-	        <h2>The Book Of</h2>
-    	    <h1>CSS3</h1>
-		</div>
+  </div>
+  <div class="span-6 d3-parent">
+    <div class="d3-child trans-1">
+      <h2>The Book Of</h2>
+      <h1>CSS3</h1>
     </div>
-    <div class="span-6 threed">
-        <div class="trans-2">
-	        <h2>The Book Of</h2>
-    	    <h1>CSS3</h1>
-		</div>
+  </div>
+  <div class="span-6 d3-parent">
+    <div class="d3-child trans-2">
+      <h2>The Book Of</h2>
+      <h1>CSS3</h1>
     </div>
-    <div class="last span-6 threed">
-        <div class="trans-3">
-	        <h2>The Book Of</h2>
-    	    <h1>CSS3</h1>
-		</div>
+  </div>
+  <div class="span-6 d3-parent last">
+    <div class="d3-child trans-3">
+      <h2>The Book Of</h2>
+      <h1>CSS3</h1>
     </div>
+  </div>
 </div>
 </body>
 </html>

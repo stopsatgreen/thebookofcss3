@@ -178,24 +178,19 @@ div[class^='shadow'] {
 
 .ch_14 .container { padding-top: 80px; }
 
-.threed {
-    outline: 4px dashed silver;
-    -moz-transform: rotateX(15deg) rotateY(45deg);
-    -ms-transform: rotateX(15deg) rotateY(45deg);
-    -webkit-transform: rotateX(15deg) rotateY(45deg);
-    -moz-transform-style: preserve-3d;
-    -ms-transform-style: preserve-3d;
-    -webkit-transform-style: preserve-3d;
+.d3-parent {
+  outline: 4px dashed silver; 
+  -webkit-perspective: 200px;
+  perspective: 200px;
 }
 
-.threed div {
+.d3-child {
 	background-color: white;
 	border: 10px solid black;
 	padding: 10px;
 	text-align: center;
-    -moz-transition: -moz-transform 2s;
-    -ms-transition: -ms-transform 2s;
-    -webkit-transition: -webkit-transform 2s;
+  -webkit-transition: -webkit-transform 2s;
+  transition: transform 2s;
 }
 
 .ch_14 h1, .ch_14 h2 {
