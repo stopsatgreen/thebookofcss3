@@ -7,32 +7,40 @@
   <link rel="stylesheet" href="css/blueprint/screen.css">
   <link rel="stylesheet" href="css/persistent.css">
   <style>
-.span-6 { background-color: black; }
+.span-8 { background-color: black; }
+.span-8 div {
+  background-color: white;
+  margin: 20px;
+}
 .semi-opaque-1 { opacity: 0.66; }
 .semi-opaque-2 { opacity: 0.33; }
 p {
-    color: white;
-    font-size: 180%;
-    font-weight: bold;
-	line-height: 1.2;
-	margin: 0;
-    padding: 20px;
+  background-color: white;
+  font-size: 180%;
+  font-weight: bold;
+  line-height: 1.2;
+  margin: 0;
+  padding: 20px;
 }
 </style>
 </head>
 <body>
 <div class="container">
-	<div class="span-3">&thinsp;</div>
-    <div class="span-6">
-        <p>Call me Ishmael. Some years ago - never mind how long precisely…</p>
+  <div class="span-8">
+    <div>
+      <p>Call me Ishmael. Some years ago - never mind how long precisely…</p>
     </div>
-    <div class="span-6 semi-opaque-1">
-        <p>Call me Ishmael. Some years ago - never mind how long precisely…</p>
+  </div>
+  <div class="span-8">
+    <div class="semi-opaque-1">
+      <p class="semi-opaque-1">Call me Ishmael. Some years ago - never mind how long precisely…</p>
     </div>
-    <div class="span-6 semi-opaque-2">
-        <p>Call me Ishmael. Some years ago - never mind how long precisely…</p>
+  </div>
+  <div class="span-8 last">
+    <div class="semi-opaque-2">
+      <p>Call me Ishmael. Some years ago - never mind how long precisely…</p>
     </div>
-    <div class="span-3 last">&thinsp;</div>
+  </div>
 </div>
 </body>
 </html>
