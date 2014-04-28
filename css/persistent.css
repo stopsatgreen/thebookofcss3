@@ -211,30 +211,21 @@ div[class^='shadow'] {
 
 /* Chapter 15 */
 
-.ch_15 .container { padding-top: 40px; }
+.ch_15 .flex-container {
+  border: 1px solid black;
+  display: -webkit-flex;
+  display: flex;
+  max-width: 598px;
+}
 
-.ch_15 .flexbox-holder {
+.ch_15 .flex-item {
   background-color: silver;
-  margin-bottom: 20px;
-  width: 600px;
+  font-size: 600%;
+  line-height: 100px;
+  text-align: center;
+  width: 150px;
 }
 
-.ch_15 .flex {
-    background-color: white;
-    border: 1px solid gray;
-    margin: 10px;
-    padding: 10px;
-    
-}
-
-.ch_15 .legacy .flex { width: 200px; }
-
-.ch_15 .flex:nth-of-type(2n) { margin: 10px 0; }
-
-.ch_15 h3 { line-height: 21px; }
-
-.ch_15 h3, .ch_15 p { margin-bottom: 0; }
-
-.ch_15 p { color: #333; }
+.ch_15 .flex-item:nth-child(even) { background-color: gray; }
 
 

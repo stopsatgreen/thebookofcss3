@@ -1,127 +1,49 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf8">
-<title></title>
-<link rel="stylesheet" href="css/blueprint/screen.css" media="screen, projection">
-<link rel="stylesheet" href="css/blueprint/print.css" media="print">	
-<!--[if lt IE 8]><link rel="stylesheet" href="css/blueprint/ie.css" media="screen, projection"><![endif]-->
-<link rel="stylesheet" href="css/persistent.css" media="screen, projection">
-<link rel="stylesheet" href="css/css3_15.css" media="screen, projection">
-<style>
-.flexbox-holder { width: 100%; }
-.legacy {
-  display: -moz-box;
-  display: -ms-box;
-  display: -webkit-box;
-  -moz-box-orient: vertical;
-  -ms-box-orient: vertical;
-  -webkit-box-orient: vertical;
-}
-.flexbox-two.legacy {
-    -moz-box-direction: reverse;
-    -ms-box-direction: reverse;
-    -webkit-box-direction: reverse;
-}
-.legacy .flex {
-    -moz-box-flex: 1;
-    -ms-box-flex: 1;
-    -webkit-box-flex: 1;
-}
-.standard {
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -webkit-flex;
-}
-.flexbox-one.standard {
-    -moz-flex-direction: column;
-    -ms-flex-direction: column;
-    -webkit-flex-direction: column;
-}
-.flexbox-two.standard {
-    -moz-flex-direction: column-reverse;
-    -ms-flex-direction: column-reverse;
-    -webkit-flex-direction: column-reverse;
-}
-.standard .flex {
-    -moz-flex: 1;
-    -ms-flex: 1;
-    -webkit-flex: 1;
-}
-.flex:nth-of-type(2n) { margin: 0 10px; }
-</style>
+  <meta charset="utf8">
+  <meta name="viewport" content="width=device-width">
+  <title>Figure 15-10</title>
+  <link rel="stylesheet" href="css/blueprint/screen.css">
+  <link rel="stylesheet" href="css/persistent.css">
+  <style>
+  #container-b { justify-content: center; }
+  #container-c { justify-content: space-around; }
+  </style>
 </head>
-<body>
+<body class="ch_15">
 <div class="container">
-    <div class="span-2">&thinsp;</div>
-    <div class="span-10">
-        <div class="flexbox-holder flexbox-one legacy">
-            <div class="flex flex-one">
-    <h3>1. 20,000 Leagues Under The Sea</h3>
-    <p>The year 1866 was marked by a bizarre development, an unexplained and downright inexplicable phenomenon that surely no one has forgotten.</p>
-            </div>
-            <div class="flex flex-two">
-    <h3>2. Great Expectations</h3>
-    <p>My father's family name being Pirrip, and my Christian name Philip, my infant tongue could make of both names nothing longer or more explicit than Pip.</p>
-            </div>
-            <div class="flex flex-three">
-    <h3>3. The Hound Of The Baskervilles</h3>
-    <p>Mr. Sherlock Holmes, who was usually very late in the mornings, save upon those not infrequent occasions when he was up all night, was seated at the breakfast table.</p>
-            </div>
-        </div>
+  <div class="span-4">&thinsp;</div>
+  <div class="span-16">
+    <div class="flex-container" id="container-a">
+      <div class="flex-item">A</div>
+      <div class="flex-item">B</div>
+      <div class="flex-item">C</div>
     </div>
-    <div class="span-10">
-        <div class="flexbox-holder flexbox-two legacy">
-            <div class="flex flex-one">
-    <h3>1. 20,000 Leagues Under The Sea</h3>
-    <p>The year 1866 was marked by a bizarre development, an unexplained and downright inexplicable phenomenon that surely no one has forgotten.</p>
-            </div>
-            <div class="flex flex-two">
-    <h3>2. Great Expectations</h3>
-    <p>My father's family name being Pirrip, and my Christian name Philip, my infant tongue could make of both names nothing longer or more explicit than Pip.</p>
-            </div>
-            <div class="flex flex-three">
-    <h3>3. The Hound Of The Baskervilles</h3>
-    <p>Mr. Sherlock Holmes, who was usually very late in the mornings, save upon those not infrequent occasions when he was up all night, was seated at the breakfast table.</p>
-            </div>
-        </div>
+  </div>
+  <div class="span-4 last">&thinsp;</div>
+</div>
+<div class="container">
+  <div class="span-4">&thinsp;</div>
+  <div class="span-16">
+    <div class="flex-container" id="container-b">
+      <div class="flex-item">A</div>
+      <div class="flex-item">B</div>
+      <div class="flex-item">C</div>
     </div>
-    <div class="span-2 last">&thinsp;</div>
-<!-- Standard -->
-<div class="span-2">&thinsp;</div>
-    <div class="span-10">
-        <div class="flexbox-holder flexbox-one standard">
-            <div class="flex flex-one">
-    <h3>1. 20,000 Leagues Under The Sea</h3>
-    <p>The year 1866 was marked by a bizarre development, an unexplained and downright inexplicable phenomenon that surely no one has forgotten.</p>
-            </div>
-            <div class="flex flex-two">
-    <h3>2. Great Expectations</h3>
-    <p>My father's family name being Pirrip, and my Christian name Philip, my infant tongue could make of both names nothing longer or more explicit than Pip.</p>
-            </div>
-            <div class="flex flex-three">
-    <h3>3. The Hound Of The Baskervilles</h3>
-    <p>Mr. Sherlock Holmes, who was usually very late in the mornings, save upon those not infrequent occasions when he was up all night, was seated at the breakfast table.</p>
-            </div>
-        </div>
+  </div>
+  <div class="span-4 last">&thinsp;</div>
+</div>
+<div class="container">
+  <div class="span-4">&thinsp;</div>
+  <div class="span-16">
+    <div class="flex-container" id="container-c">
+      <div class="flex-item">A</div>
+      <div class="flex-item">B</div>
+      <div class="flex-item">C</div>
     </div>
-    <div class="span-10">
-        <div class="flexbox-holder flexbox-two standard">
-            <div class="flex flex-one">
-    <h3>1. 20,000 Leagues Under The Sea</h3>
-    <p>The year 1866 was marked by a bizarre development, an unexplained and downright inexplicable phenomenon that surely no one has forgotten.</p>
-            </div>
-            <div class="flex flex-two">
-    <h3>2. Great Expectations</h3>
-    <p>My father's family name being Pirrip, and my Christian name Philip, my infant tongue could make of both names nothing longer or more explicit than Pip.</p>
-            </div>
-            <div class="flex flex-three">
-    <h3>3. The Hound Of The Baskervilles</h3>
-    <p>Mr. Sherlock Holmes, who was usually very late in the mornings, save upon those not infrequent occasions when he was up all night, was seated at the breakfast table.</p>
-            </div>
-        </div>
-    </div>
-    <div class="span-2 last">&thinsp;</div>
+  </div>
+  <div class="span-4 last">&thinsp;</div>
 </div>
 </body>
 </html>

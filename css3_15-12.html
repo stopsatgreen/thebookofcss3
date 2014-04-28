@@ -1,169 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf8">
-<title></title>
-<link rel="stylesheet" href="css/blueprint/screen.css" type="text/css" media="screen, projection">
-<link rel="stylesheet" href="css/blueprint/print.css" type="text/css" media="print">	
-<!--[if lt IE 8]><link rel="stylesheet" href="css/blueprint/ie.css" type="text/css" media="screen, projection"><![endif]-->
-<link rel="stylesheet" href="css/persistent.css" type="text/css" media="screen, projection">
-<style>
-.container { padding-top: 40px; }
-div[class^='box-holder'] {
-    background-color: silver;
-    height: 330px;
-    width: 100%;
-}
-.flex-new div[class^='box-holder'] {
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-}
-.flex-new div.box-holder-one,
-.flex-new div.box-holder-four {
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
-}
-.flex-new div.box-holder-two {
-    -ms-flex-align: start;
-    -webkit-align-items: flex-start;
-    align-items: flex-start;
-}
-.flex-new div.box-holder-three,
-.flex-new div.box-holder-four {
-    -ms-flex-direction: column;
-    -webkit-flex-direction: column;
-    flex-direction: column;
-}
-.flex-new div.box-holder-three {
-    -ms-flex-align: end;
-    -webkit-align-items: flex-end;
+  <meta charset="utf8">
+  <meta name="viewport" content="width=device-width">
+  <title>Figure 15-12</title>
+  <link rel="stylesheet" href="css/blueprint/screen.css">
+  <link rel="stylesheet" href="css/persistent.css">
+  <style>
+  .ch_15 .flex-container {
     align-items: flex-end;
-}
-.flex-old div[class^='box-holder'] {
-    display: -moz-box;
-    display: -ms-box;
-    display: -webkit-box;
-}
-.flex-old div.box-holder-one {
-    -moz-box-align: center;
-    -ms-box-align: center;
-    -webkit-box-align: center;
-}
-.flex-old div.box-holder-two {
-    -moz-box-align: start;
-    -ms-box-align: start;
-    -webkit-box-align: start;
-}
-.flex-old div.box-holder-three,
-.flex-old div.box-holder-four {
-    -moz-box-orient: vertical;
-    -ms-box-orient: vertical;
-    -webkit-box-orient: vertical;
-}
-.flex-old div.box-holder-three {
-    -moz-box-align: end;
-    -ms-box-align: end;
-    -webkit-box-align: end;
-}
-.flex-old div.box-holder-four {
-    -moz-box-align: center;
-    -ms-box-align: center;
-    -webkit-box-align: center;
-}
-div.flex {
-    background-color: white;
-    border: 1px solid gray;
-    margin: 10px;
-    padding: 10px;
-    width: 100px;
-}
-.flex-new div.flex {
-    -ms-flex: 1;
-    -webkit-flex: 1;
-    flex: 1;
-}
-.flex-old div.flex {
-    -moz-box-flex: 1;
-    -ms-box-flex: 1;
-    -webkit-box-flex: 1;
-}
-h3 { font-size: 16px; }
-h3, p { line-height: 18px; margin-bottom: 0; }
-p { color: #333; font-size: 12px; }
-</style>
+    height: 150px;
+  }
+  .ch_15 .flex-item { flex-grow: 1; }
+  #c { align-self: center; }
+  </style>
 </head>
-<body>
-<div class="container flex-new">
-<!-- New syntax -->
-    <div class="span-6">
-        <div class="box-holder-one">
-            <div class="flex">
-    <h3>20,000 Leagues Under The Sea</h3>
-    <p>The year 1866 was marked by a bizarre de&shy;vel&shy;op&shy;ment, an unexplained and downright inexplicable phenomenon that surely no one has forgotten.</p>
-            </div>
-        </div>
+<body class="ch_15">
+<div class="container">
+  <div class="span-4">&thinsp;</div>
+  <div class="span-16">
+    <div class="flex-container">
+      <div class="flex-item">A</div>
+      <div class="flex-item">B</div>
+      <div class="flex-item" id="c">C</div>
     </div>
-    <div class="span-6">
-        <div class="box-holder-two">
-            <div class="flex">
-    <h3>20,000 Leagues Under The Sea</h3>
-    <p>The year 1866 was marked by a bizarre development, an unexplained and downright inexplicable phenomenon that surely no one has forgotten.</p>
-            </div>
-        </div>
-    </div>
-    <div class="span-6">
-        <div class="box-holder-three">
-            <div class="flex">
-    <h3>20,000 Leagues Under The Sea</h3>
-    <p>The year 1866 was marked by a bizarre de&shy;vel&shy;op&shy;ment, an unex&shy;plained and downright inexplicable phenomenon that surely no one has forgotten.</p>
-            </div>
-        </div>
-    </div>
-    <div class="span-6 last">
-        <div class="box-holder-four">
-            <div class="flex">
-    <h3>20,000 Leagues Under The Sea</h3>
-    <p>The year 1866 was marked by a bizarre de&shy;vel&shy;op&shy;ment, an unex&shy;plained and downright inexplicable phenomenon that surely no one has forgotten.</p>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="container flex-old">
-<!-- Old syntax -->
-    <div class="span-6">
-        <div class="box-holder-one">
-            <div class="flex">
-    <h3>20,000 Leagues Under The Sea</h3>
-    <p>The year 1866 was marked by a bizarre de&shy;vel&shy;op&shy;ment, an unexplained and downright inexplicable phenomenon that surely no one has forgotten.</p>
-            </div>
-        </div>
-    </div>
-    <div class="span-6">
-        <div class="box-holder-two">
-            <div class="flex">
-    <h3>20,000 Leagues Under The Sea</h3>
-    <p>The year 1866 was marked by a bizarre development, an unexplained and downright inexplicable phenomenon that surely no one has forgotten.</p>
-            </div>
-        </div>
-    </div>
-    <div class="span-6">
-        <div class="box-holder-three">
-            <div class="flex">
-    <h3>20,000 Leagues Under The Sea</h3>
-    <p>The year 1866 was marked by a bizarre de&shy;vel&shy;op&shy;ment, an unex&shy;plained and downright inexplicable phenomenon that surely no one has forgotten.</p>
-            </div>
-        </div>
-    </div>
-    <div class="span-6 last">
-        <div class="box-holder-four">
-            <div class="flex">
-    <h3>20,000 Leagues Under The Sea</h3>
-    <p>The year 1866 was marked by a bizarre de&shy;vel&shy;op&shy;ment, an unex&shy;plained and downright inexplicable phenomenon that surely no one has forgotten.</p>
-            </div>
-        </div>
-    </div>
+  </div>
+  <div class="span-4 last">&thinsp;</div>
 </div>
 </body>
 </html>

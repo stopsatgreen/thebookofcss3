@@ -1,97 +1,42 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf8">
-<title></title>
-<link rel="stylesheet" href="css/blueprint/screen.css" type="text/css" media="screen, projection">
-<link rel="stylesheet" href="css/blueprint/print.css" type="text/css" media="print">	
-<!--[if lt IE 8]><link rel="stylesheet" href="css/blueprint/ie.css" type="text/css" media="screen, projection"><![endif]-->
-<link rel="stylesheet" href="css/persistent.css" type="text/css" media="screen, projection">
-<style>
-.container { padding-top: 40px; }
-div[class^='box-holder'] {
-    background-color: silver;
-    display: -moz-box;
-    display: -ms-box;
-    display: -webkit-box;
-    height: 330px;
-    width: 100%;
-}
-div.box-holder-one {
-    -moz-box-pack: center;
-    -ms-box-pack: center;
-    -webkit-box-pack: center;
-}
-div.box-holder-two, div.box-holder-three {
-    -moz-box-pack: end;
-    -ms-box-pack: end;
-    -webkit-box-pack: end;
-}
-div.box-holder-three, div.box-holder-four {
-    -moz-box-orient: vertical;
-    -ms-box-orient: vertical;
-    -webkit-box-orient: vertical;
-}
-div.box-holder-four {
-    -moz-box-pack: justify;
-    -ms-box-pack: justify;
-    -webkit-box-pack: justify;
-}
-div.flex {
-    background-color: white;
-    border: 1px solid gray;
-    margin: 10px;
-    padding: 10px;
-    width: 100px;
-    -moz-box-flex: 0;
-    -ms-box-flex: 0;
-    -webkit-box-flex: 0;
-}
-.box-holder-four .flex { width: auto; }
-h3 { font-size: 16px; }
-h3, p { line-height: 18px; margin-bottom: 0; }
-p { color: #333; font-size: 12px; }
-</style>
+  <meta charset="utf8">
+  <meta name="viewport" content="width=device-width">
+  <title>Figure 15-13</title>
+  <link rel="stylesheet" href="css/blueprint/screen.css">
+  <link rel="stylesheet" href="css/persistent.css">
+  <style>
+  #container-a { flex-wrap: wrap; }
+  #container-b { flex-wrap: wrap-reverse; }
+  .ch_15 .flex-item {
+    flex-shrink: 0;
+    width: 250px;
+  }
+  </style>
 </head>
-<body>
+<body class="ch_15">
 <div class="container">
-    <div class="span-5">
-        <div class="box-holder-one">
-            <div class="flex">
-    <h3>20,000 Leagues Under The Sea</h3>
-    <p>The year 1866 was marked by a bizarre de&shy;vel&shy;op&shy;ment, an unex&shy;plained and down&shy;right inex&shy;plicable phe&shy;nom&shy;e&shy;non that surely no one has forgotten.</p>
-            </div>
-        </div>
+  <div class="span-4">&thinsp;</div>
+  <div class="span-16">
+    <div class="flex-container" id="container-a">
+      <div class="flex-item">A</div>
+      <div class="flex-item">B</div>
+      <div class="flex-item">C</div>
     </div>
-    <div class="span-5">
-        <div class="box-holder-two">
-            <div class="flex">
-    <h3>20,000 Leagues Under The Sea</h3>
-    <p>The year 1866 was marked by a bizarre de&shy;vel&shy;op&shy;ment, an unex&shy;plained and down&shy;right inex&shy;plicable phe&shy;nom&shy;e&shy;non that surely no one has forgotten.</p>
-            </div>
-        </div>
+  </div>
+  <div class="span-4 last">&thinsp;</div>
+</div>
+<div class="container">
+  <div class="span-4">&thinsp;</div>
+  <div class="span-16">
+    <div class="flex-container" id="container-b">
+      <div class="flex-item">A</div>
+      <div class="flex-item">B</div>
+      <div class="flex-item">C</div>
     </div>
-    <div class="span-5">
-        <div class="box-holder-three">
-            <div class="flex">
-    <h3>20,000 Leagues Under The Sea</h3>
-    <p>The year 1866 was marked by a bizarre de&shy;vel&shy;op&shy;ment, an unex&shy;plained and down&shy;right inex&shy;plicable phe&shy;nom&shy;e&shy;non that surely no one has forgotten.</p>
-            </div>
-        </div>
-    </div>
-    <div class="span-7">
-        <div class="box-holder-four">
-            <div class="flex">
-    <h3>20,000 Leagues Under The Sea</h3>
-    <p>The year 1866 was marked by a bizarre de&shy;vel&shy;op&shy;ment, an unex&shy;plained and down&shy;right inex&shy;plicable phe&shy;nom&shy;e&shy;non that surely no one has forgotten.</p>
-            </div>
-            <div class="flex">
-    <h3>Great Expectations</h3>
-    <p>My father's family name being Pirrip, and my Christian name Philip, my infant tongue could make of both names nothing longer or more explicit than Pip.</p>
-            </div>
-        </div>
-    </div>
-    <div class="span-2 last"></div>
+  </div>
+  <div class="span-4 last">&thinsp;</div>
 </div>
 </body>
 </html>
