@@ -1,56 +1,42 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf8">
-<title></title>
-<link rel="stylesheet" href="css/blueprint/screen.css" type="text/css" media="screen, projection">
-<link rel="stylesheet" href="css/blueprint/print.css" type="text/css" media="print">	
-<!--[if lt IE 8]><link rel="stylesheet" href="css/blueprint/ie.css" type="text/css" media="screen, projection"><![endif]-->
-<link rel="stylesheet" href="css/persistent.css" type="text/css" media="screen, projection">
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-<script src="http://css-template-layout.googlecode.com/files/jquery.tpl_layout1.1.5.js"></script>
-<script>$(document).ready(function() { $.setTemplateLayout() });</script>
-<style>
-.container { padding-top: 40px; }
-#tpl-holder {
-    background-color: silver;
-    display: "abc";
-}
-div[class^='tpl'] {
-    background-color: white;
-    border: 1px solid gray;
-    margin: 10px;
-    padding: 10px;
-}
-.tpl-one { position: a; }
-.tpl-two { position: b; }
-.tpl-three { position: c; }
-
-h3 { line-height: 21px; }
-h3, p { margin-bottom: 0; }
-p { color: #333; }
-</style>
+  <meta charset="utf8">
+  <meta name="viewport" content="width=device-width">
+  <title>Figure 16-1</title>
+  <link rel="stylesheet" href="css/blueprint/screen.css">
+  <link rel="stylesheet" href="css/persistent.css">
+  <style>
+  .box-model {
+    background-color: #EEE;
+    background-clip: content-box;
+    border: 10px solid gray;
+    border-width: 0 10px;
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 250px;
+  }
+  .border-box {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .box-model p { margin: 0; }
+  </style>
 </head>
-<body>
+<body class="ch_16">
 <div class="container">
-	<div class="span-4">&nbsp;</div>
-    <div class="span-16">
-        <div id="tpl-holder">
-            <div class="tpl-one">
-    <h3>20,000 Leagues Under The Sea</h3>
-    <p>The year 1866 was marked by a bizarre development, an unexplained and downright inexplicable phenomenon that surely no one has forgotten.</p>
-            </div>
-            <div class="tpl-two">
-    <h3>Great Expectations</h3>
-    <p>My father's family name being Pirrip, and my Christian name Philip, my infant tongue could make of both names nothing longer or more explicit than Pip.</p>
-            </div>
-            <div class="tpl-three">
-    <h3>The Hound Of The Baskervilles</h3>
-    <p>Mr. Sherlock Holmes, who was usually very late in the mornings, save upon those not infrequent occasions when he was up all night, was seated at the breakfast table.</p>
-            </div>
-        </div>
+  <div class="span-24">
+    <div class="box-model">
+      <p>All states, all powers, that have held and hold rule over men have been and are either republics or principalities. Principalities are either hereditary, in which the family has been long established; or they are new.</p>
     </div>
-    <div class="span-4 last">&nbsp;</div>
+  </div>
+</div>
+<div class="container">
+  <div class="span-24">
+    <div class="box-model border-box">
+      <p>All states, all powers, that have held and hold rule over men have been and are either republics or principalities. Principalities are either hereditary, in which the family has been long established; or they are new.</p>
+    </div>
+  </div>  
 </div>
 </body>
 </html>

@@ -179,7 +179,7 @@ div[class^='shadow'] {
 .ch_14 .container { padding-top: 80px; }
 
 .d3-parent {
-  outline: 4px dashed silver; 
+  outline: 4px dashed silver;
   -webkit-perspective: 200px;
   perspective: 200px;
 }
@@ -228,4 +228,23 @@ div[class^='shadow'] {
 
 .ch_15 .flex-item:nth-child(even) { background-color: gray; }
 
+/* Chapter 17 */
 
+.ch_17 .grid-container,
+.ch_17 .grid-highlight {
+	outline: 1px solid #333;
+}
+
+.ch_17 .grid-container { display: grid; }
+
+.ch_17 .grid-highlight { height: 100%; }
+
+.ch_17 .grid-item {
+	background-color: #DDD;
+	height: 100%;
+}
+
+.ch_17 .grid-item p {
+	margin: 0;
+	padding: 1em;
+}

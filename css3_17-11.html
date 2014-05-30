@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf8">
+  <meta name="viewport" content="width=device-width">
+  <title>Figure 17-11</title>
+  <link rel="stylesheet" href="css/blueprint/screen.css">
+  <link rel="stylesheet" href="css/persistent.css">
+  <style>
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 80px);
+    grid-auto-flow: column;
+  }
+  .grid-item {
+    overflow: hidden;
+  }
+  .grid-item:nth-child(even) { background-color: #CCC !important; }
+  .item-one { order: 2; }
+  .item-two { order: 3 }
+  </style>
+</head>
+<body class="ch_17">
+<div class="container">
+  <div class="span-12">
+    <div class="grid-container">
+      <div class="grid-item">
+        <p>A merchant, who had three daughters, was setting out on a journey.</p>
+      </div>
+      <div class="grid-item">
+        <p>The eldest wished for pearls; the second for jewels.</p>
+      </div>
+      <div class="grid-item">
+        <p>But the third, who was called Lily, said, “Dear father, bring me a rose.”</p>
+      </div>
+    </div>
+  </div>
+  <div class="span-12 last">
+    <div class="grid-container">
+      <div class="grid-item item-one">
+        <p>A merchant, who had three daughters, was setting out on a journey.</p>
+      </div>
+      <div class="grid-item item-two">
+        <p>The eldest wished for pearls; the second for jewels.</p>
+      </div>
+      <div class="grid-item">
+        <p>But the third, who was called Lily, said, “Dear father, bring me a rose.”</p>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
