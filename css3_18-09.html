@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf8">
+  <meta name="viewport" content="width=device-width">
+  <title>Example 18-9</title>
+  <link rel="stylesheet" href="css/blueprint/screen.css">
+  <link rel="stylesheet" href="css/persistent.css">
+  <style>
+  .hue-rotate {
+    -webkit-filter: hue-rotate(45deg);
+    filter: url('#hue-rotate');
+    filter: hue-rotate(45deg);
+  }
+  </style>
+</head>
+<body class="ch_18">
+<div class="container">
+  <div class="span-4">&thinsp;</div>
+  <div class="span-8">
+    <img src="images/landscape-medium-colour.jpg">
+  </div>
+  <div class="span-8">
+      <img src="images/landscape-medium-colour.jpg" class="hue-rotate">
+  </div>
+  <div class="span-4 last">&thinsp;</div>
+</div>
+<svg>
+  <filter id="hue-rotate">
+    <feColorMatrix type="hueRotate" values="45"/>
+  </filter>
+</svg>
+</body>
+</html>

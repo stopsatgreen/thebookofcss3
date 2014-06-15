@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf8">
+  <meta name="viewport" content="width=device-width">
+  <title>Example 18-5</title>
+  <link rel="stylesheet" href="css/blueprint/screen.css">
+  <link rel="stylesheet" href="css/persistent.css">
+  <style>
+  .span-8 { background: url('images/bunny_sprite.png') repeat 0 0 / 25% auto transparent; }
+  .blend {
+    background-color: transparent;
+    height: 200px;
+    overflow: hidden;
+  }
+  .screen img { mix-blend-mode: multiply; }
+  .isolate { isolation: isolate; }
+  </style>
+</head>
+<body class="ch_18">
+<div class="container">
+  <div class="span-4">&thinsp;</div>
+  <div class="span-8">
+    <div class="blend screen">
+      <img src="images/eyes.jpg">
+    </div>
+  </div>
+  <div class="span-8">
+    <div class="blend screen isolate">
+      <img src="images/eyes.jpg">
+    </div>
+  </div>
+  <div class="span-4 last">&thinsp;</div>
+</div>
+</body>
+</html>

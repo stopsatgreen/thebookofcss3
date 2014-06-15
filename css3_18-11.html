@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf8">
+  <meta name="viewport" content="width=device-width">
+  <title>Example 18-11</title>
+  <link rel="stylesheet" href="css/blueprint/screen.css">
+  <link rel="stylesheet" href="css/persistent.css">
+  <style>
+  .sepia-grayscale {
+    -webkit-filter: sepia(1) grayscale(1);
+    filter: sepia(1) grayscale(1);
+  }
+  .grayscale-sepia {
+    -webkit-filter: grayscale(1) sepia(1);
+    filter: grayscale(1) sepia(1);
+  }
+  </style>
+</head>
+<body class="ch_18">
+<div class="container">
+  <div class="span-4">&thinsp;</div>
+  <div class="span-8">
+      <img src="images/landscape-medium-colour.jpg" class="sepia-grayscale">
+  </div>
+  <div class="span-8">
+    <img src="images/landscape-medium-colour.jpg" class="grayscale-sepia">
+  </div>
+  <div class="span-4 last">&thinsp;</div>
+</div>
+</body>
+</html>

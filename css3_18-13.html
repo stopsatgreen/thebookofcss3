@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf8">
+  <meta name="viewport" content="width=device-width">
+  <title>Example 18-13</title>
+  <link rel="stylesheet" href="css/blueprint/screen.css">
+  <link rel="stylesheet" href="css/persistent.css">
+  <style>
+  img {
+    -webkit-clip-path: polygon(0% 0%, 0% 100%, 100% 0%);
+    clip-path: polygon(0% 0%, 0% 100%, 100% 0%);
+    transition: all 1s;
+  }
+  img:hover {
+    -webkit-clip-path: polygon(100% 100%, 0% 100%, 100% 0%);
+    clip-path: polygon(100% 100%, 0% 100%, 100% 0%);
+  }
+  </style>
+</head>
+<body class="ch_18">
+<div class="container">
+  <div class="span-7">&thinsp;</div>
+  <div class="span-10">
+    <img src="images/eyes.jpg">
+  </div>
+  <div class="span-7 last">&thinsp;</div>
+</div>
+</body>
+</html>

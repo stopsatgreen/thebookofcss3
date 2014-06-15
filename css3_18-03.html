@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf8">
+  <meta name="viewport" content="width=device-width">
+  <title>Example 18-3</title>
+  <link rel="stylesheet" href="css/blueprint/screen.css">
+  <link rel="stylesheet" href="css/persistent.css">
+  <style>
+  .blend {
+    background-color: #f00;
+    background-image: url('images/landscape-300.jpg'), url('images/eyes.jpg');
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+  }
+  .screen-multiply { background-blend-mode: screen, multiply; }
+  .multiply-overlay { background-blend-mode: multiply, overlay; }
+  .overlay-screen { background-blend-mode: overlay, screen; }
+  .blend:hover {
+    background-blend-mode: normal;
+    background-position: 0 0, 100% 100%;
+    background-size: 50% auto;
+  }
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="span-8">
+    <div class="blend screen-multiply"></div>
+  </div>
+  <div class="span-8">
+    <div class="blend multiply-overlay"></div>
+  </div>
+  <div class="span-8 last">
+    <div class="blend overlay-screen"></div>
+  </div>
+</div>
+</body>
+</html>

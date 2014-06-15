@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf8">
+  <meta name="viewport" content="width=device-width">
+  <title>Example 18-7</title>
+  <link rel="stylesheet" href="css/blueprint/screen.css">
+  <link rel="stylesheet" href="css/persistent.css">
+  <style>
+  .brightness {
+    -webkit-filter: brightness(50%);
+    filter: url('#brightness');
+    filter: brightness(50%);
+  }
+  .contrast {
+    -webkit-filter: contrast(50%);
+    filter: url('#contrast');
+    filter: contrast(50%);
+  }
+  </style>
+</head>
+<body class="ch_18">
+<div class="container">
+  <div class="span-8">
+    <img src="images/eyes.jpg">
+  </div>
+  <div class="span-8">
+    <img src="images/eyes.jpg" class="brightness">
+  </div>
+  <div class="span-8 last">
+    <img src="images/eyes.jpg" class="contrast">
+  </div>
+</div>
+<svg>
+  <filter id="brightness">
+    <feComponentTransfer>
+      <feFuncR type="linear" slope="0.5"/>
+      <feFuncG type="linear" slope="0.5"/>
+      <feFuncB type="linear" slope="0.5"/>
+    </feComponentTransfer>
+  </filter>
+  <filter id="contrast">
+    <feComponentTransfer>
+        <feFuncR type="linear" slope="0.5" intercept="0.25"/>
+        <feFuncG type="linear" slope="0.5" intercept="0.25"/>
+        <feFuncB type="linear" slope="0.5" intercept="0.25"/>
+    </feComponentTransfer>
+  </filter>
+</svg>
+</body>
+</html>

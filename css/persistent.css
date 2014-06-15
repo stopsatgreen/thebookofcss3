@@ -248,3 +248,9 @@ div[class^='shadow'] {
 	margin: 0;
 	padding: 1em;
 }
+
+/* Chapter 17 */
+
+.ch_18 .container { padding-top: 10px; }
+
+.ch_18 img { width: 100%; }
