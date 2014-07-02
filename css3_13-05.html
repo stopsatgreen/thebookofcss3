@@ -1,48 +1,49 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf8">
+  <meta charset="utf8">
   <meta name="viewport" content="width=device-width">
-  <title>Figure 13-5</title>
+  <title>Figure 14-5</title>
   <link rel="stylesheet" href="css/blueprint/screen.css">
   <link rel="stylesheet" href="css/persistent.css">
-  <style>
-    .widget-holder {
-        border: 1px solid black;
-        height: 300px;
-        position: relative;
-    }
-    .widget {
-        background-color: silver;
-        height: 100px;
-        left: 75%;
-        position: absolute;
-        top: 10%;
-        width: 100px;
-        -webkit-transition: background-color 4s linear,
-                            left 2s ease-in-out,
-                            top 2s ease-in-out;
-        transition: background-color 4s linear,
-                    left 2s ease-in-out,
-                    top 2s ease-in-out;
-    }
-    .widget-holder:hover .widget {
-        background-color: silver;
-        left: 75%;
-        top: 10%;
-    }
-    </style>
+<style>
+.d3-parent {
+  background-color: silver;
+  outline: none;
+  -webkit-transform: perspective(200px) rotateY(15deg);
+  transform: perspective(200px) rotateY(15deg);
+}
+.d3-child { background-color: transparent; }
+.trans-z1 {
+  -webkit-transform: translateZ(-40px);
+  transform: translateZ(-40px);
+}
+.trans-z2 {
+  -webkit-transform: translateZ(40px);
+  transform: translateZ(40px);
+}
+.d3-parent:hover .d3-child {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+}
+</style>
 </head>
-<body>
-
+<body class="ch_14">
 <div class="container">
-  <div class="span-6">&nbsp;</div>
-  <div class="span-12">
-    <div class="widget-holder">
-      <div class="widget"></div>
+  <div class="span-6">&thinsp;</div>
+  <div class="span-6 d3-parent">
+    <div class="trans-z1 d3-child">
+      <h2>The Book Of</h2>
+      <h1>CSS3</h1>
     </div>
   </div>
-  <div class="span-6 last">&nbsp;</div>
+  <div class="span-6 d3-parent">
+    <div class="trans-z2 d3-child">
+      <h2>The Book Of</h2>
+      <h1>CSS3</h1>
+    </div>
+  </div>
+  <div class="span-6 last">&thinsp;</div>
 </div>
 </body>
 </html>

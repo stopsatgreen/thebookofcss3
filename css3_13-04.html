@@ -3,33 +3,54 @@
 <head>
   <meta charset="utf8">
   <meta name="viewport" content="width=device-width">
-  <title>Figure 13-4</title>
+  <title>Figure 14-4</title>
   <link rel="stylesheet" href="css/blueprint/screen.css">
   <link rel="stylesheet" href="css/persistent.css">
-  <style>
-    .transition {
-        border: 1px solid black;
-        height: 250px;
-        padding: 10px;
-    }
-    h1 {
-        font: bold 300%/250px ChunkFiveRegular, serif;
-        text-align: center;
-        -webkit-transition: font-size 2s ease-out 250ms;
-        transition: font-size 2s ease-out 250ms;
-    }
-    h1:hover { font-size: 1200%; }
-    </style>
+<style>
+.d3-parent {
+  -webkit-perspective: none;
+  perspective: none;
+}
+.trans-1 {
+  -webkit-transform: perspective(1000px) rotateX(30deg) rotateY(45deg);
+  transform: perspective(1000px) rotateX(30deg) rotateY(45deg);
+}
+.trans-2 {
+  -webkit-transform: perspective(250px) rotateX(30deg) rotateY(45deg);
+  transform: perspective(250px) rotateX(30deg) rotateY(45deg);
+}
+.trans-3 {
+  -webkit-transform: perspective(150px) rotateX(30deg) rotateY(45deg);
+  transform: perspective(150px) rotateX(30deg) rotateY(45deg);
+}
+.d3-parent:hover div {
+  -webkit-transform: rotate3d(1,1,1,0deg) perspective(200px);
+  transform: rotate3d(1,1,1,0deg) perspective(200px);
+}
+</style>
 </head>
-<body>
+<body class="ch_14">
 <div class="container">
-  <div class="span-6">&nbsp;</div>
-    <div class="span-12">
-        <div class="transition box-sizing">
-            <h1>CSS3</h1>
-        </div>
+  <div class="span-3">&thinsp;</div>
+  <div class="span-6 d3-parent">
+    <div class="trans-1 d3-child">
+      <h2>The Book Of</h2>
+      <h1>CSS3</h1>
     </div>
-    <div class="span-6 last">&nbsp;</div>
+  </div>
+  <div class="span-6 d3-parent">
+    <div class="trans-2 d3-child">
+      <h2>The Book Of</h2>
+      <h1>CSS3</h1>
+    </div>
+  </div>
+  <div class="span-6 d3-parent">
+    <div class="trans-3 d3-child">
+      <h2>The Book Of</h2>
+      <h1>CSS3</h1>
+    </div>
+  </div>
+  <div class="span-3 last">&thinsp;</div>
 </div>
 </body>
 </html>

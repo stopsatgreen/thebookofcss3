@@ -3,58 +3,53 @@
 <head>
   <meta charset="utf8">
   <meta name="viewport" content="width=device-width">
-  <title>Figure 14-8</title>
+  <title>Figure 13-8</title>
   <link rel="stylesheet" href="css/blueprint/screen.css">
   <link rel="stylesheet" href="css/persistent.css">
-<style>
-.d3-child {
-  -webkit-transform: rotateX(45deg) rotateZ(90deg);
-  transform: rotateX(45deg) rotateZ(90deg);
-}
-.trans-1 {
-  -webkit-perspective-origin: left center;
-  perspective-origin: left center;
-}
-.trans-2 {
-  -webkit-perspective-origin: 100% 100%;
-  perspective-origin: 100% 100%;
-}
-.trans-3 {
-  -webkit-perspective-origin: 75% 25%;
-  perspective-origin: 75% 25%;
-}
-.d3-parent:hover .d3-child {
-  -webkit-transform: none;
-  transform: none;
-}
-</style>
+  <style>
+  @-webkit-keyframes expand {
+      from { border-width: 8px; }
+      50% { border-width: 24px; }
+      to {
+          border-width: 8px;
+          height: 100%;
+          width: 100%;   
+      }
+  }
+  @keyframes expand {
+      from { border-width: 8px; }
+      50% { border-width: 24px; }
+      to {
+          border-width: 8px;
+          height: 100%;
+          width: 100%;   
+      }
+  }
+  .widget-holder {
+      border: 1px solid silver;
+      height: 300px;
+  }
+  .widget {
+      background-color: silver;
+      border: 8px solid black;
+      height: 100%;
+      width: 100%;
+      -webkit-animation: expand 6s ease 1s infinite alternate;
+      animation: expand 6s ease 1s infinite alternate;
+  }
+  .widget-holder .widget {
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+  }
+  </style>
 </head>
-<body class="ch_14">
+<body>
 <div class="container">
-  <div class="span-6 d3-parent">
-    <div class="d3-child">
-      <h2>The Book Of</h2>
-      <h1>CSS3</h1>
+    <div class="span-6">&nbsp;</div>
+    <div class="span-12 widget-holder">
+        <div class="widget box-sizing"></div>
     </div>
-  </div>
-  <div class="span-6 trans-1 d3-parent">
-    <div class="d3-child">
-      <h2>The Book Of</h2>
-      <h1>CSS3</h1>
-    </div>
-  </div>
-  <div class="span-6 trans-2 d3-parent">
-    <div class="d3-child">
-      <h2>The Book Of</h2>
-      <h1>CSS3</h1>
-    </div>
-  </div>
-  <div class="span-6 trans-3 d3-parent last">
-    <div class="d3-child">
-      <h2>The Book Of</h2>
-      <h1>CSS3</h1>
-    </div>
-  </div>
+    <div class="span-6 last">&nbsp;</div>
 </div>
 </body>
 </html>
