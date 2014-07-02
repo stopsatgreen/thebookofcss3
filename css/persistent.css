@@ -67,6 +67,34 @@
         url('../assets/GentiumBasic/GenBasI-webfont.woff') format('woff'),
         url('../assets/GentiumBasic/GenBasI-webfont.ttf')  format('truetype');
 }
+/* Chapter 2 */
+
+body.ch_02 { font-size: 100%; }
+
+.ch_02 .container {
+	margin: 0 auto;
+	width: auto;
+}
+
+.ch_02 h1 {
+	font-size: 2em;
+	line-height: 1.25;
+	padding: 0.375em 0.375em 0;
+	text-align: center;
+}
+
+.ch_02 h2 {
+	background-color: #DDD;
+	border-top: 2px solid #666;
+	font-size: 1.625em;
+	line-height: 1.15384615;
+	padding: 0.25em;
+}
+
+.ch_02 p {
+	line-height: 1.25;
+	margin-bottom: 0;
+}
 
 /* Chapter 4 */
 
@@ -249,7 +277,7 @@ div[class^='shadow'] {
 	padding: 1em;
 }
 
-/* Chapter 17 */
+/* Chapter 18 */
 
 .ch_18 .container { padding-top: 10px; }
 

@@ -4,41 +4,27 @@
 <meta charset="utf8">
 <meta name="viewport" content="user-scalable=no, width=device-width">
 <title>Figure 2-3</title>
+<link rel="stylesheet" href="css/blueprint/screen.css">
 <link rel="stylesheet" href="css/persistent.css">
 <style>
-body { font-family: 'Lucida Grande',Helvetica,Verdana; }
-.container {
-	margin: 0 auto;
-	width: 500px;
-}
+.ch_02 .container { width: 500px; }
 .container div {
 	float: left;
-	margin: 0 15px 0 0;
-	width: 235px;
+	width: 47.5%;
 }
-.container div:last-child { margin: 0 0 0 15px; }
-h2 {
-	background-color: #DDD;
-	border-top: 2px solid black;
-	font-size: 18px;
-	line-height: 38px;
-	padding-left: 3px;
-}
-p {
-    font: 14px/20px 'Lucida Grande',Helvetica,Verdana;
-    margin: 0 0 20px;
-}
-@media only screen and (max-device-width: 320px) {
-    .container { width: auto; }
+.container div:last-child { float: right; }
+@media only screen and (max-device-width: 480px) {
+    .ch_02 .container { width: auto; }
     .container div {
         float: none;
-        margin: 0 !important;
+				margin-bottom: 1em;
         width: auto;
     }
+		.ch_02 p { padding: 0 0.5em; }
 }
 </style>
 </head>
-<body>
+<body class="ch_02">
 <div class="container">
     <div>
         <h2>The Carpet-Bag (One)</h2>
