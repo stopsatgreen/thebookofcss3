@@ -3,34 +3,40 @@
 <head>
 <meta charset="utf8">
 <meta name="viewport" content="user-scalable=no, width=device-width">
-<title>Figure 2-4</title>
+<title>Figure 2-5</title>
 <link rel="stylesheet" href="css/persistent.css" type="text/css" media="screen, projection">
 <style>
 body { font-family: 'Lucida Grande',Helvetica,Verdana; }
-ul, li { margin: 0; padding: 0; }
-ul { list-style: none; overflow: hidden; }
+ul, li {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  border: 1px solid black;
+  list-style: none;
+}
 li {
-    border: 1px solid black;
-    border-right-width: 0;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
+    border-bottom: 1px solid black;
     box-sizing: border-box;
     color: black;
-    float: left;
     font: 14px/20px 'Lucida Grande',Helvetica,Verdana;
     padding: 5px 0;
     text-align: center;
-    width: 20%;
 }
-li:last-child { border-right-width: 1px; }
-li a { color: inherit; }
-@media only screen and (orientation:portrait) {
+li:last-child { border-bottom-width: 0; }
+li a {
+  color: inherit;
+  text-decoration: none;
+}
+@media only screen and (orientation:landscape) {
+    ul { overflow: hidden; }
     li {
-        float: none;
-        border-width: 1px 1px 0;
-        width: 100%;
+        float: left;
+        border-bottom-width: 0;
+        border-right: 1px solid black;
+        width: 20%;
     }
-    li:last-child { border-bottom-width: 1px; }
+    li:last-child { border-right-width: 0; }
 }
 </style>
 <!--link href="css/css3_02-02a.css" media="screen and (min-device-width: 400px)" rel="stylesheet"-->
