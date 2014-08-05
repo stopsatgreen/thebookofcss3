@@ -3,27 +3,43 @@
 <head>
   <meta charset="utf8">
   <meta name="viewport" content="width=device-width">
-  <title>Example 18-13</title>
+  <title>Example 18-14</title>
   <link rel="stylesheet" href="css/blueprint/screen.css">
   <link rel="stylesheet" href="css/persistent.css">
   <style>
-  .mask {
-    -webkit-mask: url('images/white-black.png') 50% 50% / 100% auto;
-    clip-path: rectangle(10px, 10px, 50%, 100px, 20px);
+  .clip-holder { border: 1px solid black; }
+  .clip-holder img { display: block; }
+  .clip-circ {
+    -webkit-clip-path: circle(50%, 50%, 75px);
+    clip-path: url('#clipping');
+    clip-path: circle(50%, 50%, 75px);
+  }
+  .clip-poly {
+    -webkit-clip-path: polygon(0% 0%, 0% 100%, 100% 0%);
+    clip-path: polygon(0% 0%, 0% 100%, 100% 0%);
   }
   </style>
 </head>
 <body class="ch_18">
 <div class="container">
-  <div class="span-8">
-      <img src="images/landscape-colour.jpg">
+  <div class="span-4">&thinsp;</div>
+  <div class="span-8 clip-holder">
+    <img src="images/eyes.jpg" class="clip-circ">
   </div>
-  <div class="span-8">
-    <img src="images/white-black.png">
+  <div class="span-8 clip-holder last">
+    <img src="images/eyes.jpg" class="clip-poly">
   </div>
-  <div class="span-8 last">
-    <img src="images/landscape-colour.jpg" class="mask">
-  </div>
+  <div class="span-4 last">&thinsp;</div>
 </div>
+<svg>
+  <defs>
+    <clipPath id="clipping" clipPathUnits="objectBoundingBox">
+      <circle cx="0.5" cy="0.5" r="0.5" />
+    </clipPath>
+    <clipPath id="clipping-alt" clipPathUnits="objectBoundingBox">
+      <circle cx="0.5" cy="0.5" r="1" />
+    </clipPath>
+  </defs>
+</svg>
 </body>
 </html>
