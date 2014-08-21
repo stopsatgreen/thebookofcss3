@@ -10,8 +10,12 @@
   .clip-holder { border: 1px solid black; }
   .clip-holder img { display: block; }
   .clip-rect {
-    -webkit-clip-path: rectangle(10px, 10px, 50%, 100px, 20px);
-    clip-path: rectangle(10px, 10px, 50%, 100px, 20px);
+    -webkit-clip-path: inset-rectangle(25px, 25px, 25px, 25px); /* Safari */
+    -webkit-clip-path: inset(25px); /* Chrome */
+  }
+  .clip-rnd {
+    -webkit-clip-path: inset-rectangle(25px, 25px, 25px, 25px, 20px); /* Safari */
+    -webkit-clip-path: inset(25px round 20px); /* Chrome */
   }
   </style>
 </head>
@@ -19,10 +23,10 @@
 <div class="container">
   <div class="span-4">&thinsp;</div>
   <div class="span-8 clip-holder">
-      <img src="images/eyes.jpg">
+      <img src="images/eyes.jpg" class="clip-rect">
   </div>
   <div class="span-8 clip-holder">
-    <img src="images/eyes.jpg" class="clip-rect">
+    <img src="images/eyes.jpg" class="clip-rnd">
   </div>
   <div class="span-4 last">&thinsp;</div>
 </div>

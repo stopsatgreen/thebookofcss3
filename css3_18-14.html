@@ -9,37 +9,18 @@
   <style>
   .clip-holder { border: 1px solid black; }
   .clip-holder img { display: block; }
-  .clip-circ {
-    -webkit-clip-path: circle(50%, 50%, 75px);
-    clip-path: url('#clipping');
-    clip-path: circle(50%, 50%, 75px);
-  }
   .clip-poly {
-    -webkit-clip-path: polygon(0% 0%, 0% 100%, 100% 0%);
-    clip-path: polygon(0% 0%, 0% 100%, 100% 0%);
+    -webkit-clip-path: polygon(0% 0%, 0% 100%, 100% 0%); /* Safari */
   }
   </style>
 </head>
 <body class="ch_18">
 <div class="container">
-  <div class="span-4">&thinsp;</div>
+  <div class="span-8">&thinsp;</div>
   <div class="span-8 clip-holder">
-    <img src="images/eyes.jpg" class="clip-circ">
-  </div>
-  <div class="span-8 clip-holder last">
     <img src="images/eyes.jpg" class="clip-poly">
   </div>
-  <div class="span-4 last">&thinsp;</div>
+  <div class="span-8 last">&thinsp;</div>
 </div>
-<svg>
-  <defs>
-    <clipPath id="clipping" clipPathUnits="objectBoundingBox">
-      <circle cx="0.5" cy="0.5" r="0.5" />
-    </clipPath>
-    <clipPath id="clipping-alt" clipPathUnits="objectBoundingBox">
-      <circle cx="0.5" cy="0.5" r="1" />
-    </clipPath>
-  </defs>
-</svg>
 </body>
 </html>

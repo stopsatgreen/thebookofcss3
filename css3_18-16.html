@@ -3,27 +3,25 @@
 <head>
   <meta charset="utf8">
   <meta name="viewport" content="width=device-width">
-  <title>Example 18-13</title>
+  <title>Example 18-16</title>
   <link rel="stylesheet" href="css/blueprint/screen.css">
   <link rel="stylesheet" href="css/persistent.css">
   <style>
-  .mask {
-    -webkit-mask: url('images/white-black.png') 50% 50% / 100% auto;
-    clip-path: rectangle(10px, 10px, 50%, 100px, 20px);
+  .clip-holder { border: 1px solid black; }
+  .clip-holder img { display: block; }
+  .clip-rect {
+    -webkit-clip-path: rectangle(10px, 10px, 50%, 100px, 20px); /* Safari */
   }
   </style>
 </head>
 <body class="ch_18">
 <div class="container">
-  <div class="span-8">
-      <img src="images/landscape-colour.jpg">
+  <div class="span-8">&thinsp;</div>
+  <div class="span-8 clip-holder">
+    <img src="images/eyes.jpg" class="clip-rect">
   </div>
-  <div class="span-8">
-    <img src="images/white-black.png">
-  </div>
-  <div class="span-8 last">
-    <img src="images/landscape-colour.jpg" class="mask">
-  </div>
+  <div class="span-8 last">&thinsp;</div>
 </div>
+
 </body>
 </html>
