@@ -8,13 +8,15 @@
   <link rel="stylesheet" href="css/persistent.css">
   <style>
   .grid-container {
-    grid-template-areas: 'a b b' 'a c d';
+    grid-template-areas: 'nav head head' 'nav main side';
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 80px);
   }
-  .grid-item {
-    grid-area: b;
-    z-index: 2;
+  .grid-item { z-index: 2; }
+  .grid-head { grid-area: head; }
+  .grid-nav {
+    background-color: #BBB !important;
+    grid-area: nav;
   }
   </style>
 </head>
@@ -25,8 +27,11 @@
     <div class="grid-container">
       <div class="grid-highlight" style="grid-column: 2; grid-row: 1 / 4;"></div>
       <div class="grid-highlight" style="grid-column: 1 / 4;"></div>
-      <div class="grid-item">
+      <div class="grid-item grid-head">
         <p>A merchant, who had three daughters, was once setting out upon a journey; but before he went he asked each daughter what gift he should bring back for her.</p>
+      </div>
+      <div class="grid-item grid-nav">
+        <p>The eldest wished for pearls; the second for jewels; but the third, who was called Lily, said, ‘Dear father, bring me a rose.’</p>
       </div>
     </div>
   </div>
