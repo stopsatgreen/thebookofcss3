@@ -3,17 +3,17 @@
 <head>
   <meta charset="utf8">
   <meta name="viewport" content="width=device-width">
-  <title>Example 18-19</title>
+  <title>Example 18-d</title>
   <link rel="stylesheet" href="css/blueprint/screen.css">
   <link rel="stylesheet" href="css/persistent.css">
   <style>
-  .clip-circ {
-    -webkit-clip-path: circle(50%, 50%, 75px);
-    clip-path: circle(50%, 50%, 75px);
+  .sepia-grayscale {
+    -webkit-filter: sepia(1) grayscale(1);
+    filter: sepia(1) grayscale(1);
   }
-  .drop-shadow {
-    -webkit-filter: drop-shadow(5px 5px 5px black);
-    filter: drop-shadow(5px 5px 5px black)
+  .grayscale-sepia {
+    -webkit-filter: grayscale(1) sepia(1);
+    filter: grayscale(1) sepia(1);
   }
   </style>
 </head>
@@ -21,10 +21,10 @@
 <div class="container">
   <div class="span-4">&thinsp;</div>
   <div class="span-8">
-    <img src="images/eyes.jpg" class="clip-circ drop-shadow">
+      <img src="images/landscape-medium-colour.jpg" class="sepia-grayscale">
   </div>
-  <div class="span-8 drop-shadow">
-    <img src="images/eyes.jpg" class="clip-circ">
+  <div class="span-8">
+    <img src="images/landscape-medium-colour.jpg" class="grayscale-sepia">
   </div>
   <div class="span-4 last">&thinsp;</div>
 </div>

@@ -7,26 +7,20 @@
   <link rel="stylesheet" href="css/blueprint/screen.css">
   <link rel="stylesheet" href="css/persistent.css">
   <style>
-  .sepia-grayscale {
-    -webkit-filter: sepia(1) grayscale(1);
-    filter: sepia(1) grayscale(1);
-  }
-  .grayscale-sepia {
-    -webkit-filter: grayscale(1) sepia(1);
-    filter: grayscale(1) sepia(1);
+  .clip-holder { border: 1px solid black; }
+  .clip-holder img { display: block; }
+  .clip-poly {
+    -webkit-clip-path: polygon(0% 0%, 0% 100%, 100% 0%); /* Safari */
   }
   </style>
 </head>
 <body class="ch_18">
 <div class="container">
-  <div class="span-4">&thinsp;</div>
-  <div class="span-8">
-      <img src="images/landscape-medium-colour.jpg" class="sepia-grayscale">
+  <div class="span-8">&thinsp;</div>
+  <div class="span-8 clip-holder">
+    <img src="images/eyes.jpg" class="clip-poly">
   </div>
-  <div class="span-8">
-    <img src="images/landscape-medium-colour.jpg" class="grayscale-sepia">
-  </div>
-  <div class="span-4 last">&thinsp;</div>
+  <div class="span-8 last">&thinsp;</div>
 </div>
 </body>
 </html>

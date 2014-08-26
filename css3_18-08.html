@@ -3,57 +3,39 @@
 <head>
   <meta charset="utf8">
   <meta name="viewport" content="width=device-width">
-  <title>Example 18-8</title>
+  <title>Example 18-08</title>
   <link rel="stylesheet" href="css/blueprint/screen.css">
   <link rel="stylesheet" href="css/persistent.css">
   <style>
-  .grayscale {
-    -webkit-filter: grayscale(100%);
-    filter: url('#grayscale');
-    filter: grayscale(100%);
+  .drop-shadow {
+    -webkit-filter: drop-shadow(5px 5px 3px gray);
+    filter: url('#drop-shadow');
+    filter: drop-shadow(5px 5px 3px gray);
   }
-  .sepia {
-    -webkit-filter: sepia(100%);
-    filter: url('#sepia');
-    filter: sepia(100%);
-  }
-  .saturate {
-    -webkit-filter: saturate(0%);
-    filter: url('#saturate');
-    filter: saturate(200%);
-  }
+  .box-shadow { box-shadow: 5px 5px 3px gray; }
   </style>
 </head>
 <body class="ch_18">
 <div class="container">
-  <div class="span-6">
-    <img src="images/landscape-medium-colour.jpg">
+  <div class="span-4">&thinsp;</div>
+  <div class="span-8">
+      <img src="images/monkey.min.svg" class="drop-shadow">
   </div>
-  <div class="span-6">
-    <img src="images/landscape-medium-colour.jpg" class="grayscale">
+  <div class="span-8">
+    <img src="images/monkey.min.svg" class="box-shadow">
   </div>
-  <div class="span-6">
-    <img src="images/landscape-medium-colour.jpg" class="sepia">
-  </div>
-  <div class="span-6 last">
-    <img src="images/landscape-medium-colour.jpg" class="saturate">
-  </div>
+  <div class="span-4 last">&thinsp;</div>
 </div>
 <svg>
-  <filter id="grayscale">
-    <feColorMatrix type="matrix" values="0.2126 0.7152 0.0722 0 0
-                                         0.2126 0.7152 0.0722 0 0
-                                         0.2126 0.7152 0.0722 0 0
-                                         0 0 0 1 0"/>
-  </filter>
-  <filter id="sepia">
-    <feColorMatrix type="matrix" values="0.393 0.769 0.189 0 0
-                                         0.349 0.686 0.168 0 0
-                                         0.272 0.534 0.131 0 0
-                                         0 0 0 1 0"/>
-  </filter>
-  <filter id="saturate">
-    <feColorMatrix type="saturate" values="2"/>
+  <filter id="drop-shadow">
+    <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+    <feOffset dx="5" dy="5" result="offsetblur"/>
+    <feFlood flood-color="gray"/>
+    <feComposite in2="offsetblur" operator="in"/>
+    <feMerge>
+      <feMergeNode/>
+      <feMergeNode in="SourceGraphic"/>
+    </feMerge>
   </filter>
 </svg>
 </body>
