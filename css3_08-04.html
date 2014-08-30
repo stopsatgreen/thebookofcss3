@@ -7,12 +7,15 @@
   <link rel="stylesheet" href="css/blueprint/screen.css">
   <link rel="stylesheet" href="css/persistent.css">
 <style>
+.container { padding-top: 10px; }
 h2 {
-    background-image: url('images/monkey.svg'), url('images/landscape-colour.jpg');
-    background-position: 95% 85%, 50% 50%;
-    background-repeat: no-repeat;
-    background-size: auto 60%, auto auto;
-    
+    background:
+        url('images/monkey.svg') no-repeat 95% 85%,
+        url('images/monkey.svg') no-repeat 50% 80%,
+        url('images/monkey.svg') no-repeat 10% 100%,
+        url('images/landscape-colour.jpg') no-repeat 50% 50% #F00;
+    background-size: auto 80%, auto 15%, auto 50%, auto;
+
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     color: white;
@@ -28,7 +31,7 @@ h2 {
 <body>
 <div class="container">
     <div class="span-24 last">
-        <h2>Monkey in a landscape</h2>
+        <h2>Monkeys in a landscape</h2>
     </div>
 </div>
 </body>

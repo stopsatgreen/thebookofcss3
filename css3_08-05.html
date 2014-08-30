@@ -7,32 +7,32 @@
   <link rel="stylesheet" href="css/blueprint/screen.css">
   <link rel="stylesheet" href="css/persistent.css">
 <style>
-.container { padding-top: 10px; }
-h2 {
-    background:
-        url('images/monkey.svg') no-repeat 95% 85%,
-        url('images/monkey.svg') no-repeat 50% 80%,
-        url('images/monkey.svg') no-repeat 10% 100%,
-        url('images/landscape-colour.jpg') no-repeat 50% 50% #F00;
-    background-size: auto 80%, auto 15%, auto 50%, auto;
-
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    color: white;
-    font-weight: bold;
-    font-size: 360%;
-    height: 350px;
-    line-height: 1;
-    padding: 25px;
-    text-shadow: 0 0 1px black;
+.monkey-1, .monkey-2 {
+    background: #F00 url('images/monkey.svg') no-repeat 50% 50%;
+    height: 140px;
+}
+.monkey-1 {
+    -moz-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+}
+.monkey-2 {
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
 }
 </style>
 </head>
 <body>
 <div class="container">
-    <div class="span-24 last">
-        <h2>Monkeys in a landscape</h2>
+	<div class="span-6">&nbsp;</div>
+    <div class="span-6">
+      <div class="monkey-1"></div>
     </div>
+    <div class="span-6">
+      <div class="monkey-2"></div>
+    </div>
+	<div class="span-6 last">&nbsp;</div>
 </div>
 </body>
 </html>

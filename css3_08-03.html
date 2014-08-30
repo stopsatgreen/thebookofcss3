@@ -1,22 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf8">
+  <meta charset="utf8">
   <meta name="viewport" content="width=device-width">
   <title>Example 8-3</title>
   <link rel="stylesheet" href="css/blueprint/screen.css">
   <link rel="stylesheet" href="css/persistent.css">
 <style>
-.ch_08 .bunny { background-repeat: round space; }
+h2 {
+    background-image: url('images/monkey.svg'), url('images/landscape-colour.jpg');
+    background-position: 95% 85%, 50% 50%;
+    background-repeat: no-repeat;
+    background-size: auto 60%, auto auto;
+
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    color: white;
+    font-weight: bold;
+    font-size: 360%;
+    height: 350px;
+    line-height: 1;
+    padding: 25px;
+    text-shadow: 0 0 1px black;
+}
 </style>
 </head>
-<body class="ch_08">
+<body>
 <div class="container">
-    <div class="span-6">&nbsp;</div>
-    <div class="span-12">
-    	<div class="bunny"></div>
+    <div class="span-24 last">
+        <h2>Monkey in a landscape</h2>
     </div>
-    <div class="span-6 last">&nbsp;</div>
 </div>
 </body>
 </html>
