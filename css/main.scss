@@ -1,0 +1,262 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+@import 'variables';
+
+/* Reset */
+
+html, body, div, h1, h2, h3, p, ul, li, blockquote {
+    margin: 0;
+    padding: 0;
+}
+
+ul { list-style: none; }
+
+a { color: inherit; }
+
+/* Layout */
+
+html,
+body { font-size: 10px; }
+
+body {
+    background-color: #97B6CB;
+    font-family: Georgia, serif;
+    min-height: 100%;
+}
+
+.article,
+.footer {
+    background-color: white;
+    border-color: #888;
+    border-style: solid;
+    border-width: 1px 0 0;
+    padding: 20px 19px;
+}
+
+.footer { clear: both; }
+
+/* Navigation */
+
+.menu {
+  line-height: 2.333;
+  margin-bottom: 20px;
+
+  & li {
+    border-color: rgba(255,255,255,0.5);
+    border-style: dashed;
+    border-width: 0 0 1px;
+    color: rgba(0,0,0,0.6);
+    font-family: sans-serif;
+    font-size: 180%;
+
+    & a {
+      display: block;
+      padding: 0 20px;
+      text-decoration: none;
+    }
+  }
+}
+
+/* Type */
+
+h1 {
+    color: white;
+    font: bold 300%/1 sans-serif;
+    letter-spacing: -1px;
+    margin: 0 20px 20px;
+    text-shadow: 2px 2px 1px rgba(0,0,0,0.33);
+}
+
+h2 {
+  border-bottom: 1px solid #ccc;
+  font-size: 220%;
+  font-weight: bold;
+  line-height: 1.432;
+  margin-bottom: 0.955em;
+
+  &:not(:first-of-type) {
+    border-top: 1px solid #ccc;
+    margin-top: 0.79167em;
+  }
+}
+
+h3, p,
+.article li,
+.examples li {
+    font-size: 150%;
+    line-height: 1.4;
+}
+
+p { margin-bottom: 1.4em; }
+
+#cta p {
+  color: rgba(0,0,0,0.85);
+  font-size: 140%;
+  line-height: 1.172;
+	margin-bottom: 1.172em;
+}
+
+.footer p {
+  color: rgba(0,0,0,0.75);
+  margin-bottom: 0;
+}
+
+ul.examples, ul.countries { margin-bottom: 21px; }
+
+.examples li {
+  font-style: italic;
+
+  & a { font-style: normal; }
+}
+
+.countries li {
+  background-position: 0 50%;
+  background-repeat: no-repeat;
+  display: block;
+  padding-left: 1.5em;
+
+  &.uk { background-image: url('images/gb.png'); }
+
+  &.us { background-image: url('images/us.png'); }
+}
+
+code, pre {
+  font-family: monospace;
+  font-size: 13px;
+}
+
+pre {
+  @include linear-gradient(#efefef,#fff,#efefef);
+  border: 1px solid #aaa;
+  border-width: 1px 0;
+  line-height: 1.5;
+  margin: 0 0 1.75em;
+  padding: 0 10px 1px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+blockquote { margin-left: 3em; }
+
+/* Tables */
+
+table { margin-bottom: 20px; }
+
+tr { font-size: 160%; }
+
+thead th,
+tbody td {
+	border-left: 1px solid #ddd;
+	line-height: 1.5;
+}
+
+thead th { border-bottom: 1px solid #ddd; }
+
+thead th:not(:first-child),
+tbody td { width: 15% }
+
+thead th:first-child { border-left: none; }
+
+tbody tr:nth-child(even) { background-color: #efefef; }
+
+tbody th { padding-left: 0.5em; text-align: left; }
+
+tbody td { text-align: center; }
+
+.invalid th,
+.invalid td { color: #800000; }
+
+/* Home Article */
+
+#cover { display: none; }
+
+/* Home Page */
+
+.home #blurb p:first-child {
+    font-size: 180%;
+    line-height: 1.458;
+    margin-bottom: 1.1667em;
+}
+
+#cta .coming-soon { display: none; }
+
+.tweets li {
+	font-size: 86.66667%;
+	margin-bottom: 0.5em;
+}
+
+/* About Page */
+
+.about #blurb img {
+  -webkit-box-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+  box-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+  float: left;
+  margin: 0 10px 10px 0;
+}
+
+/* Buy Online Page */
+
+a.buyfrom {
+	background-position: 0 50%;
+	background-repeat: no-repeat;
+  display: inline-block;
+  padding-left: 1.5em;
+}
+
+a.nostarch { background-image: url('images/nostarch-icon.png'); }
+
+a.oreilly { background-image: url('images/oreilly-icon.png'); }
+
+/* Resources Page */
+
+#links li h3, #links li li { font-size: 100%; }
+
+#links ul ul { margin-bottom: 20px; }
+
+/* Chapter Page */
+
+.version-note {
+
+  & h2 { padding-top: 0; }
+
+  & p {
+    max-width: 650px;
+
+    &:last-child { margin-bottom: 0; }
+  }
+}
+
+/* Blog Page */
+
+.blog h2 a { text-decoration: none; }
+
+.blog h2 a:hover { text-decoration: underline; }
+
+.widget-area > ul > li { font-size: 100%; }
+
+#nav-below {
+    border-top: 1px solid #eee;
+    margin-top: 1.4em;
+    overflow: hidden;
+    padding-top: 1.4em;
+}
+
+#nav-below > span {
+    display: block;
+    float: left;
+    width: 50%;
+}
+
+.single .see-all {
+    border-top: 1px solid #eee;
+    margin-bottom: 0;
+    padding-top: 1.4em;
+    text-align: center;
+}
+
+@media (min-width: 641px) {
+  @import 'desktop';
+}

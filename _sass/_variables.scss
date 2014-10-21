@@ -1,0 +1,59 @@
+$color-nav-core: #F7EB5B;
+$color-nav-light: #FFFFC0;
+
+// Mixins
+
+// Flexbox
+
+@mixin flex-display() {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+@mixin flex($val) {
+  -ms-flex: $val;
+  -webkit-flex: $val;
+  flex: $val;
+}
+
+// Transforms
+
+@mixin transform($val) {
+  -ms-transform: $val;
+  -webkit-transform: $val;
+  transform: $val;
+}
+
+// Columns
+
+@mixin column-count($val) {
+  -moz-column-count: $val;
+  -webkit-column-count: $val;
+  column-count: $val;
+}
+
+@mixin column-gap($val) {
+  -moz-column-gap: $val;
+  -webkit-column-gap: $val;
+  column-gap: $val;
+}
+
+@mixin column-rule($val) {
+  -moz-column-rule: $val;
+  -webkit-column-rule: $val;
+  column-rule: $val;
+}
+
+@mixin column-span($val) {
+  -moz-column-span: $val;
+  -webkit-column-span: $val;
+  column-span: $val;
+}
+
+// Gradients
+
+@mixin linear-gradient($color-stops...) {
+  background: -webkit-linear-gradient($color-stops);
+  background: linear-gradient($color-stops);
+}
