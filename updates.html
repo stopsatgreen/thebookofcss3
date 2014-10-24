@@ -1,0 +1,47 @@
+---
+layout: default
+title: Updates &amp; Errata
+permalink: /updates/
+class: blog
+---
+
+<div class="section" role="main">
+{% for post in site.posts %}
+  <div class="hentry">
+		<h2 class="entry-title"><a href="{{ post.url }}" rel="bookmark">{{ post.title }}</a></h2>
+    {{ post.content }}
+    <p class="entry-date"><i>— {{ post.date | date: "%-d %B, %Y" }}</i></p>
+  </div>
+{% endfor %}
+
+{% if paginator.next_page or paginator.previous_page %}
+  <p id="nav-below" class="navigation">
+{% if paginator.previous_page %}
+    <span class="nav-previous"><a href="{{ previous_page_path }}"><span class="meta-nav">←</span> Older posts</a></span>
+{% else %}
+		<span class="nav-next"><a href="{{ next_page_path }}"><span class="meta-nav">→</span> Newer posts</a></span>
+{% endif %}
+	</p><!-- #nav-below -->
+{% endif %}
+</div>
+
+<div class="aside">
+  <p>This page lists errata from the book (hope­fully not too much!), changes to the spe­cific­a­tions since pub­lic­a­tion, and brand new features.</p>
+  <h3 class="widget-title">Categories</h3>
+  <ul class="widget-categories">
+    <li class="cat-item cat-item-6"><a href="{{ site.baseurl }}/category/chapters/chapter-02/" title="View all posts filed under Chapter 02">Chapter 02</a></li>
+    <li class="cat-item cat-item-33"><a href="{{ site.baseurl }}/category/chapters/chapter-05/" title="View all posts filed under Chapter 05">Chapter 05</a></li>
+    <li class="cat-item cat-item-31"><a href="{{ site.baseurl }}/category/chapters/chapter-06/" title="View all posts filed under Chapter 06">Chapter 06</a></li>
+    <li class="cat-item cat-item-32"><a href="{{ site.baseurl }}/category/chapters/chapter-07/" title="View all posts filed under Chapter 07">Chapter 07</a></li>
+    <li class="cat-item cat-item-34"><a href="{{ site.baseurl }}/category/chapters/chapter-08/" title="View all posts filed under Chapter 08">Chapter 08</a></li>
+    <li class="cat-item cat-item-39"><a href="{{ site.baseurl }}/category/chapters/chapter-09/" title="View all posts filed under Chapter 09">Chapter 09</a></li>
+    <li class="cat-item cat-item-15"><a href="{{ site.baseurl }}/category/chapters/chapter-10/" title="View all posts filed under Chapter 10">Chapter 10</a></li>
+    <li class="cat-item cat-item-16"><a href="{{ site.baseurl }}/category/chapters/chapter-11/" title="View all posts filed under Chapter 11">Chapter 11</a></li>
+    <li class="cat-item cat-item-17"><a href="{{ site.baseurl }}/category/chapters/chapter-12/" title="View all posts filed under Chapter 12">Chapter 12</a></li>
+    <li class="cat-item cat-item-18"><a href="{{ site.baseurl }}/category/chapters/chapter-13/" title="View all posts filed under Chapter 13">Chapter 13</a></li>
+    <li class="cat-item cat-item-19"><a href="{{ site.baseurl }}/category/chapters/chapter-14/" title="View all posts filed under Chapter 14">Chapter 14</a></li>
+    <li class="cat-item cat-item-20"><a href="{{ site.baseurl }}/category/chapters/chapter-15/" title="View all posts filed under Chapter 15">Chapter 15</a></li>
+    <li class="cat-item cat-item-30"><a href="{{ site.baseurl }}/category/errata/" title="View all posts filed under Errata">Errata</a></li>
+    <li class="cat-item cat-item-1"><a href="{{ site.baseurl }}/category/updates/" title="View all posts filed under Updates">Updates</a></li>
+  </ul>
+</div>

@@ -13,3 +13,4 @@ github_username:  stopsatgreen
 
 # Build settings
 markdown: kramdown
+paginate: 10

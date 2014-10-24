@@ -262,18 +262,10 @@ h1 {
 
 .post p:last-of-type, .container .category-errata:last-child { margin-bottom: 0; }
 
-ul.xoxo { overflow: hidden; }
-
-li.widget_categories ul {
-    -moz-column-count: 2;
-    -moz-column-gap: 30px;
-    -moz-column-rule: 1px solid #ddd;
-    -webkit-column-count: 2;
-    -webkit-column-gap: 30px;
-    -webkit-column-rule: 1px solid #ddd;
-    column-count: 2;
-    column-gap: 30px;
-    column-rule: 1px solid #ddd;
+.widget-categories {
+  @include column-count(2);
+  @include column-gap(30px);
+  @include column-rule(1px solid #ddd);
 }
 
 li.widget_text p {
