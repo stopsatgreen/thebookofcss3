@@ -1,0 +1,74 @@
+---
+layout: chapter
+title: Chapter 5
+---
+
+
+<div class="section">
+  <h2>Examples</h2>
+  <ul class="examples">
+    <li><a href="{{ site.baseurl }}/examples/css3_05-01.html">Figure 5-1</a>: The <em>ChunkFive</em> font, called using the <code>@font-face</code> rule, compared to the page default font</li>
+    <li><a href="{{ site.baseurl }}/examples/css3_05-02.html">Figure 5-2</a>: <em>Gentium Basic Regular</em> and <em>Italic</em> applied using <code>@font-face</code></li>
+    <li><a href="{{ site.baseurl }}/examples/css3_05-03.html">Figure 5-3</a>: Comparing an artificial italic with a true italic font face</li>
+    <li><a href="{{ site.baseurl }}/examples/css3_05-04.html">Figure 5-4</a>: Text using “web-safe” fonts and using different web fonts</li>
+    <li><a href="{{ site.baseurl }}/examples/css3_05-05.html">Figure 5-5</a>: The effect of <code>font-size-adjust</code> on the <em>Impact</em> font</li>
+    <li><a href="{{ site.baseurl }}/examples/css3_05-07.html">Figure 5-7</a>: The second example uses the narrow font face because of the effect of the <em>font-stretch</em> property</li>
+    <li><a href="{{ site.baseurl }}/examples/css3_05-08_10.html">Figure 5-8</a>: The lower example uses OpenType’s own small caps feature</li>
+    <li><a href="{{ site.baseurl }}/examples/css3_05-08_10.html">Figure 5-9</a>: Comparing OpenType ligatures: (from top) none, common, and discretionary</li>
+    <li><a href="{{ site.baseurl }}/examples/css3_05-08_10.html">Figure 5-10</a>: Text with kerning disabled and enabled using the <code>font-kerning</code> property</li>
+  </ul>
+</div>
+<div class="section">
+  <h2>Browser Support</h2>
+  <table width="100%" border="0" cellpadding="0" cellspacing="0">
+    <thead>
+      <tr>
+        <th></th>
+        <th>Chrome</th>
+        <th>Firefox</th>
+        <th>Safari</th>
+        <th>IE</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th><code>@font-face</code></th>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>Yes</td>
+      </tr>
+      <tr>
+        <th><code>font-size-adjust</code></th>
+        <td>No</td>
+        <td>Yes</td>
+        <td>No</td>
+        <td>No</td>
+      </tr>
+      <tr>
+        <th><code>font-stretch</code></th>
+        <td>No</td>
+        <td>Yes</td>
+        <td>No</td>
+        <td>Yes</td>
+      </tr>
+      <tr>
+        <th><code>font-feature-settings</code></th>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>No</td>
+        <td>IE10</td>
+      </tr>
+      <tr>
+        <th><code><em>font-variant-*</em></code></th>
+        <td>Yes†</td>
+        <td>No</td>
+        <td>Yes†</td>
+        <td>No</td>
+      </tr>
+    </tbody>
+  </table>
+  <ul class="table-legend">
+    <li>† Requires vendor prefix.</li>
+  </ul>
+</div>

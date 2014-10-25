@@ -3,9 +3,7 @@ title: The Book of CSS3, 2nd Edition
 author: Peter Gasston
 email: peter@broken-links.com
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Companion site for The Book of CSS3 by Peter Gasston for No Starch Press. Example files, updates, and errata.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://stopsatgreen.github.io/thebookofcss3" # the base hostname & protocol for your site
 twitter_username: stopsatgreen

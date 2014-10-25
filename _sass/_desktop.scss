@@ -9,26 +9,28 @@ body {
 }
 
 .container {
-    margin: 0 auto;
-    padding: 10px 0 30px;
-    position: relative;
-    width: 960px;
+  margin: 0 auto;
+  padding: 10px 0 30px;
+  position: relative;
+  max-width: 960px;
 }
 
 .article {
-    margin-bottom: 20px;
-    overflow: hidden;
-    width: 920px;
-}
+  margin-bottom: 20px;
+  overflow: hidden;
+  width: 920px;
 
-.article > div { float: left; }
+	& > div { float: left; }
+}
 
 .section { width: 100%; }
 
-.article, .footer {
-    border-width: 1px;
-    border-radius: 5px;
-    box-shadow:	inset 1px 1px 1px rgba(0,0,0,0.3), 1px 1px 1px rgba(255,255,255,0.6);
+.article,
+.footer {
+  border-width: 1px;
+  border-radius: 5px;
+  box-shadow:	inset 1px 1px 1px rgba(0,0,0,0.3),
+							1px 1px 1px rgba(255,255,255,0.6);
 }
 
 /* Navigation */
@@ -168,7 +170,7 @@ h1 {
 	& #blurb {
 		@include column-count(3);
 	  @include column-gap(30px);
-	  @include column-rule(1px solid #eee);
+	  @include column-rule(1px solid $color-line-light);
 	  width: 100%;
 
 		& h2 {
@@ -265,11 +267,11 @@ h1 {
 .widget-categories {
   @include column-count(2);
   @include column-gap(30px);
-  @include column-rule(1px solid #ddd);
+  @include column-rule(1px solid $color-line-light);
 }
 
 li.widget_text p {
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid $color-line-light;
     padding-bottom: 1.4em;
 }
 

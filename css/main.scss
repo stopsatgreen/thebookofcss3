@@ -71,14 +71,14 @@ h1 {
 }
 
 h2 {
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid $color-line-light;
   font-size: 220%;
   font-weight: bold;
   line-height: 1.432;
   margin-bottom: 0.955em;
 
   &:not(:first-of-type) {
-    border-top: 1px solid #ccc;
+    border-top: 1px solid $color-line-light;
     margin-top: 0.79167em;
   }
 }
@@ -104,12 +104,15 @@ p { margin-bottom: 1.4em; }
   margin-bottom: 0;
 }
 
-ul.examples, ul.countries { margin-bottom: 21px; }
+.examples,
+.countries { margin-bottom: 21px; }
 
 .examples li {
   font-style: italic;
 
-  & a { font-style: normal; }
+  & a,
+  & > em,
+  & > code { font-style: normal; }
 }
 
 .countries li {
@@ -125,7 +128,7 @@ ul.examples, ul.countries { margin-bottom: 21px; }
 
 code, pre {
   font-family: monospace;
-  font-size: 13px;
+  font-size: 1em;
 }
 
 pre {
@@ -149,11 +152,11 @@ tr { font-size: 160%; }
 
 thead th,
 tbody td {
-	border-left: 1px solid #ddd;
+	border-left: 1px solid $color-line-light;
 	line-height: 1.5;
 }
 
-thead th { border-bottom: 1px solid #ddd; }
+thead th { border-bottom: 1px solid $color-line-light; }
 
 thead th:not(:first-child),
 tbody td { width: 15% }
@@ -238,7 +241,7 @@ a.oreilly { background-image: url('images/oreilly-icon.png'); }
 .widget-area > ul > li { font-size: 100%; }
 
 #nav-below {
-    border-top: 1px solid #eee;
+    border-top: 1px solid $color-line-light;
     margin-top: 1.4em;
     overflow: hidden;
     padding-top: 1.4em;
@@ -251,7 +254,7 @@ a.oreilly { background-image: url('images/oreilly-icon.png'); }
 }
 
 .single .see-all {
-    border-top: 1px solid #eee;
+    border-top: 1px solid $color-line-light;
     margin-bottom: 0;
     padding-top: 1.4em;
     text-align: center;
