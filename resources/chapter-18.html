@@ -1,0 +1,93 @@
+---
+layout: chapter
+title: Chapter 18
+---
+
+
+<div class="section">
+  <h2>Examples</h2>
+  <ul class="examples">
+    <li><a href="{{ site.baseurl }}/examples/css3_18-01.html">Figure 18-1</a>: Comparing different blend modes applied to a source&nbsp;image.</li>
+    <li><a href="{{ site.baseurl }}/examples/css3_18-02.html">Figure 18-2</a>: Blending multiple background image&nbsp;layers.</li>
+    <li><a href="{{ site.baseurl }}/examples/css3_18-03.html">Figure 18-3</a>: Applying multiple blend modes in different combinations.</li>
+    <li><a href="{{ site.baseurl }}/examples/css3_18-04.html">Figure 18-4</a>: Different blend modes applied to the text element, mixed with the background of its&nbsp;parent.</li>
+    <li><a href="{{ site.baseurl }}/examples/css3_18-05.html">Figure 18-5</a>: Isolating an element to set a new stacking&nbsp;context.</li>
+    <li><a href="{{ site.baseurl }}/examples/css3_18-06.html">Figure 18-6</a>: Applying a Gaussian blur&nbsp;filter.</li>
+    <li><a href="{{ site.baseurl }}/examples/css3_18-07.html">Figure 18-7</a>: Adjusting brightness and contrast with CSS filter&nbsp;effects.</li>
+    <li><a href="{{ site.baseurl }}/examples/css3_18-08.html">Figure 18-8</a>: Comparing the <code>drop-shadow()</code> filter with the <code>box-shadow</code>&nbsp;property.</li>
+    <li><a href="{{ site.baseurl }}/examples/css3_18-09.html">Figure 18-9</a>: Function values for the <code>clip-path</code> property: <code>circle()</code> and&nbsp;<code>ellipse()</code>.</li>
+    <li><a href="{{ site.baseurl }}/examples/css3_18-10.html">Figure 18-10</a>: The <code>inset()</code> function without and with border radius&nbsp;values.</li>
+    <li><a href="{{ site.baseurl }}/examples/css3_18-11.html">Figure 18-11</a>: A triangular clip path made with the <code>polygon()</code>&nbsp;function.</li>
+    <li><a href="{{ site.baseurl }}/examples/css3_18-13.html">Figure 18-13</a>: A rectangle made with the <code>rectangle()</code> function of <code>-webkit-clip-path</code>.</li>
+    <li><a href="{{ site.baseurl }}/examples/css3_18-14.html">Figure 18-14</a>: The three steps of image&nbsp;masking.</li>
+    <li><a href="{{ site.baseurl }}/examples/css3_18-15.html">Figure 18-15</a>: Comparing rendering order of graphical CSS&nbsp;effects.</li>
+    <li><a href="{{ site.baseurl }}/examples/css3_18-a.html">Figure 18-a</a>:   Demonstrating the <code>grayscale()</code>, <code>sepia()</code> and <code>saturate()</code> functions of the <code>filter</code>&nbsp;property.</li>
+    <li><a href="{{ site.baseurl }}/examples/css3_18-b.html">Figure 18-b</a>:   An example of the <code>hue-rotate()</code> function of the <code>filter</code>&nbsp;property.</li>
+    <li><a href="{{ site.baseurl }}/examples/css3_18-c.html">Figure 18-c</a>:   Comparing the differing effects of the order of values on the <code>filter</code>&nbsp;property.</li>
+    <li><a href="{{ site.baseurl }}/examples/css3_18-d.html">Figure 18-d</a>:   Animating shapes made with the <code>clip-path</code>&nbsp;property.</li>
+  </ul>
+</div>
+<div class="section">
+  <h2>Browser Support</h2>
+  <table width="100%" border="0" cellpadding="0" cellspacing="0">
+    <thead>
+      <tr>
+        <th></th>
+        <th>Chrome</th>
+        <th>Firefox</th>
+        <th>Safari</th>
+        <th>IE</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th><code>background-blend-mode</code></th>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>8</td>
+        <td>No</td>
+      </tr>
+      <tr>
+        <th><code>mix-blend-mode</code></th>
+        <td>No<sup>*</sup></td>
+        <td>Yes</td>
+        <td>8</td>
+        <td>No</td>
+      </tr>
+      <tr>
+        <th><code>isolation</code></th>
+        <td>No<sup>*</sup></td>
+        <td>No</td>
+        <td>8</td>
+        <td>No</td>
+      </tr>
+      <tr>
+        <th><code>filter</code></th>
+        <td>Yes<sup>†</sup></td>
+        <td>Yes<sup>‡</sup></td>
+        <td>Yes<sup>†</sup></td>
+        <td>No</td>
+      </tr>
+      <tr>
+        <th><code>clip-path</code></th>
+        <td>No<sup>*</sup></td>
+        <td>No</td>
+        <td>7<sup>§</sup>, 8<sup>†</sup></td>
+        <td>No</td>
+      </tr>
+      <tr>
+        <th><code>mask</code></th>
+        <td>Yes<sup>†</sup></td>
+        <td>No</td>
+        <td>Yes<sup>†</sup></td>
+        <td>No</td>
+      </tr>
+    </tbody>
+  </table>
+  <ul class="table-legend">
+    <li>* Implemented but off by default.</li>
+    <li>† With vendor prefix.</li>
+    <li>‡ Filters defined in SVG, not shorthand functions.</li>
+    <li>§ With outdated syntax.</li>
+  </ul>
+</div>

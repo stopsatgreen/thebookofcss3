@@ -18,11 +18,8 @@ a { color: inherit; }
 
 /* Layout */
 
-html,
-body { font-size: 10px; }
-
 body {
-    background-color: #97B6CB;
+    background-color: $color-key-base;
     font-family: Georgia, serif;
     min-height: 100%;
 }
@@ -41,7 +38,6 @@ body {
 /* Navigation */
 
 .menu {
-  line-height: 2.333;
   margin-bottom: 20px;
 
   & li {
@@ -49,8 +45,7 @@ body {
     border-style: dashed;
     border-width: 0 0 1px;
     color: rgba(0,0,0,0.6);
-    font-family: sans-serif;
-    font-size: 180%;
+    font: 112.5%/2.333 sans-serif;
 
     & a {
       display: block;
@@ -64,7 +59,7 @@ body {
 
 h1 {
     color: white;
-    font: bold 300%/1 sans-serif;
+    font: bold 187.5%/1 sans-serif;
     letter-spacing: -1px;
     margin: 0 20px 20px;
     text-shadow: 2px 2px 1px rgba(0,0,0,0.33);
@@ -72,7 +67,7 @@ h1 {
 
 h2 {
   border-bottom: 1px solid $color-line-light;
-  font-size: 220%;
+  font-size: 137.5%;
   font-weight: bold;
   line-height: 1.432;
   margin-bottom: 0.955em;
@@ -83,21 +78,9 @@ h2 {
   }
 }
 
-h3, p,
-.article li,
-.examples li {
-    font-size: 150%;
-    line-height: 1.4;
-}
+h3, p, li { line-height: 1.5; }
 
-p { margin-bottom: 1.4em; }
-
-#cta p {
-  color: rgba(0,0,0,0.85);
-  font-size: 140%;
-  line-height: 1.172;
-	margin-bottom: 1.172em;
-}
+p { margin-bottom: 1.5em; }
 
 .footer p {
   color: rgba(0,0,0,0.75);
@@ -109,10 +92,13 @@ p { margin-bottom: 1.4em; }
 
 .examples li {
   font-style: italic;
+  margin-bottom: 0.25em;
 
   & a,
   & > em,
   & > code { font-style: normal; }
+
+  & > code { background-color: lighten( $color-key-base, 25% ); }
 }
 
 .countries li {
@@ -121,14 +107,14 @@ p { margin-bottom: 1.4em; }
   display: block;
   padding-left: 1.5em;
 
-  &.uk { background-image: url('images/gb.png'); }
+  &.uk { background-image: url('{{ site.baseurl }}/images/gb.png'); }
 
-  &.us { background-image: url('images/us.png'); }
+  &.us { background-image: url('{{ site.baseurl }}/images/us.png'); }
 }
 
 code, pre {
   font-family: monospace;
-  font-size: 1em;
+  font-size: 1.231em; // Because 1em = 13px, for some reason
 }
 
 pre {
@@ -148,12 +134,12 @@ blockquote { margin-left: 3em; }
 
 table { margin-bottom: 20px; }
 
-tr { font-size: 160%; }
-
 thead th,
 tbody td {
 	border-left: 1px solid $color-line-light;
 	line-height: 1.5;
+
+  &:first-child { border-left: none; }
 }
 
 thead th { border-bottom: 1px solid $color-line-light; }
@@ -161,13 +147,16 @@ thead th { border-bottom: 1px solid $color-line-light; }
 thead th:not(:first-child),
 tbody td { width: 15% }
 
-thead th:first-child { border-left: none; }
+tbody {
+  th {
+    padding-left: 0.5em;
+    text-align: left;
+  }
 
-tbody tr:nth-child(even) { background-color: #efefef; }
+  tr:nth-child(even) { background-color: #efefef; }
 
-tbody th { padding-left: 0.5em; text-align: left; }
-
-tbody td { text-align: center; }
+  td { text-align: center; }
+}
 
 .invalid th,
 .invalid td { color: #800000; }
@@ -179,23 +168,17 @@ tbody td { text-align: center; }
 /* Home Page */
 
 .home #blurb p:first-child {
-    font-size: 180%;
+    font-size: 112.5%;
     line-height: 1.458;
     margin-bottom: 1.1667em;
 }
 
 #cta .coming-soon { display: none; }
 
-.tweets li {
-	font-size: 86.66667%;
-	margin-bottom: 0.5em;
-}
-
 /* About Page */
 
 .about #blurb img {
-  -webkit-box-shadow: 1px 1px 2px rgba(0,0,0,0.5);
-  box-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+  @include box-shadow(1px 1px 2px rgba(0,0,0,0.5));
   float: left;
   margin: 0 10px 10px 0;
 }
@@ -209,13 +192,14 @@ a.buyfrom {
   padding-left: 1.5em;
 }
 
-a.nostarch { background-image: url('images/nostarch-icon.png'); }
+a.nostarch { background-image: url('{{ site.baseurl }}/images/nostarch-icon.png'); }
 
-a.oreilly { background-image: url('images/oreilly-icon.png'); }
+a.oreilly { background-image: url('{{ site.baseurl }}/images/oreilly-icon.png'); }
 
 /* Resources Page */
 
-#links li h3, #links li li { font-size: 100%; }
+#links li h3,
+#links li li { font-size: 100%; }
 
 #links ul ul { margin-bottom: 20px; }
 
@@ -225,32 +209,30 @@ a.oreilly { background-image: url('images/oreilly-icon.png'); }
 
   & h2 { padding-top: 0; }
 
-  & p {
-    max-width: 650px;
-
-    &:last-child { margin-bottom: 0; }
-  }
+  & p:last-child { margin-bottom: 0; }
 }
 
 /* Blog Page */
 
-.blog h2 a { text-decoration: none; }
+.blog h2 a {
+  text-decoration: none;
 
-.blog h2 a:hover { text-decoration: underline; }
+  &:hover { text-decoration: underline; }
+}
 
 .widget-area > ul > li { font-size: 100%; }
 
 #nav-below {
-    border-top: 1px solid $color-line-light;
-    margin-top: 1.4em;
-    overflow: hidden;
-    padding-top: 1.4em;
-}
+  border-top: 1px solid $color-line-light;
+  margin-top: 1.4em;
+  overflow: hidden;
+  padding-top: 1.4em;
 
-#nav-below > span {
+  & > span {
     display: block;
     float: left;
     width: 50%;
+  }
 }
 
 .single .see-all {

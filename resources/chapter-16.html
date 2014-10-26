@@ -1,0 +1,72 @@
+---
+layout: chapter
+title: Chapter 16
+---
+
+
+<div class="section">
+  <h2>Examples</h2>
+  <ul class="examples">
+    <li><a href="{{ site.baseurl }}/examples/css3_16-01.html">Figure 16-1</a>: Comparing values for <code>box-sizing</code>: the&nbsp;default <code>content-box</code> and <code>border-box</code>.</li>
+    <li><a href="{{ site.baseurl }}/examples/css3_16-02.html">Figure 16-2</a>: The <code>max-content</code> value makes the element as wide as its widest child, whereas <code>min-content</code> makes the element as wide as its narrowest&nbsp;child.</li>
+    <li><a href="{{ site.baseurl }}/examples/css3_16-03.html">Figure 16-3</a>: The <code>fit-content</code> value, compared to <code>max-content</code> and&nbsp; <code>min-content</code>.</li>
+    <li><a href="{{ site.baseurl }}/examples/css3_16-04.html">Figure 16-4</a>: Using the <code>fill</code> value for width makes the inline-block caption shown here fill the available width of its&nbsp;parent.</li>
+  </ul>
+</div>
+<div class="section">
+  <h2>Browser Support</h2>
+  <table width="100%" border="0" cellpadding="0" cellspacing="0">
+    <thead>
+      <tr>
+        <th></th>
+        <th>Chrome</th>
+        <th>Firefox</th>
+        <th>Safari</th>
+        <th>IE</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>Root-relative units</th>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>Yes</td>
+      </tr>
+      <tr>
+        <th>Viewport-relative units</th>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>Yes<sup>*</sup></td>
+        <td>IE9<sup>†</sup>, IE10<sup>‡</sup></td>
+      </tr>
+      <tr>
+        <th>Calculated values</th>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>Yes</td>
+      </tr>
+      <tr>
+        <th>Box sizing</th>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>Yes</td>
+      </tr>
+      <tr>
+        <th>Intrinsic/extrinsic sizing</th>
+        <td>Yes<sup>§</sup></td>
+        <td>Yes<sup>§</sup></td>
+        <td>Yes<sup>§</sup></td>
+        <td>No</td>
+      </tr>
+    </tbody>
+  </table>
+  <ul class="table-legend">
+    <li>* Buggy support for <code>vh</code> in iOS.</li>
+    <li>† Supports <code>vm</code> instead of <code>vmin</code>, no support for <code>vmax</code>.</li>
+    <li>‡ No support for <code>vmax</code>.</li>
+    <li>§ Requires vendor prefix.</li>
+  </ul>
+</div>
