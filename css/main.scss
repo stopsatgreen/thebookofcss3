@@ -20,6 +20,7 @@ a { color: inherit; }
 
 body {
     background-color: $color-key-base;
+    color: $color-text-base;
     font-family: Georgia, serif;
     min-height: 100%;
 }
@@ -97,6 +98,8 @@ p { margin-bottom: 1.5em; }
   & a,
   & > em,
   & > code { font-style: normal; }
+
+  & a { -moz-text-decoration-color: lighten($color-text-base, 50%); }
 
   & > code { background-color: lighten( $color-key-base, 25% ); }
 }
