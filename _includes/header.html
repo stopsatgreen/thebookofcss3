@@ -7,4 +7,4 @@
     <li><a href="{{ site.baseurl }}/buy/">Buy Online</a></li>
   </ul>
 
-<h1>{{ page.title }}</h1>
+<h1>{% if page.chapter %}{{ page.chapter }}&thinsp;: {% endif %}{{ page.title }}</h1>

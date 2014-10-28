@@ -90,7 +90,7 @@ body {
 /* Type */
 
 h1 {
-  font: normal 450%/0.875 'Roboto Slab', sans-serif;
+  font: normal 450%/0.88889 'Roboto Slab', sans-serif;
   letter-spacing: -3px;
   margin: 0 0.139em 0.4167em;
   text-shadow:	0 1px 0 #5282A3, 0 2px 0 #5282A3,
@@ -203,6 +203,14 @@ h1 {
 
 .examples,
 .version-note p { max-width: 70.65%; } // 650px at max
+
+/* Chapter Pages */
+
+.chapter h1 {
+	font-size: 300%;
+	line-height: 1.33333;
+	margin: 0 0.20833em 0.625em;
+}
 
 /* Blog Page */
 
