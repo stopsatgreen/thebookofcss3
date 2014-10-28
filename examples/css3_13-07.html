@@ -1,11 +1,8 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf8">
-  <meta name="viewport" content="width=device-width">
-  <title>Figure 13-7</title>
-  <link rel="stylesheet" href="css/blueprint/screen.css">
-  <link rel="stylesheet" href="css/persistent.css">
+---
+layout: example
+title: Example 13-7
+---
+
 <style>
 .d3-parent {
   background-color: silver;
@@ -15,34 +12,28 @@
 }
 .d3-child { background-color: transparent; }
 .trans-1 {
-    -moz-transform: matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,10,10,10,1);
-    -ms-transform: matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,10,10,10,1);
-    -webkit-transform: matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,10,10,10,1);
+  -webkit-transform: matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,10,10,10,1);
+  transform: matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,10,10,10,1);
 }
 .trans-2 {
-    -moz-transform: matrix3d(1.5,0,0,0,0,1.5,0,0,0,0,2,0,0,0,10,1);
-    -ms-transform: matrix3d(1.5,0,0,0,0,1.5,0,0,0,0,2,0,0,0,10,1);
-    -webkit-transform: matrix3d(1.5,0,0,0,0,1.5,0,0,0,0,2,0,0,0,10,1);
+  -webkit-transform: matrix3d(1.5,0,0,0,0,1.5,0,0,0,0,2,0,0,0,10,1);
+  transform: matrix3d(1.5,0,0,0,0,1.5,0,0,0,0,2,0,0,0,10,1);
 }
 .trans-3 {
-    -moz-transform: matrix3d(0.96,-0.26,0,0,0.26,0.96,0,0,0,0,1,0,-10,0,0,1);
-    -ms-transform: matrix3d(0.96,-0.26,0,0,0.26,0.96,0,0,0,0,1,0,-10,0,0,1);
-    -webkit-transform: matrix3d(0.96,-0.26,0,0,0.26,0.96,0,0,0,0,1,0,-10,0,0,1);
+  -webkit-transform: matrix3d(0.96,-0.26,0,0,0.26,0.96,0,0,0,0,1,0,-10,0,0,1);
+  transform: matrix3d(0.96,-0.26,0,0,0.26,0.96,0,0,0,0,1,0,-10,0,0,1);
 }
 .d3-parent:hover .trans-1 {
-    -moz-transform: matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1);
-    -ms-transform: matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1);
-    -webkit-transform: matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1);
+  -webkit-transform: matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1);
+  transform: matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1);
 }
 .d3-parent:hover .trans-2 {
-    -moz-transform: matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1);
-    -ms-transform: matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1);
-    -webkit-transform: matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1);
+  -webkit-transform: matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1);
+  transform: matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1);
 }
 .d3-parent:hover .trans-3 {
-    -moz-transform: matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1);
-    -ms-transform: matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1);
-    -webkit-transform: matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1);
+  -webkit-transform: matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1);
+  transform: matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1);
 }
 </style>
 </head>
@@ -69,5 +60,3 @@
   </div>
   <div class="span-3 last">&thinsp;</div>
 </div>
-</body>
-</html>
