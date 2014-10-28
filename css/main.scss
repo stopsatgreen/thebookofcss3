@@ -8,16 +8,13 @@
 
 /* Reset */
 
-html, body, div, h1, h2, h3, p, ul, li, blockquote {
+body, h1, h2, h3, p, blockquote {
     margin: 0;
-    padding: 0;
 }
 
-ul { list-style: none; }
-
-a {
-  color: inherit;
-  -moz-text-decoration-color: lighten($color-text-base, 50%);
+ul {
+  list-style: none;
+  padding-left: 0;
 }
 
 /* Layout */
@@ -45,14 +42,13 @@ body {
 .menu {
   margin-bottom: 20px;
 
-  & li {
-    border-color: rgba(255,255,255,0.5);
-    border-style: dashed;
-    border-width: 0 0 1px;
+  li {
+    border: 0 dashed rgba(255,255,255,0.5);
+    border-bottom-width: 1px;
     color: rgba(0,0,0,0.6);
     font: 112.5%/2.333 sans-serif;
 
-    & a {
+    a {
       display: block;
       padding: 0 20px;
       text-decoration: none;
@@ -86,6 +82,11 @@ h2 {
 h3, p, li { line-height: 1.5; }
 
 p { margin-bottom: 1.5em; }
+
+a {
+  color: inherit;
+  -moz-text-decoration-color: lighten($color-text-base, 50%);
+}
 
 .footer p {
   color: rgba(0,0,0,0.75);
@@ -177,9 +178,9 @@ tbody {
 /* Home Page */
 
 .home #blurb p:first-child {
-    font-size: 112.5%;
-    line-height: 1.458;
-    margin-bottom: 1.1667em;
+  font-size: 112.5%;
+  line-height: 1.458;
+  margin-bottom: 1.1667em;
 }
 
 #cta .callout { display: none; }
@@ -216,9 +217,9 @@ a.oreilly { background-image: url('{{ site.baseurl }}/images/oreilly-icon.png');
 
 .version-note {
 
-  & h2 { padding-top: 0; }
+  h2 { padding-top: 0; }
 
-  & p:last-child { margin-bottom: 0; }
+  p:last-child { margin-bottom: 0; }
 }
 
 /* Blog Page */
@@ -237,7 +238,7 @@ a.oreilly { background-image: url('{{ site.baseurl }}/images/oreilly-icon.png');
   overflow: hidden;
   padding-top: 1.4em;
 
-  & > span {
+  > span {
     display: block;
     float: left;
     width: 50%;

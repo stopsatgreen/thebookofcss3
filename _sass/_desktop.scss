@@ -7,17 +7,18 @@ body {
 
 .container {
   margin: 0 auto;
+	max-width: 960px;
   padding: 10px 0 30px;
   position: relative;
-  max-width: 960px;
 }
 
 .article {
   margin-bottom: 20px;
+	max-width: 920px;
   overflow: hidden;
-  width: 920px;
+	width: 100%;
 
-	& > div { float: left; }
+	> div { float: left; }
 }
 
 .section { width: 100%; }
@@ -112,68 +113,65 @@ h1 {
 #blurb { width: 400px; }
 
 #cta {
-    float: right;
-    width: 230px;
+  float: right;
+  width: 230px;
 }
 
 /* Home Page */
 
-.home .article {
+.home {
+
+	.article {
     float: left;
     overflow: visible;
-}
+	}
 
-.home #cta p { margin: 0 5px 20px 10px; }
+	#cta {
+		.callout {
+		  background-color: white;
+		  border: 1px solid black;
+		  border-radius: 5px;
+			box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+		  display: block;
+		  font-size: 225%;
+		  font-weight: bold;
+		  line-height: 1;
+		  padding: 4px;
+		  text-align: center;
+		  @include transform(rotate(5deg) scale(1.1) translate(10px,-20px));
 
-#cta .callout {
-  background-color: white;
-  border: 1px solid black;
-  border-radius: 5px;
-	box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
-  display: block;
-  font-size: 225%;
-  font-weight: bold;
-  line-height: 1;
-  padding: 4px;
-  text-align: center;
-  @include transform(rotate(5deg) scale(1.1) translate(10px,-20px));
-
-	& span {
-    background-color: black;
-    @include linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,1));
-    border-radius: 4px;
-    color: white;
-    display: block;
-    padding: 0.333em 0;
+			span {
+		    background-color: black;
+		    @include linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,1));
+		    border-radius: 4px;
+		    color: white;
+		    display: block;
+		    padding: 0.333em 0;
+			}
+		}
 	}
 }
-
-.home #cta h3 { margin: 0 5px 10px 10px; }
-
-.home #cta h3 + p { margin-bottom: 0; }
-
-.aktt_tweets { margin: 0 5px 0 10px; }
 
 /* About Page */
 
 .about {
 
-	& .article {
+	.article {
     display: block;
     overflow: hidden;
 	}
 
-	& #blurb {
+	#blurb {
 		@include column-count(3);
 	  @include column-gap(30px);
 	  @include column-rule(1px solid $color-line-light);
 	  width: 100%;
 
-		& h2 {
-		    @include column-span(all);
+		h2 {
+			@include column-span(all);
 		}
 
-		& p {
+		p {
 			margin-bottom: 0;
 			max-width: 600px;
 			text-align: justify;
@@ -187,8 +185,8 @@ h1 {
 
 .buy #blurb {
 	float: right;
-    margin-right: 100px;
-    width: 470px;
+  margin-right: 100px;
+  width: 470px;
 }
 
 /* Resources Page */
@@ -211,40 +209,44 @@ h1 {
 
 /* Blog Page */
 
-.blog .section, .single .section, .archive .section  {
-    float: left;
-    width: 560px;
+.blog .section,
+.single .section,
+.archive .section  {
+  float: left;
+  width: 560px;
 }
 
-.blog .aside, .single .aside, .archive .aside {
-    float: right;
-    width: 330px;
+.blog .aside,
+.single .aside,
+.archive .aside {
+  float: right;
+  width: 330px;
 }
 
 .post { padding: 20px; }
 
 .container .category-updates {
-    border-top: 1px solid #AAA;
-    position: relative;
-}
+  border-top: 1px solid #AAA;
+  position: relative;
 
-.container .category-updates::before {
-    background-color: white;
-    border: 1px solid #AAA;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    content: '';
-    display: block;
-    height: 20px;
-    left: 50%;
-    margin-left: -10px;
-    position: absolute;
-    -ms-transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-    transform: rotate(45deg);
-    top: -10px;
-    width: 20px;
-    z-index: 10;
+	&::before {
+		background-color: white;
+		border: 1px solid #AAA;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+		content: '';
+		display: block;
+		height: 20px;
+		left: 50%;
+		margin-left: -10px;
+		position: absolute;
+		-ms-transform: rotate(45deg);
+		-webkit-transform: rotate(45deg);
+		transform: rotate(45deg);
+		top: -10px;
+		width: 20px;
+		z-index: 10;
+	}
 }
 
 .container .category-updates:first-of-type,
