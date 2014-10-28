@@ -63,7 +63,12 @@ $color-text-base: #333;
 
 // Gradients
 
-@mixin linear-gradient($color-stops...) {
-  background: -webkit-linear-gradient($color-stops);
-  background: linear-gradient($color-stops);
+@mixin linear-gradient($vals...) {
+  background-image: -webkit-linear-gradient($vals);
+  background-image: linear-gradient($vals);
+}
+
+@mixin radial-gradient($vals...) {
+  background-image: -webkit-radial-gradient($vals);
+  background-image: radial-gradient($vals);
 }

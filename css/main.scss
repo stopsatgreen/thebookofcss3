@@ -15,7 +15,10 @@ html, body, div, h1, h2, h3, p, ul, li, blockquote {
 
 ul { list-style: none; }
 
-a { color: inherit; }
+a {
+  color: inherit;
+  -moz-text-decoration-color: lighten($color-text-base, 50%);
+}
 
 /* Layout */
 
@@ -89,20 +92,22 @@ p { margin-bottom: 1.5em; }
   margin-bottom: 0;
 }
 
-.examples,
-.countries { margin-bottom: 21px; }
+.chapters,
+.countries,
+.examples {
+  margin-bottom: 1.25em;
+
+  li { margin-bottom: 0.25em; }
+}
 
 .examples li {
   font-style: italic;
-  margin-bottom: 0.25em;
 
-  & a,
-  & > em,
-  & > code { font-style: normal; }
+  a,
+  > em,
+  > code { font-style: normal; }
 
-  & a { -moz-text-decoration-color: lighten($color-text-base, 50%); }
-
-  & > code { background-color: lighten( $color-key-base, 25% ); }
+  > code { background-color: lighten( $color-key-base, 25% ); }
 }
 
 .countries li {
@@ -177,7 +182,7 @@ tbody {
     margin-bottom: 1.1667em;
 }
 
-#cta .coming-soon { display: none; }
+#cta .callout { display: none; }
 
 /* About Page */
 

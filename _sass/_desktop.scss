@@ -1,10 +1,7 @@
-
-
 /* Layout */
 
 body {
-	background-image: -webkit-radial-gradient(circle closest-side,rgba(255,255,255,0.9),rgba(255,255,255,0));
-	background-image: radial-gradient(circle closest-side,rgba(255,255,255,0.9),rgba(255,255,255,0));
+	@include radial-gradient(circle closest-side, rgba(255,255,255,0.9), rgba(255,255,255,0));
 	font-family: 'Droid Serif', Georgia, serif;
 }
 
@@ -40,7 +37,7 @@ body {
 	margin-bottom: 40px;
   width: 100%;
 
-	& li {
+	li {
 	  border-width: 0 1px 0 0;
 		font-family: 'Roboto Slab', sans-serif;
 
@@ -49,7 +46,7 @@ body {
 		&:nth-last-of-type(-n+2) {
 			border-right: none;
 
-			& a { border-radius: 0 5px 5px 0; }
+			a { border-radius: 0 5px 5px 0; }
 		}
 
 		&:last-child {
@@ -58,7 +55,7 @@ body {
 		  padding-right: 0;
 		  text-align: right;
 
-			& a {
+			a {
 				background-color: $color-nav-core;
 				@include linear-gradient($color-nav-light,$color-nav-core);
 				border: 1px solid white;
@@ -128,7 +125,7 @@ h1 {
 
 .home #cta p { margin: 0 5px 20px 10px; }
 
-#cta .coming-soon {
+#cta .callout {
   background-color: white;
   border: 1px solid black;
   border-radius: 5px;
