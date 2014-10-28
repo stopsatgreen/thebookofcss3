@@ -162,13 +162,12 @@ h1 {
 	}
 
 	#blurb {
-		@include column-count(3);
-	  @include column-gap(30px);
-	  @include column-rule(1px solid $color-line-light);
-	  width: 100%;
+		width: 100%;
 
-		h2 {
-			@include column-span(all);
+		.columns {
+			@include column-count(3);
+			@include column-gap(30px);
+			@include column-rule(1px solid $color-line-light);
 		}
 
 		p {
