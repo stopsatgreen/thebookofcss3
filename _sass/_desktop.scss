@@ -17,11 +17,7 @@ body {
 	max-width: 920px;
   overflow: hidden;
 	width: 100%;
-
-	> div { float: left; }
 }
-
-.section { width: 100%; }
 
 .article,
 .footer {
@@ -124,6 +120,8 @@ h1 {
 	.article {
     float: left;
     overflow: visible;
+
+		> div { float: left; }
 	}
 
 	#cta {
@@ -194,6 +192,8 @@ h1 {
 
 /* Resources Page */
 
+.resources .article > div { float: left; }
+
 #chapters,
 #links { width: 450px; }
 
@@ -201,6 +201,12 @@ h1 {
 
 .examples,
 .version-note p { max-width: 70.65%; } // 650px at max
+
+.section.support {
+	clear: both;
+	float: none;
+	width: 100%;
+}
 
 /* Chapter Pages */
 

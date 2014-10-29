@@ -29,7 +29,11 @@ class: blog
   <p>This page lists errata from the book (hope­fully not too much!), changes to the spe­cific­a­tions since pub­lic­a­tion, and brand new features.</p>
   <h3 class="widget-title">Categories</h3>
   <ul class="widget-categories">
-    <li class="cat-item cat-item-6"><a href="{{ site.baseurl }}/category/chapters/chapter-02/" title="View all posts filed under Chapter 02">Chapter 02</a></li>
+
+{% for cats in site.categories %}
+    <li>{{ cats[0] | capitalize }}</li>
+{% endfor %}
+    <!-- <li class="cat-item cat-item-6"><a href="{{ site.baseurl }}/category/chapters/chapter-02/" title="View all posts filed under Chapter 02">Chapter 02</a></li>
     <li class="cat-item cat-item-33"><a href="{{ site.baseurl }}/category/chapters/chapter-05/" title="View all posts filed under Chapter 05">Chapter 05</a></li>
     <li class="cat-item cat-item-31"><a href="{{ site.baseurl }}/category/chapters/chapter-06/" title="View all posts filed under Chapter 06">Chapter 06</a></li>
     <li class="cat-item cat-item-32"><a href="{{ site.baseurl }}/category/chapters/chapter-07/" title="View all posts filed under Chapter 07">Chapter 07</a></li>
@@ -42,6 +46,6 @@ class: blog
     <li class="cat-item cat-item-19"><a href="{{ site.baseurl }}/category/chapters/chapter-14/" title="View all posts filed under Chapter 14">Chapter 14</a></li>
     <li class="cat-item cat-item-20"><a href="{{ site.baseurl }}/category/chapters/chapter-15/" title="View all posts filed under Chapter 15">Chapter 15</a></li>
     <li class="cat-item cat-item-30"><a href="{{ site.baseurl }}/category/errata/" title="View all posts filed under Errata">Errata</a></li>
-    <li class="cat-item cat-item-1"><a href="{{ site.baseurl }}/category/updates/" title="View all posts filed under Updates">Updates</a></li>
+    <li class="cat-item cat-item-1"><a href="{{ site.baseurl }}/category/updates/" title="View all posts filed under Updates">Updates</a></li> -->
   </ul>
 </div>

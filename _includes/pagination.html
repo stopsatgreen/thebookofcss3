@@ -1,0 +1,12 @@
+<div class="section pagination">
+{% assign next = page.chapter | plus:1 %}
+{% assign previous = page.chapter | minus:1 %}
+{% for page in site.pages %}
+  {% if page.chapter == previous %}
+  <p class="previous"><a href="{{ site.baseurl }}{{ page.url }}">{{ page.chapter }}: {{ page.title }}</a></p>
+  {% endif %}
+  {% if page.chapter == next %}
+  <p class="next"><a href="{{ site.baseurl }}{{ page.url }}">{{ page.chapter }}: {{ page.title }}</a></p>
+  {% endif %}
+{% endfor %}
+</div>

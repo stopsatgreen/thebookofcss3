@@ -219,6 +219,28 @@ a.oreilly { background-image: url('{{ site.baseurl }}/images/oreilly-icon.png');
 
 #links ul ul { margin-bottom: 20px; }
 
+
+.pagination {
+  border-top: 1px solid $color-line-light;
+  margin-top: 1em;
+  overflow: hidden;
+  padding-top: 0.5em;
+
+  p { margin-bottom: 0; }
+
+  .previous {
+    float: left;
+
+    &::before { content: '« '; }
+  }
+
+  .next {
+    float: right;
+
+    &::after { content: ' »'; }
+  }
+}
+
 /* Chapter Page */
 
 .version-note {
@@ -234,6 +256,12 @@ a.oreilly { background-image: url('{{ site.baseurl }}/images/oreilly-icon.png');
   text-decoration: none;
 
   &:hover { text-decoration: underline; }
+}
+
+.blog .hentry ul {
+  list-style: disc;
+  margin-bottom: 1.5em;
+  padding-left: 1em;
 }
 
 .widget-area > ul > li { font-size: 100%; }
