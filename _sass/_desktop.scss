@@ -81,6 +81,14 @@ body {
 	}
 }
 
+.home .nav-home a,
+.about .nav-about a,
+.resources .nav-resources a,
+.blog .nav-updates a {
+	background-color: rgba(255,255,255,0.5) !important;
+	color: rgba(0,0,0,1);
+}
+
 /* Type */
 
 h1 {
