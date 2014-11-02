@@ -142,9 +142,10 @@ h1 {
 		  font-size: 225%;
 		  font-weight: bold;
 		  line-height: 1;
+			margin-bottom: 0.5em;
 		  padding: 4px;
 		  text-align: center;
-		  @include transform(rotate(5deg) scale(1.1) translate(10px,-20px));
+		  @include transform(rotate(7.5deg) scale(1.1) translate(5px, -45px));
 
 			span {
 		    background-color: black;
@@ -155,6 +156,8 @@ h1 {
 		    padding: 0.333em 0;
 			}
 		}
+
+		[data-twttr-id] { margin-top: -30px; }
 	}
 }
 
