@@ -14,4 +14,4 @@ github_username:  stopsatgreen
 
 # Build settings
 markdown: kramdown
-exclude: [examples.zip,gulpfile.js,package.json,node_modules]
+exclude: [examples.zip,gulpfile.js,package.json,README.md,node_modules]
