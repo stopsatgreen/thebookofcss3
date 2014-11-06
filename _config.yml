@@ -5,7 +5,7 @@ email: peter@broken-links.com
 description: > # this means to ignore newlines until "baseurl:"
   Companion site for The Book of CSS3 by Peter Gasston for No Starch Press. Example files, updates, and errata.
 baseurl: "" # /thebookofcss3
-url: "http://stopsatgreen.github.io/thebookofcss3" # the base hostname & protocol for your site
+url: "http://thebookofcss3.com/" # the base hostname & protocol for your site
 paginate: 10
 
 # Author settings
@@ -14,3 +14,4 @@ github_username:  stopsatgreen
 
 # Build settings
 markdown: kramdown
+exclude: [examples.zip,gulpfile.js,package.json,node_modules]

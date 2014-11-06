@@ -1,0 +1,26 @@
+{
+  "name": "thebookofcss3",
+  "version": "2.0.0",
+  "description": "Site and example files for The Book of CSS3",
+  "main": "index.html",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stopsatgreen/thebookofcss3.git"
+  },
+  "author": "Peter Gasston",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stopsatgreen/thebookofcss3/issues"
+  },
+  "homepage": "https://github.com/stopsatgreen/thebookofcss3",
+  "devDependencies": {
+    "gulp": "^3.8.10",
+    "gulp-zip": "^2.0.2"
+  }
+}
