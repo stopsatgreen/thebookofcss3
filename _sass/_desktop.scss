@@ -193,12 +193,18 @@ h1 {
 
 /* Buy Online Page */
 
-.buy #cover { width: 340px; }
+.buy {
 
-.buy #blurb {
-	float: right;
-  margin-right: 100px;
-  width: 470px;
+	#cover {
+		float: left;
+		width: 340px;
+	}
+
+	#blurb {
+		float: right;
+	  margin-right: 100px;
+	  width: 470px;
+	}
 }
 
 /* Resources Page */
